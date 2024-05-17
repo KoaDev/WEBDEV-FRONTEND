@@ -1,3 +1,5 @@
+@import url(../../TMAX/style.css);
+
 body{
     font-family: Inter, sans-serif;
     margin: 0;
@@ -15,7 +17,7 @@ section{
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    border-bottom: 1px lightgrey solid;
+    border-bottom: 1px solid var(--background);
 }
 .flex-row{
     display: flex;
@@ -30,7 +32,7 @@ section{
 }
 button{
     border: none;
-    background-color: white;
+    background-color: var(--white);
     cursor: pointer;
 }
 /*----------------------------------------NETWORK NAME, 3 BOUTONS, et fil d'ariane-------------------------*/
@@ -57,11 +59,11 @@ nav{
     content: " ";
     width: 0px;
     height: 100%;
-    border: 1px solid lightgray;
+    border: 1px solid var(--background);
 }
 
 #trash{
-    color: lightgrey;
+    color: var(--background);
 }
 
 /*-------------------------------------------------------------------------------------------------------------------*/
@@ -87,14 +89,14 @@ hgroup{
     padding-bottom: 6%;
 }
 #state, #status{                   /*c'est mieux d'avoir des id, pour pouvoir afficher les bons svg avec le js*/
-    border: 2px solid lightgrey;
+    border: 2px solid var(--background);
     display: flex;
     justify-content: center;
 }
 .group-title{
     margin: 0;
     margin-bottom: 2%;
-    color: rgb(128, 128, 128);
+    color: var(--lightTitle);
 }
 .group-text{
     margin: 0;
@@ -108,7 +110,7 @@ hgroup{
 
 /*-------------------------------------STYLE SPECIFIQUE STATUT---------------------------------------------------*/
 #state .group-text{
-    background-color: #18ff18;
+    background-color: var(--sucess);
     border-radius: 10px;
     width: 50%;
     text-align: center;
@@ -133,7 +135,7 @@ hgroup{
     padding-bottom: 10%;
     padding-left: 18%;
     padding-right: 15%;
-    border : 2px solid lightgrey;
+    border : 2px solid var(--background);
 }
 .leftSide{
     display: flex;
@@ -142,7 +144,7 @@ hgroup{
 }
 .leftSide > h2{
     margin: 0;
-    color: orange;
+    color: var(--orangeIcon);
     font-size: 180%;
 }
 .leftSide > p{
@@ -172,7 +174,7 @@ hgroup{
 }
 
 .onglet:focus{
-    border-bottom: 3px solid orange;
+    border-bottom: 3px solid var(--orangeIcon);
     margin-bottom: -1px;
 }
 
@@ -186,7 +188,7 @@ hgroup{
 #text-input{
     height: 100%;
     border: none;
-    border-bottom: 2px solid grey;
+    border-bottom: 2px solid var(--lightTitle);
     padding-right: 1%;
 }
 
@@ -211,17 +213,17 @@ table {
 }
   
 td, th {
-    border-bottom: 1px solid #AAAAAA;
+    border-bottom: 1px solid var(--lightgrey);
     text-align: left;
     padding: 1%;
 }
 
 tr:nth-child(2n) {
-    background-color: #FFFFFF;
+    background-color: var(--draft);
 }
 
 .sortBy {
-    background-color: #EEEEEE;
+    background-color: var(--draft);
 }
 
 /*-------------------------------------- media --------------------------------------*/
