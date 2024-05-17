@@ -7,6 +7,7 @@
 
 :root {
   --darkgreen: #012c10;
+  --lightgreen: #2f4f27;
   --goldenrod: #cfa40b;
   --yellow: #ffcd0b;
   --limegreen: #3de35a;
@@ -25,6 +26,8 @@
   --secondary: var(--black);
   --backgroundGrey: var(--whitesmoke);
   --backgroundWhite: var(--white);
+  --backgroundNavbar: var(--darkgreen);
+  --backgroundNavbarHover: var(--lightgreen);
   --error: var(--red);
   --sucess: var(--limegreen);
   --warning: var(--yellow);
@@ -99,20 +102,14 @@ h3 {
   text-align: left;
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-  :root {
-  }
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  :root {
-  }
+@media (max-width: 768px) {
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  :root {
-  }
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
 }
