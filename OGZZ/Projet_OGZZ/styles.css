@@ -1,11 +1,8 @@
-
-
-
-
 body{
     font-family: Inter, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: none;
 }
 main{
     display: flex;
@@ -56,7 +53,7 @@ nav{
     border: none;
 }
 
-#actions button:not(:last-child)::after{   /*permet de faire le séparateur entre les boutons ref: https://stackoverflow.com/questions/41631136/add-dividing-line-between-flex-items-with-equal-space-distribution + w3school (::after) */
+#actions button:not(:last-child)::after{   /*permet de faire le sÃ©parateur entre les boutons ref: https://stackoverflow.com/questions/41631136/add-dividing-line-between-flex-items-with-equal-space-distribution + w3school (::after) */
     content: " ";
     width: 0px;
     height: 100%;
@@ -171,6 +168,7 @@ hgroup{
     justify-content: center;
     align-items: center;
     padding: 3%;
+    background-color: none;
 }
 
 .onglet:focus{
@@ -199,6 +197,31 @@ hgroup{
 
 #text-input > input:focus-visible{
     outline: none;
+}
+
+/* -------------------------- Inventaires -------------------------- */
+#inventories {
+    background-color: #EEEEEE;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border-bottom: 1px solid #AAAAAA;
+    text-align: left;
+    padding: 1%;
+}
+
+tr:nth-child(2n) {
+    background-color: #FFFFFF;
+}
+
+.sortBy {
+    background-color: #EEEEEE;
 }
 
 /*-------------------------------------- media --------------------------------------*/
@@ -230,7 +253,4 @@ hgroup{
     #rightBox .search{
         height: 70px;
     }
-
-
-
 }
