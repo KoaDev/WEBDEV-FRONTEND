@@ -1,0 +1,53 @@
+@import url(../../TMAX/style.css);
+
+section{
+    background-color: var(--backgroundRow);
+}
+
+.main-header > div{
+    border-bottom: solid var(--border) 1px;
+    padding-left: 3%;
+}
+
+.main-header > h1{
+    padding-left: 3%;
+}
+
+.selected-nav{
+    font-weight: bold;
+    border-bottom: solid var(--primary) 5px;
+    margin-bottom: 0;
+}
+
+.selected-nav > p{
+    margin-bottom: 0;
+}
+
+.flexbox-line{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.region{
+    margin-left: 2%;
+}
+
+.region > p{
+    margin-bottom: 0;
+}
+
+.site{
+    margin-left: 2%;
+}
+
+.site > p{
+    margin-bottom: 0;
+}
+
+button{
+    margin-left: 50%;
+    margin-bottom: 1%;
+    background-color: var(--secondary);
+    color: var(--backgroundWhite);
+    align-items: center;
+}

@@ -4,30 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexible Inventory</title>
+    <link rel="stylesheet" href="../../TMAX/custom.css">
+    <link rel="stylesheet" href="../../TMAX/style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <img src="../../TMAX/svg/ico_logo.svg" alt="Logo" class="logo">
+            <h3 class="wh">My Network</h3>
+        </div>
+        <ul class="navbar-menu">
+            <li class="dropdown">
+                <button class="dropbtn">Solutions</button>
+            </li>
+            <li class="dropdown">
+                <button class="dropbtn">Regions <img src="../../TMAX/svg/ico_arrow_down_hover.svg" class="ico" alt="ico_arrow_down_hover"></button>
+                <div class="dropdown-content">
+                    <a href="#">Region 1</a>
+                    <a href="#">Region 2</a>
+                    <a href="#">Region 3</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button class="dropbtn">Locations <img src="../../TMAX/svg/ico_arrow_down_hover.svg" class="ico" alt="ico_arrow_down_hover"></button>
+                <div class="dropdown-content">
+                    <a href="#">Location 1</a>
+                    <a href="#">Location 2</a>
+                    <a href="#">Location 3</a>
+                </div>
+            </li>
+        </ul>
+        <div class="navbar-user">
+            <img src="../../TMAX/svg/ico_avatar.svg" class="ico-avatar" alt="ico_avatar">
+            <span>FirstName LastName</span>
+        </div>
+    </nav>
     <main>
         <div class="main-header">
-            <div class="path">
-                <p>Home > Networking > Flexible</p>
+            <div class="flexbox-line">
+                <p>Home&nbsp</p>
+                <img src="../../TMAX/svg/ico_arrow_right.svg">
+                <p>&nbspNetworking&nbsp</p>
+                <img src="../../TMAX/svg/ico_arrow_right.svg">
+                <p>&nbspFlexible</p>
             </div>
-            <div>
-                <h1>Flexible >Inventory</h1>
-                <div>
+            <h1>Flexible Inventory</h1>
+            <div class="flexbox-line">
+                <div class="selected-nav">
                     <p>Network</p>
                 </div>
-                <div>
+                <div class="region">
                     <p>Region</p>
                 </div>
-                <div>
+                <div class="site">
                     <p>Site</p>
                 </div>
                 <div>
 
                 </div>
-                <button type="button">Add a new Network</button>
+                <button type="button" class="flexbox-line">
+                    <img src="../../TMAX/svg/ico_add.svg">
+                    <p>Add a new Network</p>
+                </button>
             </div>
-            <div>
+            <div class="flexbox-line">
                 <div>
                     <p>Provision</p>
                 </div>
