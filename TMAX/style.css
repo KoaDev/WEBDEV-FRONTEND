@@ -33,7 +33,7 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url("./font/static/'Inter'-Regular.ttf") format("truetype");
+  src: url("./font/static/Inter-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
