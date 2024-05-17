@@ -1,16 +1,6 @@
 @import url(../../TMAX/style.css);
 
-body{
-    font-family: Inter, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: none;
-}
-main{
-    display: flex;
-    flex-direction: column;
-    margin-left: 2%;
-}
+
 section{
     padding-left: 2%;
     padding-right: 2%;
