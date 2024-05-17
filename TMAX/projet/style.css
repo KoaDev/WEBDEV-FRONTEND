@@ -23,7 +23,7 @@
 
   --primary: var(--goldenrod);
   --secondary: var(--black);
-  --backgroundGrey: var(--lightergrey);
+  --backgroundGrey: var(--whitesmoke);
   --backgroundWhite: var(--white);
   --error: var(--red);
   --sucess: var(--limegreen);
@@ -95,7 +95,7 @@ h3 {
   color: var(--primary);
   font-size: 2em;
   font-weight: 700;
-  line-height: 2em;
+  line-height: 1.2em;
   text-align: left;
 }
 

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Formulaire</title>
+</head>
+
+<body>
+
+    <body>
+
+        <main>
+            <h1>Inscription</h1>
+
+            <div id="main">
+                <form id="inscription-form">
+                    <div id="container-name">
+                        <div class="name">
+                            <label for="nom">Nom</label>
+                            <div class="warning-box">
+                                <input type="text" id="nom" name="nom">
+                                <div class="warning" id="nom-warning">Le champ nom est obligatoire</div>
+                            </div>
+                            <div class="obligatoire">*</div>
+                        </div>
+                        <div class="name">
+                            <label for="prenom">Prénom</label>
+                            <div class="warning-box">
+                                <input type="text" id="prenom" name="prenom">
+                                <div class="warning" id="prenom-warning">Le champ prénom est obligatoire</div>
+                            </div>
+                            <div class="obligatoire">*</div>
+                        </div>
+                    </div>
+                    <span>
+                        <h3>Notice :</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet sit amet metus sed
+                            facilisis.
+                            Praesent pretium urna et mollis consectetur. Nunc eu arcu vel risus rhoncus interdum vel
+                            quis
+                            mauris.
+                            Donec dignissim dui sapien, et auctor purus bibendum non. Ut consequat quam dolor, sed
+                            fermentum
+                            orci
+                            sollicitudin rhoncus. Ut luctus justo ut lectus mollis, ac hendrerit nibh mollis. Etiam
+                            convallis
+                            sem
+                            ante, in vulputate risus sodales sed. Duis interdum fermentum ornare. Aliquam quis velit
+                            odio.
+                            Aliquam
+                            finibus lobortis consectetur. Mauris interdum orci at dui venenatis dignissim. In ut
+                            vehicula
+                            metus.
+                            Quisque nec interdum velit. Aenean ultricies libero diam, a tincidunt justo cursus aliquet.
+                        </p>
+                    </span>
+
+                    <div class="inline">
+                        <label for="email">Email</label>
+                        <div class="warning-box">
+                            <input type="text" id="email" name="email">
+                            <div class="warning" id="email-warning">Le champ email est obligatoire</div>
+                        </div>
+                        <div class="obligatoire">*</div>
+                    </div>
+
+                    <div id="radio">
+                        <label for="civilite">Civilité</label>
+                        <input type="radio" id="mr" name="mr" value="Mr">
+                        <label for="mr">Mr</label>
+                        <input type="radio" id="Mme" name="Mme" value="Mme">
+                        <label for="Mme">Mme</label>
+                        <input type="radio" id="Me" name="Me" value="Me">
+                        <label for="Me">Me</label>
+                    </div>
+
+                    <div id="commentaire">
+                        <label for="commentaires">Commentaires</label>
+                        <textarea id="commentaires" name="commentaires" rows="5" cols="33"></textarea>
+                    </div>
+            </div>
+
+            <div id="warning-submit">
+                <img src="warn-ico.png" alt="Description of the image">
+                <div>
+                    <div class="warning" id="nom-warning-submit">Le champ nom est obligatoire</div>
+                    <div class="warning" id="prenom-warning-submit">Le champ prénom est obligatoire</div>
+                    <div class="warning" id="email-warning-submit">Le champ email est obligatoire</div>
+                </div>
+            </div>
+
+            <button type="button" id="enregistrer-btn">ENREGISTRER</button>
+            </form>
+        </main>
+    </body>
+
+</html>
