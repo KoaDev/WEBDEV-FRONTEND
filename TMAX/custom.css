@@ -85,6 +85,43 @@ body {
 }
 
 .ico-avatar {
-    height: 24px;
+    height: 24px; /* Adjust the size as needed */
     margin-right: 8px;
+}
+
+/* Breadcrumb styles */
+.breadcrumb {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.breadcrumb a:hover {
+    text-decoration: none; /* Remove underline on hover */
+}
+
+.breadcrumb > a::after {
+    content: '>';
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.breadcrumb > a:last-child::after {
+    content: '';
+}
+
+.breadcrumb > a:last-child {
+    font-weight: normal;
+}
+
+.spacer-line {
+    margin: 0;
 }
