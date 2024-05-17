@@ -23,7 +23,8 @@
 
   --primary: var(--goldenrod);
   --secondary: var(--black);
-  --background: var(--lightergrey);
+  --backgroundGrey: var(--lightergrey);
+  --backgroundWhite: var(--white);
   --error: var(--red);
   --sucess: var(--limegreen);
   --warning: var(--yellow);
@@ -77,6 +78,7 @@ h3 {
   font-weight: 700;
   line-height: 1.5em;
   text-align: left;
+  margin: 0;
 }
 
 .status {
