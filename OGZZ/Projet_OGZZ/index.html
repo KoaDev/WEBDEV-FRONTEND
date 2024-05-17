@@ -4,9 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/TMAX/custom.css">
+    <link rel="stylesheet" href="/TMAX/style.css">
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
+<nav class="navbar">
+    <div class="navbar-brand">
+        <img src="/TMAX/svg/ico_logo.svg" alt="Logo" class="logo">
+        <h3 class="wh">My Network</h3>
+    </div>
+    <ul class="navbar-menu">
+        <li class="dropdown">
+            <button class="dropbtn">Solutions</button>
+        </li>
+        <li class="dropdown">
+            <button class="dropbtn">Regions <img src="/TMAX/svg/ico_arrow_down_hover.svg" class="ico" alt="ico_arrow_down_hover"></button>
+            <div class="dropdown-content">
+                <a href="#">Region 1</a>
+                <a href="#">Region 2</a>
+                <a href="#">Region 3</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <button class="dropbtn">Locations <img src="/TMAX/svg/ico_arrow_down_hover.svg" class="ico" alt="ico_arrow_down_hover"></button>
+            <div class="dropdown-content">
+                <a href="#">Location 1</a>
+                <a href="#">Location 2</a>
+                <a href="#">Location 3</a>
+            </div>
+        </li>
+    </ul>
+    <div class="navbar-user">
+        <img src="/TMAX/svg/ico_avatar.svg" class="ico-avatar" alt="ico_avatar">
+        <span>FirstName LastName</span>
+    </div>
+</nav>
+
+<nav class="breadcrumb">
+    <a href="#">Home</a>
+    <a href="#">Regions</a>
+    <a href="#">Location Name</a>
+</nav>
+
     <main>
         <section>
             <nav>
@@ -31,12 +72,12 @@
             <div id="actions">
 
                 <button class="flex-row" id="trash">
-                    <img src="assets/Trash.svg">
+                    <img src="/TMAX/svg/ico_trash.svg">
                     <p>Delete</p> <!--changer la couleur avec js si y'a des choses selectionnés-->
                 </button>
 
                 <button class="flex-row">
-                    <img src="assets/Reload.svg">
+                    <img src="/TMAX/svg/ico_refresh.svg">
                     <p>Refresh</p>
                 </button>
             </div>
@@ -52,81 +93,81 @@
                 <div id="summary">
                     <div class="cards">
                         <div class="leftSide">
-                            <h2>N</h2>
-                            <p>text1</p>
+                            <h2>5</h2>
+                            <p>Regions</p>
                         </div>
                         <div class="rightSide">
                             <div class="flex-row">                              
-                                <img src="assets/state_up.svg" class="state_svg">
-                                <p class="group-text">Up</p>
+                                <img src="/TMAX/svg/ico_success.svg" class="state_svg">
+                                <p class="group-text">3 Up</p>
                             </div>
                             <div class="flex-row">
-                                <img src="assets/state_degraded.svg" class="state_svg">
-                                <p class="group-text">Degraded</p>
+                                <img src="/TMAX/svg/ico_warning.svg" class="state_svg">
+                                <p class="group-text">1 Degraded</p>
                             </div>
                             <div class="flex-row">
-                                <img src="assets/state_down.svg" class="state_svg">
-                                <p class="group-text">Down</p>
+                                <img src="/TMAX/svg/ico_cross_hover.svg" class="state_svg">
+                                <p class="group-text">1 Down</p>
                             </div>
                         </div>
                     </div>
                     <div class="cards">
                         <div class="leftSide">
-                            <h2>N</h2>
-                            <p>text1</p>
+                            <h2>4</h2>
+                            <p>Gateway</p>
                         </div>
                         <div class="rightSide">
-                            <div class="flex-row">                              
-                                <img src="assets/state_up.svg" class="state_svg">
-                                <p class="group-text">Up</p>
+                            <div class="flex-row">
+                                <img src="/TMAX/svg/ico_success.svg" class="state_svg">
+                                <p class="group-text">3 Up</p>
                             </div>
                             <div class="flex-row">
-                                <img src="assets/state_degraded.svg" class="state_svg">
-                                <p class="group-text">Degraded</p>
+                                <img src="/TMAX/svg/ico_warning.svg" class="state_svg">
+                                <p class="group-text">1 Degraded</p>
                             </div>
                             <div class="flex-row">
-                                <img src="assets/state_down.svg" class="state_svg">
-                                <p class="group-text">Down</p>
+                                <img src="/TMAX/svg/ico_cross_hover.svg" class="state_svg">
+                                <p class="group-text">1 Down</p>
                             </div>
                         </div>
                     </div>
                     <div class="cards">
                         <div class="leftSide">
-                            <h2>N</h2>
-                            <p>text1</p>
+                            <h2>15</h2>
+                            <p>Site</p>
                         </div>
                         <div class="rightSide">
-                            <div class="flex-row">                              
-                                <img src="assets/state_up.svg" class="state_svg">
-                                <p class="group-text">Up</p>
+                            <div class="flex-row">
+                                <img src="/TMAX/svg/ico_success.svg" class="state_svg">
+                                <p class="group-text">3 Up</p>
                             </div>
                             <div class="flex-row">
-                                <img src="assets/state_degraded.svg" class="state_svg">
-                                <p class="group-text">Degraded</p>
+                                <img src="/TMAX/svg/ico_warning.svg" class="state_svg">
+                                <p class="group-text">1 Degraded</p>
                             </div>
                             <div class="flex-row">
-                                <img src="assets/state_down.svg" class="state_svg">
-                                <p class="group-text">Down</p>
+                                <img src="/TMAX/svg/ico_cross_hover.svg" class="state_svg">
+                                <p class="group-text">1 Down</p>
                             </div>
                         </div>
                     </div>
                     <div class="cards">
                         <div class="leftSide">
-                            <h2>N</h2>
-                            <p>text1</p>
+                            <h2>30</h2>
+                            <p>Edge</p>
                         </div>
                         <div class="rightSide">
-                            <div class="flex-row">                              
-                                <img src="assets/state_up.svg" class="state_svg">
-                                <p class="group-text">Up</p>
+                            <div class="flex-row">
+                                <img src="/TMAX/svg/ico_success.svg" class="state_svg">
+                                <p class="group-text">3 Up</p>
                             </div>
                             <div class="flex-row">
-                                <img src="assets/state_degraded.svg" class="state_svg">
-                                <p class="group-text">Degraded</p>
+                                <img src="/TMAX/svg/ico_warning.svg" class="state_svg">
+                                <p class="group-text">1 Degraded</p>
                             </div>
                             <div class="flex-row">
-                                <img src="assets/state_down.svg" class="state_svg">
-                                <p class="group-text">Down</p>
+                                <img src="/TMAX/svg/ico_cross_hover.svg" class="state_svg">
+                                <p class="group-text">1 Down</p>
                             </div>
                         </div>
                     </div>
@@ -145,10 +186,10 @@
             <div id="rightBox">
                 <div class="flex-row" id="text-input">
                     <input type="text" placeholder="Search for a product, ressource or anything">
-                    <button><img src="assets/search.svg" ></button>
+                    <button><img src="/TMAX/svg/ico_search_hover.svg" ></button>
                 </div>
                 <div class="flex-row" id="filter">
-                    <img src="assets/filter.svg">
+                    <img src="/TMAX/svg/ico_filter.svg">
                     <button class="group-text">Filter</button>
                 </div>
             </div>
