@@ -1,6 +1,8 @@
+@import url(../../TMAX/style.css);
+
 .actions{
     border: solid;
-    border-color: black;
+    border-color: var(--secondary);
     border-width: 1px;
 
     width: auto;
