@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Management</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Location name</h1>
+            <button>Cockpit</button>
+        </header>
+
+        <section class="status">
+    <div class="status-container">
+        <div class="status-left">
+            <div class="status-item"><strong>Location Unique ID:</strong> 8754-1654eef-54df59-j1zf3</div>
+            <div class="status-item"><strong>Main Status:</strong> <span class="not-in-production">Not in production</span></div>
+        </div>
+        <div class="status-right">
+            <div class="labels">
+                <div class="status-item"><strong>Location Type:</strong></div>
+                <div class="status-item"><strong>Attached Region:</strong></div>
+                <div class="status-item"><strong>Attached Project:</strong></div>
+                <div class="status-item"><strong>Vendor Dashboard:</strong></div>
+            </div>
+            <div class="values">
+                <div class="status-item">Remote</div>
+                <div class="status-item">EMEA</div>
+                <div class="status-item">Project 2</div>
+                <div class="status-item"><a href="#">Go to VC Orchestrator</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        
+        
+        
+
+        <section class="information">
+            <div class="admin-info">
+                <h2>Administrative Information</h2>
+                <button onclick="toggleVisibility('admin')">View More</button>
+                <div id="adminContent" style="display:none;">
+                <table id="deliveryTable" style="display:none;"></table>
+                    <div class="container">
+                        <p>These informations are used by My support and other team.</p>
+                        <form id="adminForm">
+                            <div class="section">
+                                <h2>General Information</h2>
+                                <div class="two-columns">
+                                    <div class="column">
+                                        <label for="locationName">Location Name</label>
+                                        <input type="text" id="locationName" name="locationName" placeholder="Enter location name">
+                                    </div>
+                                    <div class="column">
+                                        <label for="locationDescription">Location Description</label>
+                                        <input type="text" id="locationDescription" name="locationDescription" placeholder="Enter location description">
+                                    </div>
+                                </div>
+                                <div class="three-columns">
+                                    <div class="column">
+                                        <label for="streetName">Number and Street Name</label>
+                                        <input type="text" id="streetName" name="streetName" placeholder="Enter number and street name">
+                                    </div>
+                                    <div class="column">
+                                        <label for="postalCode">Postal Code</label>
+                                        <input type="text" id="postalCode" name="postalCode" placeholder="Enter postal code">
+                                    </div>
+                                    <div class="column">
+                                        <label for="city">City</label>
+                                        <input type="text" id="city" name="city" placeholder="Enter city">
+                                    </div>
+                                </div>
+                                <button type="button" id="generalSaveBtn">Save</button>
+                            </div>
+                
+                            <div class="section">
+                                <h2>Local Contact Information</h2>
+                                <p>A local contact is mandatory to handle on-site actions.</p>
+                                <div class="two-columns">
+                                    <div class="column">
+                                        <label for="lastName">Last Name</label>
+                                        <input type="text" id="lastName" name="lastName" placeholder="Enter last name">
+                
+                                        <label for="phone">Phone</label>
+                                        <input type="tel" id="phone" name="phone" placeholder="Enter phone number">
+                                    </div>
+                                    <div class="column">
+                                        <label for="firstName">First Name</label>
+                                        <input type="text" id="firstName" name="firstName" placeholder="Enter first name">
+                
+                                        <label for="email">E-mail</label>
+                                        <input type="email" id="email" name="email" placeholder="Enter email address">
+                                    </div>
+                                </div>
+                                <div class="availability">
+                                    <label>Availability</label>
+                                    <div class="radio-group">
+                                        <input type="radio" id="manual" name="availability" value="manual" checked>
+                                        <label for="manual">Manual</label>
+                                        <input type="radio" id="24-7" name="availability" value="24/7">
+                                        <label for="24-7">24/7</label>
+                                        <input type="radio" id="weekdays" name="availability" value="weekdays">
+                                        <label for="weekdays">Weekdays only</label>
+                                    </div>
+                                </div>
+                                <div class="schedule">
+                                    <div class="day">
+                                        <span>Monday</span>
+                                        <input type="checkbox" id="mon24" name="mon24" value="24h">
+                                        <label for="mon24">24h</label>
+                                        <input type="checkbox" id="monAM" name="monAM" value="AM">
+                                        <label for="monAM">AM</label>
+                                        <input type="checkbox" id="monPM" name="monPM" value="PM">
+                                        <label for="monPM">PM</label>
+                                    </div>
+                                    <!-- Répéter pour les autres jours de la semaine -->
+                                </div>
+                                <button type="button" id="contactSaveBtn">Save</button>
+                            </div>
+                        </form>
+                    </div>
+                    <script src="scripts.js"></script>
+                </table>
+                </div>
+            </div>
+            <div class="delivery-info">
+                <h2>Delivery Information</h2>
+                <button onclick="toggleVisibility('delivery')">View More</button>
+                <div id="deliveryContent" style="display:none;">
+                    <span id="deliveryMessage">Attention: champs vide</span>
+                    <table id="deliveryTable" style="display:none;">
+                        <tr>
+                            <th>Device</th>
+                            <th>Model</th>
+                            <th>Number</th>
+                            <th>Expected Delivery</th>
+                        </tr>
+                        <tr>
+                            <td>Edge</td>
+                            <td>Edge510-he</td>
+                            <td>4</td>
+                            <td>01/09/2023</td>
+                        </tr>
+                        <tr>
+                            <td>Edge</td>
+                            <td>Edge530-he</td>
+                            <td>2</td>
+                            <td>28/08/2023</td>
+                        </tr>
+                        <tr>
+                            <td>Edge</td>
+                            <td>Edge550</td>
+                            <td>1</td>
+                            <td>30/09/2023</td>
+                        </tr>
+                    </table>
+                    <button onclick="loadContent('delivery')">Charger</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
