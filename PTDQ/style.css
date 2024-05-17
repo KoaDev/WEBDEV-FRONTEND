@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 1rem;
+    border-top: 1px solid #ccc;
+}
+
+.tabContainer {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    /* Utiliser une grille pour aligner les onglets et la barre de recherche */
+    align-items: center;
+    /* Aligner les éléments verticalement */
+}
+
+.tabs {
+    display: flex;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    font-weight: bold;
+}
+
+.tab.active {
+    border-bottom: 3px solid yellow;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* La barre de recherche est alignée à droite */
+    margin-left: auto;
+    /* Pour éloigner la barre de recherche des onglets */
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
+/********************************************style max*************************************************************/
+
+@font-face {
+    font-family: 'Inter';
+    src: url("./font/static/Inter-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --darkgreen: #012c10;
+    --goldenrod: #cfa40b;
+    --yellow: #ffcd0b;
+    --limegreen: #3de35a;
+    --orange: #f16e00;
+    --red: #e70002;
+    --ligthred: #fde5e6;
+    --honeydew: #ecfdef;
+    --darkgrey: #555555;
+    --lightergrey: #cccccc;
+    --whitesmoke: #f4f4f4;
+    --lightgrey: #9d9d9d;
+    --black: #000000;
+    --white: #ffffff;
+    --primary: var(--goldenrod);
+    --secondary: var(--black);
+    --background: var(--lightergrey);
+    --error: var(--red);
+    --sucess: var(--limegreen);
+    --warning: var(--yellow);
+    --ligthError: var(--ligthred);
+    --text: var(--black);
+    --draft: var(--whitesmoke);
+    --backgroundRow: var(--whitesmoke);
+    --lightTitle: var(--darkgrey);
+    --orangeIcon: var(--orange);
+    --border: var(--lightergrey);
+    --base-font-size: 16px;
+    --base-font-family: 'Inter';
+}
+
+body {
+    font-family: var(--base-font-family);
+}
+
+main {
+    padding: 2%;
+}
+
+body {
+    color: var(--secondary);
+    font-size: 0.875em;
+    font-weight: 400;
+    line-height: 1.25em;
+    text-align: left;
+}
+
+h1 {
+    color: var(--secondary);
+    font-size: 1.625em;
+    font-weight: 700;
+    line-height: 1.875em;
+    text-align: left;
+}
+
+h2 {
+    color: var(--secondary);
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 1.75em;
+    text-align: left;
+}
+
+h3 {
+    color: var(--primary);
+    font-size: 1.25em;
+    font-weight: 700;
+    line-height: 1.5em;
+    text-align: left;
+}
+
+#status {
+    color: var(--secondary);
+    font-size: 0.875em;
+    font-weight: 700;
+    line-height: 1.25em;
+    text-align: left;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+     :root {}
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+     :root {}
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+     :root {}
+}

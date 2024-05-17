@@ -1,9 +1,9 @@
 @font-face {
-    font-family: 'Inter';
-    src: url("./font/static/Inter-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: "Inter";
+  src: url("./font/static/Inter-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
   --darkgreen: #012c10;
@@ -23,7 +23,8 @@
 
   --primary: var(--goldenrod);
   --secondary: var(--black);
-  --background: var(--lightergrey);
+  --backgroundGrey: var(--lightergrey);
+  --backgroundWhite: var(--white);
   --error: var(--red);
   --sucess: var(--limegreen);
   --warning: var(--yellow);
@@ -36,11 +37,11 @@
   --border: var(--lightergrey);
 
   --base-font-size: 16px;
-  --base-font-family: 'Inter';
+  --base-font-family: "Inter";
 }
 
-body{
-    font-family: var(--base-font-family);
+body {
+  font-family: var(--base-font-family);
 }
 
 main {
@@ -77,13 +78,22 @@ h3 {
   font-weight: 700;
   line-height: 1.5em;
   text-align: left;
+  margin: 0;
 }
 
-#status {
+.status {
   color: var(--secondary);
   font-size: 0.875em;
   font-weight: 700;
   line-height: 1.25em;
+  text-align: left;
+}
+
+.num {
+  color: var(--primary);
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 2em;
   text-align: left;
 }
 
