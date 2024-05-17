@@ -1,9 +1,9 @@
 @font-face {
-    font-family: 'Inter';
-    src: url("./font/static/Inter-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: "Inter";
+  src: url("./font/static/Inter-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
   --darkgreen: #012c10;
@@ -36,11 +36,11 @@
   --border: var(--lightergrey);
 
   --base-font-size: 16px;
-  --base-font-family: 'Inter';
+  --base-font-family: "Inter";
 }
 
-body{
-    font-family: var(--base-font-family);
+body {
+  font-family: var(--base-font-family);
 }
 
 main {
@@ -84,6 +84,14 @@ h3 {
   font-size: 0.875em;
   font-weight: 700;
   line-height: 1.25em;
+  text-align: left;
+}
+
+#num {
+  color: var(--primary);
+  font-size: 2.125em;
+  font-weight: 700;
+  line-height: 2.5em;
   text-align: left;
 }
 
