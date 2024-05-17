@@ -43,6 +43,7 @@
 body {
   font-family: var(--base-font-family);
   margin: 0;
+  padding: 0;
 }
 
 main {
