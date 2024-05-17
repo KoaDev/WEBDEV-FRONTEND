@@ -37,9 +37,13 @@ body {
     align-items: center;
     justify-content: flex-end;
     margin-left: auto;
-    border-bottom: 1px solid var(--lightgrey);
+    border-bottom: 2px solid var(--lightgrey);
+    opacity: 0.8;
 }
 
 .search-bar input[type="text"] {
     padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    outline: none;
 }
