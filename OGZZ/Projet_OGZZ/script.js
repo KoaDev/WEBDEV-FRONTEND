@@ -10,7 +10,7 @@ const Network = {
     "Default License Edition" : "Entreprise",
     "Vendor Support Level" : "Production",
     "Version EMS" : "5.2",
-    "Description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore commodi dolorem quos qui eos! Dicta eligendi minus voluptate, et laboriosam fugit natus veniam officia inventore id autem harum animi in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sit quisquam possimus non rerum ducimus, totam praesentium quas obcaecati, esse ratione atque impedit animi, consectetur architecto saepe quod beatae mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aliquid similique fugit nulla, provident perferendis ex tempore dignissimos repellat voluptatum impedit eos. Cupiditate itaque quibusdam perspiciatis dolores officiis sit repellat?"
+    "Description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore commodi dolorem quos qui eos! Dicta eligendi minus voluptate, et laboriosam fugit natus veniam officia inventore id autem harum animi in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sit quisquam possimus non rerum ducimus, totam praesentium quas obcaecati, esse ratione atque impedit animi, consectetur architecto saepe quod beatae mollitia."
 }
 
 

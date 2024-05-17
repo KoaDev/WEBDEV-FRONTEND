@@ -6,7 +6,6 @@ body{
     font-family: Inter, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: none;
 }
 main{
     display: flex;
@@ -32,7 +31,11 @@ section{
     width: 15%;
     height: 15%;
 }
-
+button{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
 /*----------------------------------------NETWORK NAME, 3 BOUTONS, et fil d'ariane-------------------------*/
 nav{
     display: flex;
@@ -131,8 +134,8 @@ hgroup{
     grid-template-columns: 50% 50%;
     padding-top: 10%;
     padding-bottom: 10%;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 18%;
+    padding-right: 15%;
     border : 2px solid lightgrey;
 }
 .leftSide{
@@ -168,7 +171,6 @@ hgroup{
     justify-content: center;
     align-items: center;
     padding: 3%;
-    background-color: none;
 }
 
 .onglet:focus{
@@ -199,3 +201,36 @@ hgroup{
     outline: none;
 }
 
+/*-------------------------------------- media --------------------------------------*/
+
+@media screen and (max-width : 850px){
+    #card-grid{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    #summary
+    {
+        display: flex;
+        overflow: auto;
+        white-space: nowrap;
+
+    }
+
+
+    #description{
+        width: 100%;
+    }
+    #search-bar{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #rightBox{
+        justify-content: space-between;
+    }
+    #rightBox .search{
+        height: 70px;
+    }
+
+
+
+}
