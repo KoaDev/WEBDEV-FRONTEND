@@ -12,9 +12,13 @@ body {
     padding: 10px 20px;
 }
 
-.navbar-brand {
+.navbar-brand, .navbar-menu, .dropdown-content, .navbar-user {
     display: flex;
     align-items: center;
+}
+
+.navbar-user > span {
+    color: white;
 }
 
 .logo {
@@ -24,7 +28,6 @@ body {
 
 .navbar-menu {
     list-style-type: none;
-    display: flex;
     margin: 0;
     padding: 0;
 }
@@ -74,24 +77,14 @@ body {
     display: block;
 }
 
-.navbar-user {
-    color: white;
-    display: flex;
-    align-items: center;
-}
-
 .ico {
     padding-left: 10px;
 }
 
 .ico-avatar {
     height: 24px;
-    /* Adjust the size as needed */
     margin-right: 8px;
 }
-
-
-/* Breadcrumb styles */
 
 .breadcrumb {
     padding: 10px 20px;
@@ -109,20 +102,19 @@ body {
 
 .breadcrumb a:hover {
     text-decoration: none;
-    /* Remove underline on hover */
 }
 
-.breadcrumb>a::after {
+.breadcrumb > a::after {
     content: '>';
     font-weight: bold;
     margin-left: 5px;
 }
 
-.breadcrumb>a:last-child::after {
+.breadcrumb > a:last-child::after {
     content: '';
 }
 
-.breadcrumb>a:last-child {
+.breadcrumb > a:last-child {
     font-weight: normal;
 }
 
