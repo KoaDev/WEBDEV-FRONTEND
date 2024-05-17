@@ -52,13 +52,13 @@ function display_NetworkInfo(){
             let svg = document.createElement("img");
             svg.setAttribute("class", "state_svg");
             if(value == "Up"){
-                svg.src = "assets/state_up.svg"
+                svg.src = "/TMAX/svg/ico_success.svg"
             }
             else if(value == "Degraded"){
-                svg.src = "assets/state_degraded.svg"
+                svg.src = "/TMAX/svg/ico_warning.svg"
             }
             else if(value == "Down"){
-                svg.src = "assets/state_down.svg"
+                svg.src = "/TMAX/svg/ico_cross_hover.svg"
             }
 
             status.appendChild(svg);
