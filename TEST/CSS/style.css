@@ -1,0 +1,37 @@
+.actions{
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+
+    width: auto;
+}
+
+.actions div:first-child{
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+
+    width: 15%;
+    float: left;
+    color: red;
+}
+.actions div:last-child{
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    
+    width: 15%;
+    float: right;
+    color: blue;
+}
+
+.tableLink{
+    gap:3px;
+    
+    margin: 0;
+
+}/*
+
+.boxLink #actuel{
+
+}*/
