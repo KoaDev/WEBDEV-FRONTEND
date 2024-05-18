@@ -1,4 +1,4 @@
-@import url(../../TMAX/style.css);
+@import url(../../../TMAX/projet/style.css);
 
 .actions{
     border: solid;
@@ -27,13 +27,22 @@
     color: blue;
 }
 
-.tableLink{
-    gap:3px;
-    
-    margin: 0;
+.mTableLink{
+    background-color: var(--backgroundWhite);
+}
 
-}/*
+.mRedirection{
+    padding: 5px;
+}
 
+.mRedirection a{
+    color: var(--lightTitle);
+}
+
+#mActuel{
+    border-bottom: 2px solid var(--primary);
+}
+
+/*
 .boxLink #actuel{
-
 }*/
