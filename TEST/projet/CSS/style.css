@@ -50,7 +50,7 @@
 .mActions .mActionGauche{
     margin: 0;
     padding: 0;
-    width: 75%;
+    width: 65%;
 
     border: solid;
     border-color: black;
@@ -63,7 +63,9 @@
 .mActions .mActionDroite{
     margin: 0;
     padding: 0;
-    width: 25%;
+    width: 35%;
+    display: flex;
+    flex-wrap: nowrap;
     background-color: aqua;
 
     border: solid;
@@ -71,9 +73,14 @@
     border-width: 1px;
     
     float: right;
-    color: blue;
 }
 
-/*
-.boxLink #actuel{
-}*/
+.mRecherche{
+    display: flex;
+    width: 65%;
+}
+
+.mFiltre{
+    display: flex;
+    width: 35%;
+}
