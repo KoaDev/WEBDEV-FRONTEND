@@ -1,14 +1,8 @@
 @import url(../../../TMAX/projet/style.css);
 
-.actions{
-    border: solid;
-    border-color: var(--secondary);
-    border-width: 1px;
 
-    width: auto;
-}
-
-.actions div:first-child{
+/*
+.mActions div:first-child{
     border: solid;
     border-color: black;
     border-width: 1px;
@@ -17,7 +11,7 @@
     float: left;
     color: red;
 }
-.actions div:last-child{
+.mActions div:last-child{
     border: solid;
     border-color: black;
     border-width: 1px;
@@ -26,7 +20,7 @@
     float: right;
     color: blue;
 }
-
+*/
 .mTableLink{
     background-color: var(--backgroundWhite);
 }
@@ -40,7 +34,44 @@
 }
 
 #mActuel{
-    border-bottom: 2px solid var(--primary);
+    border-bottom: 3px solid var(--primary);
+}
+
+.mActions{
+    display: flex;
+    flex-wrap: nowrap;
+    border: solid;
+    border-color: var(--secondary);
+    border-width: 1px;
+
+    width: auto;
+}
+
+.mActions .mActionGauche{
+    margin: 0;
+    padding: 0;
+    width: 75%;
+
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+
+    float: left;
+    color: red;
+}
+
+.mActions .mActionDroite{
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: aqua;
+
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    
+    float: right;
+    color: blue;
 }
 
 /*
