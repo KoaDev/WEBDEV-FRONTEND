@@ -53,7 +53,7 @@ function display_NetworkInfo() {
       } else if (value == "Degraded") {
         svg.src = "../../TMAX/projet/svg/ico_warning.svg";
       } else if (value == "Down") {
-        svg.src = "../../TMAX/projet/svg/ico_cross_hover.svg";
+        svg.src = "../../TMAX/projet/svg/ico_danger.svg";
       }
 
       status.appendChild(svg);
