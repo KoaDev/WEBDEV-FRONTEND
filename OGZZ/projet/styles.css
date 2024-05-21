@@ -125,7 +125,7 @@ hgroup{
     padding-bottom: 10%;
     padding-left: 18%;
     padding-right: 15%;
-    border : 2px solid var(--background);
+    border : 2px solid var(--border);
 }
 .leftSide{
     display: flex;
