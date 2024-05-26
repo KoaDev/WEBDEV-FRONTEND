@@ -6,21 +6,24 @@ section{
 
 .main-header > div{
     border-bottom: solid var(--border) 1px;
-    padding-left: 3%;
+    padding-left: 3em;
 }
 
 .main-header > h1{
-    padding-left: 3%;
+    padding-left: 2em;
 }
 
 .selected-nav{
     font-weight: bold;
     border-bottom: solid var(--primary) 5px;
-    margin-bottom: 0;
+    padding: 0 1em 0 1em;
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
 }
 
 .selected-nav > p{
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .flexbox-line{
@@ -28,26 +31,231 @@ section{
     justify-content: flex-start;
 }
 
-.region{
-    margin-left: 2%;
+.regionSection{
+    margin: 1em 0 0 2em;
+    display: flex;
+    align-items: center;
 }
 
-.region > p{
-    margin-bottom: 0;
+.regionSection > p{
+    margin: 0;
 }
 
-.site{
-    margin-left: 2%;
+.siteSection{
+    margin: 1em 0 0 2em;
+    display: flex;
+    align-items: center;
 }
 
-.site > p{
-    margin-bottom: 0;
+.siteSection > p{
+    margin: 0;
 }
 
 button{
-    margin-left: 50%;
-    margin-bottom: 1%;
+    margin: 0 0 1em 0;
     background-color: var(--secondary);
     color: var(--backgroundWhite);
     align-items: center;
+    padding: 0 3.5em 0 3.5em;
+}
+
+h1{
+    margin-bottom: 0;
+}
+
+.provisionSection{
+    display: flex;
+    align-items: center;
+    border-right: solid var(--border) 1px;
+    padding: 1em 1em 1em 0;
+}
+
+.deleteSection{
+    display: flex;
+    align-items: center;
+    border-right: solid var(--border) 1px;
+    padding: 1em;
+    color: var(--border);
+}
+
+.refreshSection{
+    display: flex;
+    align-items: center;
+    padding: 0.5em 0 0 1em;
+}
+
+.searchSection{
+    display: flex;
+    align-items: center;
+    border-right: solid var(--border) 1px;
+    padding: 1em 12em 1em 1em;
+    color: var(--lightTitle);
+}
+
+.filterSection{
+    display: flex;
+    align-items: center;
+    padding: 1em;
+}
+
+.blankSection{
+    width: 65%;
+}
+
+.blankSection2{
+    width: 45%;
+    border-right: solid var(--border) 1px;
+    border-left: solid var(--border) 1px;
+}
+
+.noMargin{
+    margin: 0;
+}
+
+.date{
+    margin: 0;
+    padding: 0 1em 0 1em;
+}
+
+section{
+    background-color: var(--backgroundGrey);
+    padding-bottom: 20%;
+}
+
+/*//*/
+
+.triSection{
+    display: flex;
+    align-items: center;
+    color: #333333;
+    padding: 3em 2em 1em 0;
+}
+
+.flexbox-center{
+    display: flex;
+    align-items: center;
+}
+/*//*/
+
+
+.flexbox-center-list{
+    display: flex;
+    align-items: center;
+    margin: 0.4em 3em 0 3em;
+    background-color: var(--backgroundWhite);
+    border: solid var(--border) 1px;
+    padding: 0 0 0 1.5em;
+}
+
+.check{
+    width: 3.8%;
+}
+
+.state{
+    width: 3%;
+}
+.status{
+    width: 10%;
+    margin-left: 4.5%;
+    font-weight: initial;
+    font-size: small;
+}
+
+.statusUnkwown{
+    width: 10%;
+    margin-left: 7.5%;
+    font-weight: initial;
+    font-size: small;
+}
+
+.statusVoidProvising{
+    width: 10%;
+    margin-left: 0.5%;
+    font-weight: initial;
+    font-size: small;
+}
+
+.statusVoidDraft{
+    width: 12.6%;
+    margin-left: 2%;
+    font-weight: initial;
+    font-size: small;
+}
+
+.statusVoidInactive{
+    width: 12.6%;
+    margin-left: 1%;
+    font-weight: initial;
+    font-size: small;
+}
+
+.network{
+    width: 15%;
+}
+
+.vendor{
+    width: 11%;
+}
+
+.regions{
+    width: 12%;
+}
+
+.gateways{
+    width: 12.5%;
+}
+
+.locations{
+    width: 12.5%;
+}
+
+.edges{
+    width: 10%;
+}
+
+.edit{
+    width: 5%;
+}
+
+.rectangle{
+    border: solid var(--secondary);
+    width: 20px;
+    height: 20px;
+}
+
+.spaceImage{
+    padding-right: 0.5em;
+}
+
+.margin-left{
+    margin-left: 8em;
+}
+
+.litte-margin-left{
+    margin-left: 3em;
+}
+
+.active{
+    background-color: var(--sucess);
+    padding: 0.1em 1.4em 0.1em 1.4em;
+    border-radius: 60px;
+}
+
+.provisioning{
+    background-color: #ecfdef;
+    border-radius: 60px;
+    padding: 0.1em 1.4em 0.1em 1.4em;
+}
+
+.draft{
+    background-color: var(--backgroundGrey);
+    border-radius: 60px;
+    padding: 0.1em 1.4em 0.1em 1.4em;
+}
+
+.inactive{
+    background-color: var(--text);
+    border-radius: 60px;
+    padding: 0.1em 1.4em 0.1em 1.4em;
+    color: var(--backgroundWhite);
 }
