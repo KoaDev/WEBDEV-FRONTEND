@@ -1,75 +1,137 @@
 @import url(../../TMAX/style.css);
 
+/*------------------General CSS for HTML attribute--------------*/
+h1{
+    margin-bottom: 0;
+}
+
 section{
-    background-color: var(--backgroundRow);
+    background-color: var(--backgroundGrey);
+    padding-bottom: 20rem;
 }
 
-.main-header > div{
-    border-bottom: solid var(--border) 1px;
-    padding-left: 3em;
-}
-
-.main-header > h1{
-    padding-left: 2em;
-}
-
-.selected-nav{
-    font-weight: bold;
-    border-bottom: solid var(--primary) 5px;
-    padding: 0 1em 0 1em;
-    margin-top: 1em;
-    display: flex;
-    align-items: center;
-}
-
-.selected-nav > p{
-    margin: 0;
-}
-
+/*-----------------General CSS for personalized CSS Class-------------*/
 .flexbox-line{
     display: flex;
     justify-content: flex-start;
 }
 
-.regionSection{
-    margin: 1em 0 0 2em;
+.noMargin{
+    margin: 0;
+}
+
+.smallTriSection{
+    display: flex;
+    align-items: center;
+    color: #333333;
+    padding: 3rem 0 1rem 0;
+    width: 9rem;
+}
+
+.bigTriSection{
+    display: flex;
+    align-items: center;
+    color: #333333;
+    padding: 3rem 0 1rem 0;
+    width: 14rem;
+}
+
+.flexbox-center{
     display: flex;
     align-items: center;
 }
 
+.spaceImage{
+    padding-right: 0.5rem;
+}
+
+/*------------------------CSS Header-----------------------*/
+
+/*Path Header*/
+.main-header > div{
+    border-bottom: solid var(--border) 1px;
+    padding-left: 2rem;
+}
+
+/*Page Title*/
+.main-header > h1{
+    padding-left: 2rem;
+}
+
+/*Navbar of our page*/
+/*Network link*/
+.selected-nav{
+    font-weight: bold;
+    border-bottom: solid var(--primary) 5px;
+    padding: 0 1rem 0 1rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+.selected-nav:hover{
+    cursor: pointer;
+}
+.selected-nav > p{
+    margin: 0;
+}
+
+/*Region link*/
+.regionSection{
+    margin: 1rem 0 0 2rem;
+    display: flex;
+    align-items: center;
+}
+.regionSection:hover{
+    cursor: pointer;
+}
 .regionSection > p{
     margin: 0;
 }
 
+/*Site link*/
 .siteSection{
-    margin: 1em 0 0 2em;
+    margin: 1rem 0 0 2rem;
     display: flex;
     align-items: center;
 }
-
+.siteSection:hover{
+    cursor: pointer;
+}
 .siteSection > p{
     margin: 0;
 }
 
+/*blank*/
+.blankSection{
+    width: 55rem;
+}
+
+/*Add Network button*/
 button{
-    margin: 0 0 1em 0;
+    margin: 0 0 1rem 0;
     background-color: var(--secondary);
     color: var(--backgroundWhite);
     align-items: center;
-    padding: 0 3.5em 0 3.5em;
+    padding: 0 3.5rem 0 3.5rem;
+}
+button:hover{
+    cursor: pointer;
 }
 
-h1{
-    margin-bottom: 0;
-}
+/*Action Choice Nav*/
 
+/*Provision Action*/
 .provisionSection{
     display: flex;
     align-items: center;
     border-right: solid var(--border) 1px;
     padding: 1em 1em 1em 0;
 }
+.provisionSection:hover{
+    cursor: pointer;
+}
 
+/*Delete Action*/
 .deleteSection{
     display: flex;
     align-items: center;
@@ -77,13 +139,25 @@ h1{
     padding: 1em;
     color: var(--border);
 }
+.deleteSection:hover{
+    cursor: pointer;
+}
 
+/*Refresh Action*/
 .refreshSection{
     display: flex;
     align-items: center;
     padding: 0.5em 0 0 1em;
 }
+.refreshSection:hover{
+    cursor: pointer;
+}
+.date{
+    margin: 0;
+    padding: 0 1rem 0 1rem;
+}
 
+/*Search Action*/
 .searchSection{
     display: flex;
     align-items: center;
@@ -92,129 +166,43 @@ h1{
     color: var(--lightTitle);
 }
 
+/*Filtering Action (JS)*/
 .filterSection{
     display: flex;
     align-items: center;
     padding: 1em;
 }
-
-.blankSection{
-    width: 65%;
+.filterSection:hover{
+    cursor: pointer;
 }
 
+/*blank*/
 .blankSection2{
-    width: 45%;
+    width: 37rem;
     border-right: solid var(--border) 1px;
     border-left: solid var(--border) 1px;
 }
 
-.noMargin{
-    margin: 0;
-}
-
-.date{
-    margin: 0;
-    padding: 0 1em 0 1em;
-}
-
-section{
-    background-color: var(--backgroundGrey);
-    padding-bottom: 20%;
-}
-
-/*//*/
-
-.triSection{
+/*-------------------Tri Section--------------------*/
+.flexbox-center-tri{
     display: flex;
     align-items: center;
-    color: #333333;
-    padding: 3em 2em 1em 0;
+    padding-left: 8rem;
 }
 
-.flexbox-center{
-    display: flex;
-    align-items: center;
-}
-/*//*/
-
-
+/*--------------------Network Items------------------*/
 .flexbox-center-list{
     display: flex;
     align-items: center;
-    margin: 0.4em 3em 0 3em;
+    margin: 0.4rem 3rem 0 3rem;
     background-color: var(--backgroundWhite);
     border: solid var(--border) 1px;
-    padding: 0 0 0 1.5em;
+    padding: 0 0 0 1.5rem;
 }
 
+/*Network Items attributes*/
 .check{
-    width: 3.8%;
-}
-
-.state{
-    width: 3%;
-}
-.status{
-    width: 10%;
-    margin-left: 4.5%;
-    font-weight: initial;
-    font-size: small;
-}
-
-.statusUnkwown{
-    width: 10%;
-    margin-left: 7.5%;
-    font-weight: initial;
-    font-size: small;
-}
-
-.statusVoidProvising{
-    width: 10%;
-    margin-left: 0.5%;
-    font-weight: initial;
-    font-size: small;
-}
-
-.statusVoidDraft{
-    width: 12.6%;
-    margin-left: 2%;
-    font-weight: initial;
-    font-size: small;
-}
-
-.statusVoidInactive{
-    width: 12.6%;
-    margin-left: 1%;
-    font-weight: initial;
-    font-size: small;
-}
-
-.network{
-    width: 15%;
-}
-
-.vendor{
-    width: 11%;
-}
-
-.regions{
-    width: 12%;
-}
-
-.gateways{
-    width: 12.5%;
-}
-
-.locations{
-    width: 12.5%;
-}
-
-.edges{
-    width: 10%;
-}
-
-.edit{
-    width: 5%;
+    width: 3.5rem;
 }
 
 .rectangle{
@@ -222,40 +210,336 @@ section{
     width: 20px;
     height: 20px;
 }
-
-.spaceImage{
-    padding-right: 0.5em;
+.rectangle:hover{
+    cursor: pointer;
 }
 
-.margin-left{
-    margin-left: 8em;
+.stateActive{
+    width: 9rem;
 }
 
-.litte-margin-left{
-    margin-left: 3em;
+.stateActive > p{
+    width: 3rem;
 }
 
+.stateUnkwown{
+    width: 9.2rem;
+}
+
+.status{
+    width: 9rem;
+    font-weight: initial;
+    font-size: small;
+}
+
+.statusUnkwown{
+    width: 8.8rem;
+    font-weight: initial;
+    font-size: small;
+}
+
+.statusVoidProvising{
+    width: 9.3rem;
+    font-weight: initial;
+    font-size: small;
+}
+
+.statusVoidDraft{
+    width: 13.1rem;
+    font-weight: initial;
+    font-size: small;
+}
+
+.statusVoidInactive{
+    width: 12rem;
+    font-weight: initial;
+    font-size: small;
+}
+
+.network{
+    width: 16em;
+}
+
+.vendor{
+    width: 9rem;
+}
+
+.regions{
+    width: 9rem;
+}
+
+.gateways{
+    width: 9rem;
+}
+
+.locations{
+    width: 9rem;
+}
+
+.edges{
+    width: 7rem;
+}
+
+.edit:hover{
+    cursor: pointer;
+}
+
+/*State Background*/
 .active{
     background-color: var(--sucess);
-    padding: 0.1em 1.4em 0.1em 1.4em;
+    padding: 0.1rem 1.4rem 0.1rem 1.4rem;
     border-radius: 60px;
 }
 
 .provisioning{
     background-color: #ecfdef;
     border-radius: 60px;
-    padding: 0.1em 1.4em 0.1em 1.4em;
+    padding: 0.1rem 1.4rem 0.1rem 1.4rem;
 }
 
 .draft{
     background-color: var(--backgroundGrey);
     border-radius: 60px;
-    padding: 0.1em 1.4em 0.1em 1.4em;
+    padding: 0.1rem 1.4rem 0.1rem 1.4rem;
 }
 
 .inactive{
     background-color: var(--text);
     border-radius: 60px;
-    padding: 0.1em 1.4em 0.1em 1.4em;
+    padding: 0.1rem 1.4rem 0.1rem 1.4rem;
     color: var(--backgroundWhite);
+}
+
+/* For Phones resolution*/
+@media (max-width: 576px) {
+    /*------------------General CSS for HTML attribute--------------*/
+    main{
+        padding: 0;
+    }
+
+    section{
+        display: flex;
+        justify-content: center;
+        padding-right: 0.2rem;
+    }
+
+    /*-----------------General CSS for personalized CSS Class-------------*/
+    .flexbox-line{
+        max-width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    .little-padding-top{
+        padding-top: 0.77rem;
+    }
+
+    .smallTriSection{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #333333;
+        padding: 0;
+        width: auto;
+        font-size: smaller;
+    }
+
+    .smallTriSectionVertical{
+        margin-top: 1rem;
+    }
+
+    .midTriSectionVertical{
+        margin-top: 1.3rem;
+    }
+
+    .bigTriSectionVertical{
+        margin-top: 1.6rem;
+    }
+    
+    .bigTriSection{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #333333;
+        padding: 0;
+        width: auto;
+        font-size: small;
+    }
+
+
+    /*---------------Header-------------*/
+    .main-header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-header > h1{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .main-header > div{
+        padding: 0;
+    }
+
+    .blankSection{
+        display: none;
+    }
+
+    .blankSection2{
+        display: none;
+    }
+
+    button{
+        width: 35%;
+        margin-top: 1rem;
+    }
+
+    .provisionSection{
+        padding: 1rem;
+    }
+
+    .searchSection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 0 1rem;
+        border-left: solid var(--border) 1px;
+    }
+
+    /*------------Tri Items Section------------*/
+    .flexbox-center-tri{
+        padding: 3rem 0.3rem 0 0.3rem;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    /*------------Network Items Section-----------------*/
+    .flexbox-center-list{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: auto;
+        margin: 1rem 0 0 0.2rem;
+    }
+
+    .check{
+        width: auto;
+    }
+    
+    .stateActive{
+        width: auto;
+    }
+    
+    .stateActive > p{
+        width: auto;
+    }
+    
+    .stateUnkwown{
+        width: auto;
+        padding: 0 0.1rem 0 0.1rem;
+        font-size: small;
+    }
+    
+    .status{
+        width: auto;
+        font-weight: initial;
+        font-size: small;
+    }
+    
+    .statusUnkwown{
+        width: auto;
+        font-weight: initial;
+        font-size: small;
+    }
+    
+    .statusVoidProvising{
+        width: auto;
+        font-weight: initial;
+        font-size: small;
+        padding-top: 4.5rem;
+    }
+    
+    .statusVoidDraft{
+        width: auto;
+        font-weight: initial;
+        font-size: small;
+        padding-top: 2.67rem;
+    }
+    
+    .statusVoidInactive{
+        width: auto;
+        font-weight: initial;
+        font-size: small;
+        padding-top: 2.77rem;
+    }
+    
+    .network{
+        width: auto;
+        text-align: center;
+        font-size: small;
+    }
+    
+    .vendor{
+        width: auto;
+        font-size: small;
+    }
+    
+    .regions{
+        width: auto;
+        font-size: small;
+    }
+    
+    .gateways{
+        width: auto;
+        font-size: small;
+    }
+    
+    .locations{
+        width: auto;
+        font-size: small;
+    }
+    
+    .edges{
+        width: auto;
+        font-size: small;
+    }
+
+    /*State Background*/
+    .active{
+        background-color: var(--sucess);
+        padding: 0 0.1rem 0 0.1rem;
+        border-radius: 60px;
+        font-size: small;
+    }
+    
+    .provisioning{
+        background-color: #ecfdef;
+        border-radius: 60px;
+        margin: 0.2rem 0.2rem 0 0.2rem;
+        padding: 0 0.1rem 0 0.1rem;
+        font-size: small;
+    }
+    
+    .draft{
+        background-color: var(--backgroundGrey);
+        border-radius: 60px;
+        padding: 0 0.1rem 0 0.1rem;
+        font-size: small;
+    }
+    
+    .inactive{
+        background-color: var(--text);
+        border-radius: 60px;
+        padding: 0 0.1rem 0 0.1rem;
+        color: var(--backgroundWhite);
+        font-size: smaller;
+    }
+
+
 }
