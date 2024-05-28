@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventaire -> Gateways</title>
+    <link rel="stylesheet" href="../TMAX/style.css">
+    <link rel="stylesheet" href="../TMAX/custom.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <!--   Navbar    -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <img src="../TMAX/svg/ico_logo.svg" alt="Logo" class="logo">
+            <h3 class="wh">My Network</h3>
+        </div>
+        <ul class="navbar-menu">
+            <li class="dropdown">
+                <button class="dropbtn">Solutions</button>
+            </li>
+            <li class="dropdown">
+                <button class="dropbtn">Regions <img src="../TMAX/svg/ico_arrow_down_hover.svg" class="ico" alt="ico_arrow_down_hover"></button>
+                <div class="dropdown-content">
+                    <a href="#">Region 1</a>
+                    <a href="#">Region 2</a>
+                    <a href="#">Region 3</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button class="dropbtn">Locations <img src="../TMAX/svg/ico_arrow_down_hover.svg" class="ico" alt="ico_arrow_down_hover"></button>
+                <div class="dropdown-content">
+                    <a href="#">Location 1</a>
+                    <a href="#">Location 2</a>
+                    <a href="#">Location 3</a>
+                </div>
+            </li>
+        </ul>
+        <div class="navbar-user">
+            <img src="../TMAX/svg/ico_avatar.svg" class="ico-avatar" alt="ico_avatar">
+            <span>FirstName LastName</span>
+        </div>
+    </nav>
+
+    <nav class="breadcrumb">
+        <a href="#">Home</a>
+        <a href="#">Inventory</a>
+    </nav>
+
+    <hr class="spacer-line">
+
+    <!--   Inventory    -->
+    <main class="main">
+        <div class="container mx-auto">
+            <div class="margin-left">
+                <h1>Inventory</h1>
+                <div class="text"><span class="label">Name </span> <strong class="business-name">My Business</strong></div>
+
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <h5 class="num">5</h5>
+                        <div class="box">Regions</div>
+                    </div>
+                    <div class="grid-item">
+                        <h5 class="num">4</h5>
+                        <div class="box">Gateways</div>
+                    </div>
+                    <div class="grid-item">
+                        <h5 class="num">15</h5>
+                        <div class="box">Locations</div>
+                    </div>
+                    <div class="grid-item">
+                        <h5 class="num">30</h5>
+                        <div class="box">Edges</div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <!--   Onglets et barre de recherche    -->
+    <div class="tabContainer">
+        <div class="tabs">
+            <div class="tab active" id="locationsTab">Locations</div>
+            <div class="tab" id="edgesTab">Edges</div>
+            <div class="tab" id="gatewaysTab">Gateways</div>
+            <div class="tab" id="locationMapTab">Location Map</div>
+        </div>
+        <div class="search-container">
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher...">
+                <img src="../TMAX/svg/ico_search_hover.svg" class="ico-search-hover">
+            </div>
+            <!--   Filtre    -->
+            <img src="../TMAX/svg/ico_filter.svg" class="ico-filter" alt="ico_filter">
+            <button id="filterButton">Filter</button>
+        </div>
+        <!-- Bouton pour afficher les filtres -->
+        <div class="filter-dropdown">
+            <div class="filter-section">
+                <h4>Status</h4>
+                <label><input type="radio" name="statusFilter" value="Active"> Active</label>
+                <label><input type="radio" name="statusFilter" value="Degraded"> Degraded</label>
+                <label><input type="radio" name="statusFilter" value="Inactive"> Inactive</label>
+                <label><input type="radio" name="statusFilter" value="All"> Tous</label>
+            </div>
+        </div>
+    </div>
+
+    <hr class="spacer-line">
+
+    <!--   Tableaux    -->
+    <!-- Tableau Locations -->
+    <div class="table-container">
+        <h1 id="locationsTableTitle" class="table-title">Locations inventory</h1>
+        <table class="inventory-table" id="locationsTable">
+            <thead>
+                <tr>
+                    <th>Location Name <img src="../TMAX/svg/ico_tri.svg" alt="ico_tri"> </th>
+                    <th>Edges <img src="../TMAX/svg/ico_tri.svg" alt="ico_tri"> </th>
+                    <th>Status <img src="../TMAX/svg/ico_tri.svg" alt="ico_tri"></th>
+                    <th>
+                        <!-- pour que le soulignement de la première ligne du tableau aille jusqu'au bout-->
+                    </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="whitebar">
+                    <td>Location SOPHIA-ANTIPOLIS</td>
+                    <td>2</td>
+                    <td><span class="status active">Active</span></td>
+                    <td><img class="row-arrow" src="../TMAX/svg/ico_right_hover.svg" alt="ico_right_hover"></td>
+                </tr>
+                <tr>
+                    <td>Location PARIS</td>
+                    <td>4</td>
+                    <td><span class="status active">Active</span></td>
+                    <td><img class="row-arrow" src="../TMAX/svg/ico_right_hover.svg" alt="ico_right_hover"></td>
+                </tr>
+                <tr class="whitebar">
+                    <td>Location KUALA LUMPUR</td>
+                    <td>1</td>
+                    <td><span class="status degraded">Degraded</span></td>
+                    <td><img class="row-arrow" src="../TMAX/svg/ico_right_hover.svg" alt="ico_right_hover"></td>
+                </tr>
+                <tr>
+                    <td>Location HONG-KONG</td>
+                    <td>2</td>
+                    <td><span class="status degraded">Degraded</span></td>
+                    <td><img class="row-arrow" src="../TMAX/svg/ico_right_hover.svg" alt="ico_right_hover"></td>
+                </tr>
+                <tr class="whitebar">
+                    <td>Location WASHINGTON D.C.</td>
+                    <td>1</td>
+                    <td><span class="status inactive">Inactive</span></td>
+                    <td><img class="row-arrow" src="../TMAX/svg/ico_right_hover.svg" alt="ico_right_hover"></td>
+                </tr>
+                <tr>
+                    <td>Location LOS ANGELES</td>
+                    <td>1</td>
+                    <td><span class="status inactive">Inactive</span></td>
+                    <td><img class="row-arrow" src="../TMAX/svg/ico_right_hover.svg" alt="ico_right_hover"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Tableau Edges -->
+    <div class="table-container" style="display: none;">
+        <h1 id="edgesTableTitle" class="table-title">Edge inventory</h1>
+        <table class="inventory-table" id="edgesTable">
+            <thead>
+                <tr>
+                    <th>Edge Name <img src="../TMAX/svg/ico_tri.svg" alt="ico_tri"></th>
+                    <th>Hostname <img src="../TMAX/svg/ico_tri.svg" alt="ico_tri"></th>
+                    <th>Serial Number <img src="../TMAX/svg/ico_tri.svg" alt="ico_tri"></th>
+                    <th>Location <img src="../TMAX/svg/ico_tri.svg" alt="ico_tri"></th>
+                    <th>Status <img src="../TMAX/svg/ico_tri.svg" alt="ico_tri"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="whitebar">
+                    <td>Edge SOPHIA-ANTIPOLIS-1</td>
+                    <td>edge-sophia-antipolis-1</td>
+                    <td>1245-4875-5263</td>
+                    <td>Location SOPHIA-ANTIPOLIS</td>
+                    <td><span class="status active">Active</span></td>
+                </tr>
+                <tr>
+                    <td>Edge SOPHIA-ANTIPOLIS-2</td>
+                    <td>edge-sophia-antipolis-1</td>
+                    <td>1245-4875-5263</td>
+                    <td>Location SOPHIA-ANTIPOLIS</td>
+                    <td><span class="status active">Active</span></td>
+                </tr>
+                <tr class="whitebar">
+                    <td>Edge KUALA LUMPUR</td>
+                    <td>edge-kuala-lumpur</td>
+                    <td>1245-4875-5263</td>
+                    <td>Location KUALA LUMPUR</td>
+                    <td><span class="status active">Active</span></td>
+                </tr>
+                <tr>
+                    <td>Edge HONG-KONG-1</td>
+                    <td>edge-hong-kong-1</td>
+                    <td>1245-4875-5263</td>
+                    <td>Location HONG-KONG</td>
+                    <td><span class="status degraded">Degraded</span></td>
+                </tr>
+                <tr class="whitebar">
+                    <td>Edge HONG-KONG-2</td>
+                    <td>edge-hong-kong-2</td>
+                    <td>1245-4875-5263</td>
+                    <td>Location HONG-KONG</td>
+                    <td><span class="status degraded">Degraded</span></td>
+                </tr>
+                <tr>
+                    <td>Edge LOS ANGELES</td>
+                    <td>edge-los-angeles</td>
+                    <td>1245-4875-5263</td>
+                    <td>Location LOS ANGELES</td>
+                    <td><span class="status inactive">Inactive</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Tableau Gateway -->
+    <div class="table-container" style="display: none;">
+        <h1 id="gatewayTableTitle" class="table-title">Gateway inventory</h1>
+        <table class="inventory-table" id="gatewayTable">
+            <thead>
+                <tr>
+                    <th>Gateway Name <img src="../TMAX/svg/ico_tri.svg" alt="ico_tri"></th>
+                    <th>Region <img src="../TMAX/svg/ico_tri.svg" alt="ico_tri"></th>
+                    <th>Status <img src="../TMAX/svg/ico_tri.svg" alt="ico_tri"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="whitebar">
+                    <td>Gateway USA</td>
+                    <td>AMER</td>
+                    <td><span class="status active">Active</span></td>
+                </tr>
+                <tr>
+                    <td>Gateway MALAYSIA</td>
+                    <td>APAC</td>
+                    <td><span class="status active">Active</span></td>
+                </tr>
+                <tr class="whitebar">
+                    <td>Gateway CHINA</td>
+                    <td>APAC</td>
+                    <td><span class="status degraded">Degraded</span></td>
+                </tr>
+                <tr>
+                    <td>Gateway SOPHIA</td>
+                    <td>EMEA</td>
+                    <td><span class="status inactive">Inactive</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Tableau Location Map -->
+    <div class="table-container" style="display: none;">
+        <h1 id="locmapTableTitle" class="table-title">Locations Map inventory</h1>
+        <table class="inventory-table" id="locmapTable">
+            <thead>
+                <tr>
+                    <th>Map Name <img src="../TMAX/svg/ico_tri.svg" alt="ico_tri"></th>
+                    <th>Status <img src="../TMAX/svg/ico_tri.svg" alt="ico_tri"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="whitebar">
+                    <td>North</td>
+                    <td><span class="status active">Active</span></td>
+                </tr>
+                <tr>
+                    <td>South</td>
+                    <td><span class="status active">Active</span></td>
+                </tr>
+                <tr class="whitebar">
+                    <td>East</td>
+                    <td><span class="status active">Active</span></td>
+                </tr>
+                <tr>
+                    <td>West</td>
+                    <td><span class="status inactive">Inactive</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <!--   Bas de page    -->
+    <div class="right">
+
+        <div class="pagination">
+            <a class="underline">Show 10 entries <img src="../TMAX/svg/ico_right_hover.svg" class="ico rotate-90" alt="ico_right_hover"></a>
+            <a href="#"><img src="../TMAX/svg/ico_arrow_left.svg" class="ico" alt="ico_arrow_left"></a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a class="dots"><img src="../TMAX/svg/ico_actions.svg" class="ico" alt="ico_actions"></a>
+            <a href="#">30</a>
+            <a href="#"><img src="../TMAX/svg/ico_arrow_right.svg" class="ico" alt="ico_arrow_right"></a>
+        </div>
+    </div>
+
+</body>
+
+</html>
