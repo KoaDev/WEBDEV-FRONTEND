@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Inventory</title>
+    <link rel="stylesheet" href="../../TMAX/projet/custom.css">
+    <link rel="stylesheet" href="../../TMAX/projet/style.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <img src="../../TMAX/projet/svg/ico_logo.svg" alt="Logo" class="logo">
+            <h3 class="wh">My Network</h3>
+        </div>
+        <ul class="navbar-menu">
+            <li class="dropdown">
+                <button class="dropbtn">Solutions</button>
+            </li>
+            <li class="dropdown">
+                <button class="dropbtn">Regions <img src="../../TMAX/projet/svg/ico_arrow_down_hover.svg" class="ico" alt="ico_arrow_down_hover"></button>
+                <div class="dropdown-content">
+                    <a href="#">Region 1</a>
+                    <a href="#">Region 2</a>
+                    <a href="#">Region 3</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button class="dropbtn">Locations <img src="../../TMAX/projet/svg/ico_arrow_down_hover.svg" class="ico" alt="ico_arrow_down_hover"></button>
+                <div class="dropdown-content">
+                    <a href="#">Location 1</a>
+                    <a href="#">Location 2</a>
+                    <a href="#">Location 3</a>
+                </div>
+            </li>
+        </ul>
+        <div class="navbar-user">
+            <img src="../../TMAX/projet/svg/ico_avatar.svg" class="ico-avatar" alt="ico_avatar">
+            <span>FirstName LastName</span>
+        </div>
+    </nav>
+    <main>
+        <div class="main-header">
+            <div class="flexbox-line">
+                <p>Home&nbsp&nbsp</p>
+                <img src="../../TMAX/projet/svg/ico_arrow_right.svg">
+                <p>&nbsp&nbspNetworking&nbsp&nbsp</p>
+                <img src="../../TMAX/projet/svg/ico_arrow_right.svg">
+                <p>&nbsp&nbspFlexible</p>
+            </div>
+            <h1>Flexible Inventory</h1>
+            <div class="flexbox-line">
+                <div class="selected-nav">
+                    <p>Network</p>
+                </div>
+                <div class="regionSection">
+                    <p>Region</p>
+                </div>
+                <div class="siteSection">
+                    <p>Site</p>
+                </div>
+                <div class="blankSection">
+
+                </div>
+                <button type="button" class="flexbox-line">
+                    <img src="../../TMAX/projet/svg/ico_add.svg">
+                    <p>&nbsp&nbspAdd a new Network</p>
+                </button>
+            </div>
+            <div class="flexbox-line">
+                <div class="provisionSection">
+                    <img src="../../TMAX/projet/svg/ico_play.svg">
+                    <p class="noMargin">&nbspProvision</p>
+                </div>
+                <div class="deleteSection">
+                    <img src="../../TMAX/projet/svg/ico_trash.svg">
+                    <p class="noMargin">&nbspDelete</p>
+                </div>
+                <div>
+                    <div class="refreshSection">
+                        <img src="../../TMAX/projet/svg/ico_refresh.svg">
+                        <p class="noMargin">&nbspRefresh</p>
+                    </div>
+                    <p class="date">DD/MM/YYYY at hh:mm:ss</p>
+                </div>
+                <div class="blankSection2">
+
+                </div>
+                <div class="searchSection">
+                    <p class="noMargin center">Search for...</p>
+                </div>
+                <div class="filterSection">
+                    <img src="../../TMAX/projet/svg/ico_config.svg">
+                    <p class="noMargin">&nbspFiltrer</p>
+                </div>
+            </div>
+        </div>
+        <section>
+            <div class="flexbox-center-tri">
+                <div class="smallTriSection">
+                    <div class="spaceImage">
+                        <p class="noMargin">Provisioning</p>
+                        <p class="noMargin">State</p>
+                    </div>
+                    <img src="../../TMAX/projet/svg/ico_tri.svg">
+                </div>
+                <div class="smallTriSection smallTriSectionVertical">
+                    <div class="spaceImage">
+                        <p class="noMargin">Operational</p>
+                        <p class="noMargin">status</p>
+                    </div>
+                    <img src="../../TMAX/projet/svg/ico_tri.svg">
+                </div>
+                <div class="bigTriSection smallTriSectionVertical">
+                    <p class="noMargin spaceImage">Network name</p>
+                    <img src="../../TMAX/projet/svg/ico_tri.svg">
+                </div>
+                <div class="smallTriSection midTriSectionVertical">
+                    <p class="noMargin spaceImage">Vendor</p>
+                    <img src="../../TMAX/projet/svg/ico_tri.svg">
+                </div>
+                <div class="smallTriSection bigTriSectionVertical">
+                    <p class="noMargin spaceImage ">Regions</p>
+                    <img src="../../TMAX/projet/svg/ico_tri.svg">
+                </div>
+                <div class="smallTriSection bigTriSectionVertical">
+                    <p class="noMargin">Gateways</p>
+                    <img src="../../TMAX/projet/svg/ico_tri.svg">
+                </div>
+                <div class="smallTriSection bigTriSectionVertical">
+                    <p class="noMargin spaceImage">Locations</p>
+                    <img src="../../TMAX/projet/svg/ico_tri.svg">
+                </div>
+                <div class="smallTriSection bigTriSectionVertical">
+                    <p class="noMargin spaceImage">Edges</p>
+                    <img src="../../TMAX/projet/svg/ico_tri.svg">
+                </div>
+            </div>
+
+            <div class="flexbox-center-list">
+                <div class="check">
+                    <input type="checkbox" class="rectangle">
+                </div>
+                <div class="stateActive">
+                    <p class="active">Active</p>
+                </div>
+                <div class="flexbox-center status">
+                    <img src="../../TMAX/projet/svg/ico_success.svg">
+                    <p>&nbspUp</p>
+                </div>
+                <p class="network">CRUD XX25N1</p>
+                <P class="vendor">CRUD</P>
+                <p class="regions">5</p>
+                <p class="gateways">4</p>
+                <p class="locations">15</p>
+                <p class="edges">30</p>
+                <div class="edit">
+                    <img src="../../TMAX/projet/svg/ico_actions.svg">
+                </div>
+            </div>
+
+            <div class="flexbox-center-list">
+                <div class="check">
+                    <input type="checkbox" class="rectangle">
+                </div>
+                <div class="stateActive">
+                    <p class="active">Active</p>
+                </div>
+                <div class="flexbox-center status">
+                    <img src="../../TMAX/projet/svg/ico_danger.svg">
+                    <p>&nbspDown</p>
+                </div>
+                <p class="network">CRUD XX25N1</p>
+                <P class="vendor">CRUD</P>
+                <p class="regions">5</p>
+                <p class="gateways">4</p>
+                <p class="locations">15</p>
+                <p class="edges">30</p>
+                <div class="edit">
+                    <img src="../../TMAX/projet/svg/ico_actions.svg">
+                </div>
+            </div>
+
+            <div class="flexbox-center-list">
+                <div class="check">
+                    <input type="checkbox" class="rectangle">
+                </div>
+                <p class="stateUnkwown">Unkwown</p>
+                <p class="statusUnkwown">Unkwown</p>
+                <p class="network">CRUD XX25N1</p>
+                <P class="vendor">CRUD</P>
+                <p class="regions">5</p>
+                <p class="gateways">4</p>
+                <p class="locations">15</p>
+                <p class="edges">30</p>
+                <div class="edit">
+                    <img src="../../TMAX/projet/svg/ico_actions.svg">
+                </div>
+            </div>
+
+            <div class="flexbox-center-list">
+                <div class="check">
+                    <input type="checkbox" class="rectangle">
+                </div>
+                <div class="flexbox-center provisioning">
+                    <img src="../../TMAX/projet/svg/ico_progress.svg">
+                    <p class="noMargin">&nbspProvisioning</p>
+                </div>
+                <div class="statusVoidProvising">
+
+                </div>
+                <p class="network">CRUD XX25N1</p>
+                <P class="vendor  little-padding-top">CRUD</P>
+                <p class="regions">5</p>
+                <p class="gateways">4</p>
+                <p class="locations">15</p>
+                <p class="edges">30</p>
+                <div class="edit">
+                    <img src="../../TMAX/projet/svg/ico_actions.svg">
+                </div>
+            </div>
+
+            <div class="flexbox-center-list">
+                <div class="check">
+                    <input type="checkbox" class="rectangle">
+                </div>
+                <p class="state draft">Draft</p>
+                <div class="statusVoidDraft">
+                </div>
+                <p class="network">CRUD XX25N1</p>
+                <P class="vendor">CRUD</P>
+                <p class="regions">5</p>
+                <p class="gateways">4</p>
+                <p class="locations">15</p>
+                <p class="edges">30</p>
+                <div class="edit">
+                    <img src="../../TMAX/projet/svg/ico_actions.svg">
+                </div>
+            </div>
+
+            <div class="flexbox-center-list">
+                <div class="check">
+                    <input type="checkbox" class="rectangle">
+                </div>
+                <p class="inactive">Inactive</p>
+                <div class="statusVoidInactive">
+                </div>
+                <p class="network">CRUD XX25N1</p>
+                <P class="vendor">CRUD</P>
+                <p class="regions">5</p>
+                <p class="gateways">4</p>
+                <p class="locations">15</p>
+                <p class="edges">30</p>
+                <div class="edit">
+                    <img src="../../TMAX/projet/svg/ico_actions.svg">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../TMAX/projet/style.css">
+    <link rel="stylesheet" href="../../TMAX/projet/custom.css">
+    <link rel="stylesheet" href="CSS/popup-style.css">
+
+    <title>Page HTML basique</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <!-- <img src="./svg/ico_logo.svg" alt="Logo" class="logo">  -->
+            <img src="../TMAX/svg/ico_logo.svg" alt="Logo" class="logo">
+            <h3 class="wh">My Network</h3>
+        </div>
+        <ul class="navbar-menu">
+            <li class="dropdown">
+                <button class="dropbtn">Solutions</button>
+            </li>
+            <li class="dropdown">
+                <button class="dropbtn">Regions
+                    <!-- <img src="./svg/ico_arrow_down_hover.svg" class="ico" alt="ico_arrow_down_hover"> -->
+                    <img src="../TMAX/svg/ico_arrow_down_hover.svg" class="ico" alt="ico_arrow_down_hover">
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Region 1</a>
+                    <a href="#">Region 2</a>
+                    <a href="#">Region 3</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button class="dropbtn">Locations
+                    <img src="../TMAX/svg/ico_arrow_down_hover.svg" class="ico" alt="ico_arrow_down_hover">
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Location 1</a>
+                    <a href="#">Location 2</a>
+                    <a href="#">Location 3</a>
+                </div>
+            </li>
+        </ul>
+        <div class="navbar-user">
+            <!-- <img src="./svg/ico_avatar.svg" class="ico-avatar" alt="ico_avatar"> -->
+            <img src="../TMAX/svg/ico_avatar.svg" class="ico-avatar" alt="ico_avatar">
+            <span>FirstName LastName</span>
+        </div>
+    </nav>
+
+    <nav class="breadcrumb">
+        <a href="#">Home</a>
+        <a href="#">Regions</a>
+        <a href="#">Location Name</a>
+    </nav>
+
+    <hr class="spacer-line">
+
+
+
+
+   
+    <H1 id="cockpit-title-id">Cockpit</H2>
+
+        <div id="containerOverview">
+            <img src="SVG/overview.svg" alt="Image SVG" id="overview-id" class="svg-icon">
+            <img src="SVG/avaibility.svg" alt="Image SVG" id="avaibility-id" class="svg-icon">
+            <img src="SVG/service.svg" alt="Image SVG" id="service-id" class="svg-icon">
+            <img src="SVG/monitor.svg" alt="Image SVG" id="monitor-id" class="svg-icon">
+            <img src="SVG/security.svg" alt="Image SVG" id="security-id" class="svg-icon">
+            <img src="SVG/configure.svg" alt="Image SVG" id="configure-id" class="svg-icon">
+            <img src="SVG/data.svg" alt="Image SVG" id="data-id" class="svg-icon">
+            <img src="SVG/biling.svg" alt="Image SVG" id="biling-id" class="svg-icon">
+        </div>
+        <div id="golden-bar"></div>
+
+<!-- Il faudra modifier les div des titres des grids par rapport à ce qu'a fait maxime (edge_biot_1 par exemple) -->
+        <div id="gray-area">
+            <H1 id="location-overview">Location Overview</H1>
+            <div class="box-container">
+                <div class="box-overview">
+                    <h3 class="text_in_box">1</h3>
+                    <div>Edge count</div>
+                </div>
+                <div class="box-overview">
+                    <h3 class="text_in_box">Single-Edge</h3>
+                    <div>Edge redundancy</div>
+                </div>
+                <div class="box-overview">
+                    <h3 class="text_in_box">Edge510Ite</h3>
+                    <div>Edge Model</div>
+                </div>
+                <div class="box-overview">
+                    <h3 class="text_in_box">Down</h3>
+                    <div>All links Status</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="gray-area-2">
+            <H1 id="location-overview">Edge monitoring</H1>
+            <div class="grid-container">
+                <div class="grid-item1">Name</div>
+                <div class="grid-item2">Hostname</div>
+                <div class="grid-item8">Edge_Biot_1</div>
+                
+                <div class="grid-item9">Edge_Biot_1</div>
+                <div class="grid-item3">Attribut</div>
+                <div class="grid-item4">HA Status</div>
+                <a class="link-VC" href="#">
+                    <img src="../../TMAX/projet/svg/ico_href.svg" class="ico-ref" alt="ico_href">
+                    Go to VC Orchestrator
+                </a>
+                <a href="#" class="view-more">
+                    
+                    View more
+                    <img src="../../TMAX/projet/svg/ico_arrow_down_hover.svg" class="ico-ref" alt="ico_href">
+                </a>
+                
+            </div>
+            <div class="grid-container2">
+                <!-- Il faudra modifier les div des titres des grids par rapport à ce qu'a fait maxime (edge_biot_1 par exemple) -->
+                <h4 class="title-subgrid">Overview</h4>
+                <div class="grid-item2">Model</div>
+                <div class="grid-item9">edge-510-lte</div>
+                
+                
+            </div>
+
+            <div class="grid-container2">
+                <!-- Il faudra modifier les div des titres des grids par rapport à ce qu'a fait maxime (edge_biot_1 par exemple) -->
+                <h4 class="title-subgrid">Links & Overlay Tunnels</h4>
+                <div class="grid-item2">Links
+                    <img src="../../TMAX/projet/svg/ico_info_black.svg" class="ico-ref" alt="ico_href">
+                    
+                </div>
+               
+                <div class="grid-item9">
+                    <img src="../../TMAX/projet/svg/ico_warning.svg" class="ico-ref" alt="ico_href">
+                    
+                </div>
+                <div class="grid-item3">Overlay Tunnels
+                    <img src="../../TMAX/projet/svg/ico_info_black.svg" class="ico-info" alt="ico_href">
+                    <div class="info-hover">
+                        
+                            <div class="gateway-hover">GATEWAY</div>
+                            <div class="peername1-hover">peername1</div>
+                            <img src="../../TMAX/projet/svg/ico_success.svg" class="ico-success" alt="ico_href">
+                        
+                        
+                            <div>BRANCH</div>
+                            <div>peername2</div>
+                            <img src="../../TMAX/projet/svg/ico_success.svg" class="ico-success" alt="ico_href">
+                       
+                            <div>HUB</div>
+                            <div>peername3</div>
+                            <img src="../../TMAX/projet/svg/ico_danger.svg" class="ico-failure" alt="ico_href">
+                       
+                            <div>GATEWAY</div>
+                            <div>peername4</div>
+                            <img src="../../TMAX/projet/svg/ico_danger.svg" class="ico-failure" alt="ico_href">
+                        
+                    </div>
+                </div>
+                <div class="grid-item10">
+                    <img src="../../TMAX/projet/svg/ico_warning.svg" class="ico-warning" alt="ico_href">
+                    
+                </div>
+
+                <div  class="grid-item4"> QoE
+                    <img src="../../TMAX/projet/svg/ico_info_black.svg" class="ico-info2" alt="ico_href">
+                    <div class="info-hover2">
+                        
+                        <div class="">Voice :</div>
+                        <div class="">10</div>
+                        
+                    
+                    
+                        <div>Video :</div>
+                        <div>10</div>
+                        
+                   
+                        <div>Trans :</div>
+                        <div>10</div>
+                        
+                   
+                        <div>Average score :</div>
+                        <div>10.0</div>
+                        
+                    
+                    </div>
+                </div>
+                <div class="grid-item11">
+                    <img src="../../TMAX/projet/svg/ico_success.svg" class="ico-success" alt="ico_href">
+                </div>
+                
+                
+            </div>
+            <div class="grid-container3">
+                <!-- Il faudra modifier les div des titres des grids par rapport à ce qu'a fait maxime (edge_biot_1 par exemple) -->
+                <h4 class="title-subgrid">System</h4>
+                <div class="grid-item2">CPU usage
+
+                </div>
+                <div class="grid-item9">
+                    <div> 29%</div>
+                </div>
+                <div class="grid-item3">RAM usage</div>
+                <div class="grid-item10">
+                    44.
+                </div>
+
+                <div  class="grid-item5"> Flows</div>
+                <div class="grid-item12">
+                    11
+                </div>
+                
+                
+            </div>
+            <div class="grid-container">
+                <div class="grid-item1">Name</div>
+                <div class="grid-item2">Hostname</div>
+                <div class="grid-item8">Edge_Biot_1</div>
+                
+                <div class="grid-item9">Edge_Biot_1</div>
+                <div class="grid-item3">Attribut</div>
+                <div class="success-grid">Active</div>
+                <div class="grid-item4">HA Status</div>
+                <div class="grid-item11">N/A</div>
+                <a class="link-VC" href="#">
+                    <img src="../../TMAX/projet/svg/ico_href.svg" class="ico-ref" alt="ico_href">
+                    Go to VC Orchestrator
+                </a>
+                <a href="#" class="view-more">
+                    
+                    View more
+                    <img src="../../TMAX/projet/svg/ico_arrow_down_hover.svg" class="ico-ref" alt="ico_href">
+                </a>
+                
+            </div>
+        </div>
+
+
+</body>
+
+
+<script src="JS/script.js"></script>
+
+</html>

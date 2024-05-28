@@ -1,0 +1,158 @@
+:root {
+    --blue: #021fb4;
+    --red: #fd3737;
+    --lightRed: #FFC0C0;
+    --grey: #c7c7c7;
+    --lightGrey: #f7f7f7;
+    --whitesmoke : #f4f4f4;
+    --darkerGrey : #eeeeee;
+    --black: #000000;
+    --white: #ffffff;
+
+    --primary: var(--blue);
+    --secondary: var(--grey);
+    --warning: var(--red);
+    --text: var(--black);
+    --bodyBackground: var(--white);
+    --mainBackground: var(--lightGrey);
+    --textBackground: var(--whitesmoke);
+    --warningBackground: var(--lightRed);
+    --border: var(--darkerGrey);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bodyBackground);
+}
+
+main{
+    background-color: var(--mainBackground);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    color : var(--text);
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary);
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#container-name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name{
+    display: flex;
+    align-items: flex-start;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--border);
+    box-sizing: border-box;
+    border-radius: 5px;
+    
+}
+
+button {
+    background-color: var(--text);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+span p {
+    background-color: var(--textBackground);
+    text-align: justify;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+    border: 2px solid var(--border);
+    border-radius: 5px;
+}
+
+.inline{
+    width: 75%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#commentaire {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#radio{
+    width: 50%;
+    margin: 10px auto;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.warning-box{
+    width: 100%;
+}
+
+.obligatoire{
+    margin: 5px;
+    font-size: 20px;
+    color: var(--warning);
+    align-self: center;
+}
+
+#warning-submit{
+    display: none;
+    width: 25%;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    background-color: var(--warningBackground);
+    border: dotted 2px var(--warning);
+}
+
+#warning-submit div{
+    display: block;
+    text-align: justify;
+}
+
+.warning{
+    display: none;
+    font-size: 14px;
+    color: var(--warning);
+    font-weight: bold;
+}

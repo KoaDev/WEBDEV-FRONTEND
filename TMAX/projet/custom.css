@@ -1,0 +1,167 @@
+a {
+    text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: var(--backgroundNavbar);
+  padding: 10px 20px;
+}
+
+.navbar-brand,
+.navbar-menu,
+.dropdown-content,
+.navbar-user {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-user {
+  color: var(--backgroundWhite);
+  margin-left: auto;
+}
+
+.logo {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 5%;
+}
+
+.navbar-menu li {
+  position: relative;
+}
+
+.dropbtn {
+  background-color: var(--backgroundNavbar);
+  color: var(--backgroundWhite);
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: var(--backgroundNavbarHover);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--backgroundWhite);
+  min-width: 160px;
+  box-shadow: 0 8px 16px var(--border);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: var(--text);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--backgroundRow);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.ico {
+  padding-left: 10px;
+}
+
+.ico-avatar {
+  height: 24px;
+  margin-right: 8px;
+}
+
+.breadcrumb {
+  padding: 1% 3%;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+}
+
+.breadcrumb a {
+  color: var(--text);
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.breadcrumb a:hover {
+  text-decoration: none;
+}
+
+.breadcrumb > a::after {
+  content: ">";
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.breadcrumb > a:last-child::after {
+  content: "";
+}
+
+.breadcrumb > a:last-child {
+  font-weight: normal;
+}
+
+.spacer-line {
+  margin: 0;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .navbar-user span {
+    display: none;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar-brand {
+    align-self: flex-start;
+  }
+
+  .navbar-menu {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dropbtn {
+    margin: 0;
+  }
+
+  .navbar-user {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+  .ico-avatar {
+    margin-right: 0;
+  }
+
+  .navbar-user span {
+    display: none;
+  }
+}

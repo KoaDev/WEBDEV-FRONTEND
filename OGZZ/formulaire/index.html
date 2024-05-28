@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <h2 class="centre">INSCRIPTION</h2>
+        <form>
+            <fieldset id="inputs1">
+                <div class="conteneur">
+                    <div class="input">
+                        <label for="nom">Nom:</label>
+                        <input type="text" id="nom" name="nom" class="field needed">
+                        <p class="hiddenIfEmpty">*</p>
+                    </div>
+                    <p class="hiddenIfEmpty">Le champ nom est obligatoire</p>
+                </div>
+                <div class="conteneur">
+                    <div class="input">
+                        <label for="prenom">Prenom:</label>
+                        <input type="text" id="prenom" name="prenom" class="field needed">
+                        <p class="hiddenIfEmpty">*</p>
+                    </div>
+                    <p class="hiddenIfEmpty">Le champ prénom est obligatoire</p>
+                </div>
+            </fieldset>
+    
+            <dl>
+                <dt>Notice : </dt>
+                <br>
+                <dd>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident modi quo ad id veniam error odit aperiam fuga mollitia voluptatibus nisi, voluptates, suscipit enim placeat tenetur atque corporis exercitationem est?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deserunt vero, in earum perferendis cupiditate sequi placeat odit ad blanditiis tenetur magnam libero, ipsa excepturi numquam deleniti. Corporis, officiis placeat.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quas molestiae ducimus obcaecati amet dolor? Iste unde totam obcaecati eaque nesciunt aliquam in! Fuga minima culpa error animi aliquam. Error!
+                </dd>
+            </dl>
+    
+            <fieldset id="inputs2">
+                <div class="conteneur">
+                    <div class="input">
+                        <label for="mail">Email</label><br>
+                        <input type="email" id="fmail" name="mail" class="field needed">
+                        <p class="hiddenIfEmpty">*</p>
+                    </div>
+                    <p class="hiddenIfEmpty">Le champ email est obligatoire</p>
+                </div>
+                <div class="input">
+                    <label >Civilité</label>
+                    <label for="MR">Mr.</label>
+                    <input type="radio" id="MR" name="civilite" value="Mr." class="field">
+                    <label for="MME">Mme.</label>
+                    <input type="radio" id="MME" name="civilite" value="Mme." class="field"><br>
+                </div>
+                <div class="input">
+                    
+                    <label>Monsieur</label>
+                    <label>[nom]</label><br>
+                </div>
+            </fieldset>
+    
+            <fieldset id="Commentaires">
+                <label>Commentaires :</label>
+                <textarea name="field" class="field"></textarea>
+            </fieldset>
+            <div id="warningBox" class="centre"></div> <!-- afficher seulement si les champs ne sont pas complets-->
+            <div class="centre">
+                <input type="button" value="ENREGISTRER" id="button" onclick="checkInputs()">
+                </input>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="script.js" type="text/javascript"></script>
+</html>
