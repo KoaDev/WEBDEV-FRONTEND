@@ -23,7 +23,7 @@ section{
 .smallTriSection{
     display: flex;
     align-items: center;
-    color: #333333;
+    color: var(--titleTab);
     padding: 3rem 0 1rem 0;
     width: 9rem;
 }
@@ -31,7 +31,7 @@ section{
 .bigTriSection{
     display: flex;
     align-items: center;
-    color: #333333;
+    color: var(--titleTab);
     padding: 3rem 0 1rem 0;
     width: 14rem;
 }
@@ -292,7 +292,7 @@ button:hover{
 }
 
 .provisioning{
-    background-color: #ecfdef;
+    background-color: var(--previsioning);
     border-radius: 60px;
     padding: 0.1rem 1.4rem 0.1rem 1.4rem;
 }
@@ -339,7 +339,7 @@ button:hover{
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #333333;
+        color: var(--titleTab);
         padding: 0;
         width: auto;
         font-size: smaller;
@@ -361,7 +361,7 @@ button:hover{
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #333333;
+        color: var(--titleTab);
         padding: 0;
         width: auto;
         font-size: small;
@@ -519,7 +519,7 @@ button:hover{
     }
     
     .provisioning{
-        background-color: #ecfdef;
+        background-color: var(--previsioning);
         border-radius: 60px;
         margin: 0.2rem 0.2rem 0 0.2rem;
         padding: 0 0.1rem 0 0.1rem;
