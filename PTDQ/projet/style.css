@@ -9,7 +9,7 @@ body {
 }
 
 .spacer-line {
-    border-top: 2px solid var(--lightergrey);
+    border-top: 2px solid var(--border);
 }
 
 h1 {
@@ -109,7 +109,7 @@ h5 {
     /* Ajustez cette valeur pour déplacer la bordure inférieure plus bas */
     width: 100%;
     height: 0.094rem;
-    background-color: var(--darkgrey);
+    background-color: var(--lightTitle);
 }
 
 .search-bar input[type="text"] {
@@ -124,9 +124,9 @@ h5 {
     flex-direction: column;
     position: absolute;
     right: 3%;
-    background-color: var(--white);
-    box-shadow: 0rem 0.25rem 0.5rem var(--black);
-    border: 1px solid var(--lightergrey);
+    background-color: var(--backgroundWhite);
+    box-shadow: 0rem 0.25rem 0.5rem var(--secondary);
+    border: 1px solid var(--border);
     z-index: 1000;
     padding: 0.625rem;
 }
@@ -145,7 +145,7 @@ h5 {
 }
 
 #filterButton {
-    background-color: var(--white);
+    background-color: var(--backgroundWhite);
     border: none;
     font-weight: bold;
     cursor: pointer;
@@ -157,7 +157,7 @@ h5 {
 /****************************************************CSS TABLEAU***************************************************/
 
 .table-container {
-    background-color: var(--whitesmoke);
+    background-color: var(--draft);
     padding: 2rem;
 }
 
@@ -170,53 +170,53 @@ h5 {
 .inventory-table td {
     padding: 0.75rem;
     text-align: left;
-    border-bottom: 1px solid var(--whitesmoke);
+    border-bottom: 1px solid var(--draft);
 }
 
 .inventory-table th {
-    background-color: var(--whitesmoke);
+    background-color: var(--draft);
     cursor: pointer;
 }
 
 .inventory-table tbody tr:hover {
-    background-color: var(--lightergrey);
+    background-color: var(--border);
 }
 
 .inventory-table thead th {
-    color: var(--darkgrey);
+    color: var(--lightTitle);
     font-weight: normal;
 }
 
 .status {
     padding: 0.313rem 0.625rem;
     border-radius: 15px;
-    color: var(--black);
+    color: var(--secondary);
     text-align: center;
     font-weight: bold;
 }
 
 .status.active {
-    background-color: var(--limegreen);
+    background-color: var(--sucess);
 }
 
 .status.degraded {
-    background-color: var(--yellow);
+    background-color: var(--warning);
 }
 
 .status.inactive {
-    background-color: var(--red);
-    color: var(--white);
+    background-color: var(--error);
+    color: var(--backgroundWhite);
 }
 
 .whitebar {
-    background-color: var(--white);
+    background-color: var(--backgroundWhite);
 }
 
 .inventory-table th,
 .inventory-table td {
     padding: 0.75rem;
     text-align: left;
-    border-bottom: 1px solid var(--lightergrey);
+    border-bottom: 1px solid var(--border);
     vertical-align: middle;
 }
 
@@ -237,7 +237,7 @@ h5 {
 
 .right {
     text-align: right;
-    background-color: var(--whitesmoke);
+    background-color: var(--draft);
 }
 
 .pagination {
@@ -245,7 +245,7 @@ h5 {
 }
 
 .pagination a {
-    color: var(--black);
+    color: var(--secondary);
     float: left;
     padding: 0.5rem 1rem;
     text-decoration: none;
@@ -253,12 +253,12 @@ h5 {
 }
 
 .pagination a.active {
-    color: var(--black);
-    border: 2px solid var(--orange);
+    color: var(--secondary);
+    border: 2px solid var(--orangeIcon);
 }
 
 .pagination a:hover:not(.active) {
-    background-color: var(--white);
+    background-color: var(--backgroundWhite);
 }
 
 .pagination a .underline {
@@ -267,12 +267,12 @@ h5 {
     bottom: -0.5rem;
     width: 100%;
     height: 0.094rem;
-    background-color: var(--darkgrey);
+    background-color: var(--lightTitle);
 }
 
 a.underline {
     display: inline-block;
-    border-bottom: 2px solid var(--black);
+    border-bottom: 2px solid var(--secondary);
     margin-top: 0.125rem;
 }
 
