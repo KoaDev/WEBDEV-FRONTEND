@@ -75,4 +75,71 @@ function display_NetworkInfo() {
   }
 }
 
+/* Affichage des tables selons les onglets cliqués */
+
+function displayTable(idTable) {
+  tables = document.querySelectorAll("table");
+  title = document.getElementById("title-section");
+
+  tables.forEach((element) => {
+    element.id != idTable
+      ? (element.style = "display: None;")
+      : (element.style = "display: table;");
+  });
+  title.innerText = idTable + " inventory";
+}
+
+/*                                                                       *
+                                     TRI                
+  Il faudra voir pour trier les status d'une autre manière que A-Z & Z-A
+*                                                                        */
+var sortOrder = {};
+
+function sortTable(columnIndex, idTable) {
+  var table,
+    rows,
+    switching,
+    i,
+    x,
+    y,
+    shouldSwitch,
+    direction,
+    switchCount = 0;
+  table = document.getElementById(idTable);
+  switching = true;
+  direction = sortOrder[columnIndex] === "asc" ? "desc" : "asc";
+
+  while (switching) {
+    switching = false;
+    rows = table.rows;
+    for (i = 1; i < rows.length - 1; i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("TD")[columnIndex];
+      y = rows[i + 1].getElementsByTagName("TD")[columnIndex];
+      if (direction == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          shouldSwitch = true;
+          break;
+        }
+      } else if (direction == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchCount++;
+    } else {
+      if (switchCount == 0 && direction == "asc") {
+        direction = "desc";
+        switching = true;
+      }
+    }
+  }
+  sortOrder[columnIndex] = direction;
+}
+
 window.onload = display_NetworkInfo();
