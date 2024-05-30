@@ -200,6 +200,7 @@ table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    display: none;
 }
   
 td, th {
@@ -293,5 +294,4 @@ tr:nth-child(2n) {
     table td:last-child {
         border-bottom: 0;
     }
-
 }
