@@ -1,9 +1,10 @@
 #golden-bar {
-    width: 6%;
+    width: 99px;/*taille invariable utilisé des SVG pour le moment*/
     height: 5px;
     background-color: var(--primary);
     position: absolute;
     left: 0;
+    top: 0;
     display: none;
 }
 
@@ -110,6 +111,7 @@ h3{
     background: black; /* Color of the border */
 }
 
+
 .grid-item1 { 
     grid-area: 1 / 1 / 2 / 2; 
     margin-left: 8%;
@@ -208,10 +210,11 @@ h3{
     margin-left: 8%;
     font-weight: bold;
     vertical-align: top;
-    margin-bottom: 4%;
+    margin: 0 2% 2% 4%;
     background-color: var(--sucess); /* Green background */
     width: 25%;
    
+    padding: 0.5em;
     text-align: center; /* Centers text inside the button */
     border-radius: 20px; /* Rounded corners */
     font-weight: bold; /* Makes the font bold */
@@ -267,4 +270,24 @@ h3{
 }
 .peername1-hover{
     grid-area: 1 / 2 / 2 / 3; /* Row 1, Column 2 */
+}
+
+
+@media (max-width: 700px) {
+
+    /*POUR TOUT LES grid-itemX*/
+    .grid-item, .success-grid, .link-VC, .box-overview{
+        /* Permet de couper les mots pour aller à la ligne */
+        word-break: break-word;
+        min-width: 3em;
+    }
+    
+}
+@media (max-width: 500px) {
+    .grid-container, .grid-container3{
+        grid-template-columns: 1fr;
+    }
+    .grid-container2{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
