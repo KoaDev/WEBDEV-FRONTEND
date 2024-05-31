@@ -8,13 +8,13 @@ svgIcons.forEach(svgIcon => {
     svgIcon.addEventListener('click', function () {
       goldenBar.style.display = 'block';
 
-      // Calculate the offset left position of the clicked SVG icon
       const offsetLeft = svgIcon.offsetLeft;
+      const offsetTop = svgIcon.offsetTop;
+      const iconHeight = svgIcon.offsetHeight; // Obtenir la hauteur de l'icône
 
-      // Set the left position of the golden bar to match the clicked SVG icon
       goldenBar.style.left = `${offsetLeft}px`;
+      goldenBar.style.top = `${offsetTop + iconHeight}px`;
 
-      // Add active class to the corresponding section
       const sectionId = this.id.replace('id', ''); // Get section ID
       const sectionElement = document.getElementById(sectionId + '-section');
 
@@ -29,10 +29,15 @@ svgIcons.forEach(svgIcon => {
       goldenBar.style.display = 'block';
 
       const offsetLeft = svgIcon.offsetLeft;
+      const offsetTop = svgIcon.offsetTop;
+      const iconHeight = svgIcon.offsetHeight; // Obtenir la hauteur de l'icône
 
       goldenBar.style.left = `${offsetLeft}px`;
+      goldenBar.style.top = `${offsetTop + iconHeight}px`;
+
       const sectionId = this.id.replace('id', ''); // Get section ID
       const sectionElement = document.getElementById(sectionId + '-section');
+
       grayArea2.style.opacity = 1;
       grayArea.style.opacity = 0;
 
@@ -42,8 +47,11 @@ svgIcons.forEach(svgIcon => {
       goldenBar.style.display = 'block';
 
       const offsetLeft = svgIcon.offsetLeft;
+      const offsetTop = svgIcon.offsetTop;
+      const iconHeight = svgIcon.offsetHeight; // Obtenir la hauteur de l'icône
 
       goldenBar.style.left = `${offsetLeft}px`;
+      goldenBar.style.top = `${offsetTop + iconHeight}px`;
 
       const sectionId = this.id.replace('id', ''); // Get section ID
       const sectionElement = document.getElementById(sectionId + '-section');
