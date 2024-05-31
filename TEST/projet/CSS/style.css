@@ -1,28 +1,10 @@
 @import url(../../../TMAX/projet/style.css);
 
 
-/*
-.mActions div:first-child{
-    border: solid;
-    border-color: black;
-    border-width: 1px;
-
-    width: 15%;
-    float: left;
-    color: red;
-}
-.mActions div:last-child{
-    border: solid;
-    border-color: black;
-    border-width: 1px;
-    
-    width: 15%;
-    float: right;
-    color: blue;
-}
-*/
 .mTableLink{
+    display: flex;
     background-color: var(--backgroundWhite);
+    max-width: max-content;
 }
 
 .mRedirection{
@@ -37,6 +19,22 @@
     border-bottom: 3px solid var(--primary);
 }
 
+/*Sert à séparer le titre des autres éléments*/
+.mSeparator{
+    display: flex;
+    flex-wrap: nowrap;
+    width: auto;
+}
+
+#addANewRegion{
+    display: flex;
+    align-items: center;
+    background-color: var(--secondary);
+    color: var(--white);
+    margin-left: auto;
+}
+
+/*========== Début code Actions ==========*/
 .mActions{
     display: flex;
     flex-wrap: nowrap;

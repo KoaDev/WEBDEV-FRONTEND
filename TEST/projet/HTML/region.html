@@ -62,19 +62,22 @@
         <div class="Entête">
             <div class="frame">
                 <h1>Flexible Inventory</h1>
-                <table class="mTableLink">
-                    <tr>
-                        <td class="mRedirection">
-                            <a href="" class="boxLink">Network</a>
-                        </td>
-                        <td class="mRedirection" id="mActuel">
-                            <a href="" class="boxLink">Region</a>
-                        </td>
-                        <td class="mRedirection">
-                            <a href="" class="boxLink">Site</a>
-                        </td>
-                    </tr>
-                </table>
+                <div class="mSeparator">
+                    <table class="mTableLink">
+                        <tr>
+                            <td class="mRedirection">
+                                <a href="" class="boxLink">Network</a>
+                            </td>
+                            <td class="mRedirection" id="mActuel">
+                                <a href="" class="boxLink">Region</a>
+                            </td>
+                            <td class="mRedirection">
+                                <a href="" class="boxLink">Site</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <button id="addANewRegion">+ Add a new Region</button>
+                </div>
             </div>
 
             <div class="mActions">
@@ -90,14 +93,22 @@
 
             <table class="mStatTable">
                 <tr>
-                    <th>Provisioning state<div class="upDown">↑↓</div></th>
-                    <th>Operational status<div class="upDown">↑↓</div></th>
-                    <th>Region<div class="upDown">↑↓</div></th>
-                    <th>Vendor<div class="upDown">↑↓</div></th>
-                    <th>Network<div class="upDown">↑↓</div></th>
-                    <th>Gateways<div class="upDown">↑↓</div></th>
-                    <th>Locations<div class="upDown">↑↓</div></th>
-                    <th>Edges<div class="upDown">↑↓</div></th>
+                    <th>Provisioning state<div class="upDown">↑↓</div>
+                    </th>
+                    <th>Operational status<div class="upDown">↑↓</div>
+                    </th>
+                    <th>Region<div class="upDown">↑↓</div>
+                    </th>
+                    <th>Vendor<div class="upDown">↑↓</div>
+                    </th>
+                    <th>Network<div class="upDown">↑↓</div>
+                    </th>
+                    <th>Gateways<div class="upDown">↑↓</div>
+                    </th>
+                    <th>Locations<div class="upDown">↑↓</div>
+                    </th>
+                    <th>Edges<div class="upDown">↑↓</div>
+                    </th>
                 </tr>
             </table>
         </div>
