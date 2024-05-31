@@ -220,15 +220,12 @@ tr:nth-child(2n) {
 /*-------------------------------------- media --------------------------------------*/
 
 @media screen and (max-width : 850px){
-    section{
-        padding-left: 0;
 
-    }
     main{
         padding-left: 1%;
         padding-right: 1%;
-
     }
+    
     #card-grid{
         display: grid;
         grid-template-columns: auto auto;
@@ -268,15 +265,15 @@ tr:nth-child(2n) {
     }
 
     table tr {
-        border-bottom: 3px solid #ddd;
+        border: 1px solid var(--border);
         display: block;
         margin-bottom: .625em;
     }
 
     table td {
-        border-bottom: 1px solid #ddd;
+        border-bottom: none;
         display: block;
-        font-size: .8em;
+        font-size: var(--base_font_size);
         text-align: right;
     }
 
