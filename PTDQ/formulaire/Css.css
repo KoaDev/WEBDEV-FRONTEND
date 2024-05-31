@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#Page {
+    margin: 0 20%;
+    background-color: #F7F7F7;
+    padding-bottom: 5em;
+}
+
+h1 {
+    text-align: center;
+    padding: 3%;
+    color: #021FB4;
+}
+
+h3 {
+    color: #AAAAAA;
+    margin: 0 2%
+}
+
+h5 {
+    text-align: center;
+    font-size: 15px;
+    margin-left: 2rem;
+}
+
+p {
+    margin: 1%;
+}
+
+.texte {
+    background-color: #F4F4F4;
+    border: 2px solid #EEEEEE;
+    margin: 0 2% 2% 2%;
+}
+
+.texte p {
+    text-align: justify;
+}
+
+#NomPrenom {
+    width: 100%;
+    justify-content: space-between;
+    text-align: left;
+    margin: 0 10% 0 0;
+    display: grid;
+    grid-template-columns: 49% 49%;
+}
+
+#nom,
+#prenom {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    padding: 0 2%;
+}
+
+#errorMessageNom {
+    margin: 0 0 0 5em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+#errorMessagePrenom {
+    margin: 0 0 0 6.7em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+label {
+    padding: 0 5% 0 0;
+}
+
+/*
+#nom input,
+#prenom input {
+    width: 100%;
+    border-radius: 10px;
+}
+*/
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 75%;
+    border-radius: 10px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 75%;
+    border-radius: 10px;
+}
+
+textarea {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 75%;
+    height: 4rem;
+    resize: none;
+}
+
+
+.civilite {
+    margin: 0 auto;
+    width: 35%;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.grid-container {
+    margin: 0 10% 0 0;
+    display: grid;
+    grid-template-columns: 30% auto;
+    padding: 10px;
+}
+
+.grid-item {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.grid-item1 {
+    text-align: left;
+}
+
+.grid-item2 {
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 10rem;
+}
+
+.grid-item3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-right: 10rem;
+}
+
+
+.radioLabel {
+    padding: 0 0 10% 10%;
+}
+
+input[type="submit"] {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+.required {
+    color: red;
+    font-weight: bold;
+
+    font-size: 1.3em;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+
+.global-error-message {
+    border: 1px dashed red;
+    background-color: rgba(255, 0, 0, 0.096);
+    display: flex;
+    align-items: center;
+    /* Alignement vertical */
+    width: 150%;
+    margin: 0 115%;
+}
+
+#icon {
+    color: red;
+    font-size: 4em;
+    margin-left: 10px;
+}
+
+.error-text {
+    color: red;
+    flex-grow: 1;
+    /* Permet au texte de s'étendre sur la largeur disponible */
+}
+
+
+.icon-attention {
+    color: red;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.error-text {
+    color: red;
+}
+
+.error {
+    color: red;
+    display: none;
+}

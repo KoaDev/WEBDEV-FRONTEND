@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre Formulaire</title>
+    <link rel="stylesheet" href="Css.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="Page">
+        <h1>INSCRIPTION</h1>
+        <form id="registrationForm">
+            <div id="NomPrenom">
+                <div id="nom">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" placeholder="votre nom">
+                    <span class="required">★</span>
+                </div>
+                <div id="prenom">
+                    <label for="firstname">Prénom</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="votre prénom">
+                    <span class="required">★</span>
+                </div>
+                <div id="errorMessageNom">
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                <div id="errorMessagePrenom">
+                    <span class="error-message" id="firstname-error"></span>
+                </div>
+            </div>
+
+
+            <h3>Notice :</h3>
+            <div class="texte">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet sollicitudin diam, at
+                    aliquet
+                    mauris. Pellentesque sed fermentum massa, sed pharetra enim. Phasellus aliquet quis massa eu cursus.
+                    Sed
+                    eget viverra ante. Cras sollicitudin ullamcorper ante, eget elementum tellus. Nunc vitae ullamcorper
+                    sem. Duis scelerisque neque sit amet elit interdum, vel suscipit dui varius. Aenean maximus, massa
+                    in
+                    viverra eleifend, tortor ante euismod elit, non dictum erat est eu quam. </p>
+            </div>
+
+            <div class="grid-container">
+                <div class="grid-item"><label for="email">Email</label></div>
+                <div class="grid-item1">
+                    <input type="email" id="email" name="email" placeholder="votre email">
+                    <span class="required">★</span>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="grid-item"><label for="title">Civilité</label></div>
+                <div class="grid-item2">
+                    <label class="radioLabel"><input type="radio" id="mr" name="title" value="mr" checked>Mr</label>
+                    <label class="radioLabel"><input type="radio" id="mme" name="title" value="mme">Mme</label>
+                    <label class="radioLabel"><input type="radio" id="me" name="title" value="me">Me</label>
+                </div>
+                <div class="grid-item"></div>
+                <div class="grid-item3">
+                    <h5 id="AModifier2">Monsieur</h5>
+                    <h5 id="AModifier3">[NOM]</h5>
+                </div>
+                <div class="grid-item"><label for="comments">Commentaires</label></div>
+                <div class="grid-item1"><textarea id="comments" name="comments"></textarea></div>
+
+                <div class="global-error-message" id="comments-error">
+                    <span id="icon">⚠</span>
+                    <span class="error-text"></span>
+                </div>
+            </div>
+            <input type="submit" value="ENREGISTRER">
+        </form>
+    </div>
+</body>
+
+</html>

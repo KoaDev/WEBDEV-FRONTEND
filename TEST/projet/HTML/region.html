@@ -4,11 +4,12 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Region {Group: TEST}</title>
+    <title>Region</title>
+    <link rel="icon" href="../../../TMAX/projet/svg/ico_logo.svg" type="image/x-icon">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta name="author" content="Barbaud Malo">
-    <meta name="group" content="TEST">
-    
+    <meta name="group" content="Region">
+
     <link rel='stylesheet' type='text/css' media='screen' href='../../../TMAX/projet/style.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../../../TMAX/projet/custom.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../CSS/style.css'>
@@ -16,10 +17,10 @@
 
 <body>
     <nav class="navbar">
-        <div class="navbar-brand">
+        <a href="#" class="navbar-brand">
             <img src="../../../TMAX/projet/svg/ico_logo.svg" alt="Logo" class="logo">
-            <h3 class="wh">My Network</h3>
-        </div>
+            <h3>My Network</h3>
+        </a>
         <ul class="navbar-menu">
             <li class="dropdown">
                 <button class="dropbtn">Solutions</button>
@@ -34,8 +35,8 @@
                 </div>
             </li>
             <li class="dropdown">
-                <button class="dropbtn">Locations <img src="../../../TMAX/projet/svg/ico_arrow_down_hover.svg" class="ico"
-                        alt="ico_arrow_down_hover"></button>
+                <button class="dropbtn">Locations <img src="../../../TMAX/projet/svg/ico_arrow_down_hover.svg"
+                        class="ico" alt="ico_arrow_down_hover"></button>
                 <div class="dropdown-content">
                     <a href="#">Location 1</a>
                     <a href="#">Location 2</a>
@@ -48,6 +49,7 @@
             <span>FirstName LastName</span>
         </div>
     </nav>
+
     <nav class="breadcrumb">
         <a href="#">Home</a>
         <a href="#">Regions</a>
@@ -60,19 +62,22 @@
         <div class="Entête">
             <div class="frame">
                 <h1>Flexible Inventory</h1>
-                <table class="mTableLink">
-                    <tr>
-                        <td class="mRedirection">
-                            <a href="" class="boxLink">Network</a>
-                        </td>
-                        <td class="mRedirection" id="mActuel">
-                            <a href="" class="boxLink">Region</a>
-                        </td>
-                        <td class="mRedirection">
-                            <a href="" class="boxLink">Site</a>
-                        </td>
-                    </tr>
-                </table>
+                <div class="mSeparator">
+                    <table class="mTableLink">
+                        <tr>
+                            <td class="mRedirection">
+                                <a href="" class="boxLink">Network</a>
+                            </td>
+                            <td class="mRedirection" id="mActuel">
+                                <a href="" class="boxLink">Region</a>
+                            </td>
+                            <td class="mRedirection">
+                                <a href="" class="boxLink">Site</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <button id="addANewRegion">+ Add a new Region</button>
+                </div>
             </div>
 
             <div class="mActions">
@@ -84,8 +89,28 @@
                     </div>
                     <div class="mFiltre">Filtrer</div>
                 </div>
-                
             </div>
+
+            <table class="mStatTable">
+                <tr>
+                    <th>Provisioning state<div class="upDown">↑↓</div>
+                    </th>
+                    <th>Operational status<div class="upDown">↑↓</div>
+                    </th>
+                    <th>Region<div class="upDown">↑↓</div>
+                    </th>
+                    <th>Vendor<div class="upDown">↑↓</div>
+                    </th>
+                    <th>Network<div class="upDown">↑↓</div>
+                    </th>
+                    <th>Gateways<div class="upDown">↑↓</div>
+                    </th>
+                    <th>Locations<div class="upDown">↑↓</div>
+                    </th>
+                    <th>Edges<div class="upDown">↑↓</div>
+                    </th>
+                </tr>
+            </table>
         </div>
     </main>
 
