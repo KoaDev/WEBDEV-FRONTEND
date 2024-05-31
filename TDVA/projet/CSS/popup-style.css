@@ -155,6 +155,7 @@ h3{
 .grid-item6 { grid-area: 1 / 6 / 2 / 7; } /* Cell 6 (row 1, col 6) */
 .grid-item7 { grid-area: 1 / 7 / 2 / 8; } /* Cell 7 (row 1, col 7) */
 .grid-item8 { 
+    font-size: 16px;
     grid-area: 2 / 1 / 3 / 2; 
     margin-left: 8%;
     font-weight: bold;
@@ -163,6 +164,7 @@ h3{
    
 } /* Cell 8 (row 2, col 1) */
 .grid-item9 { 
+    font-size: 16px;
     grid-area: 2 / 2 / 3 / 3; 
     margin-left: 8%;
     font-weight: bold;
@@ -170,6 +172,7 @@ h3{
     margin-bottom: 4%;
 } /* Cell 9 (row 2, col 2) */
 .grid-item10 { 
+    font-size: 16px;
     grid-area: 2 / 3 / 3 / 4; 
     margin-left: 8%;
     font-weight: bold;
@@ -178,13 +181,22 @@ h3{
     
 } /* Cell 10 (row 2, col 3) */
 .grid-item11 { 
+    font-size: 16px;
     grid-area: 2 / 4 / 3 / 5; 
     margin-left: 8%;
     font-weight: bold;
     vertical-align: top;
     margin-bottom: 4%;
 } /* Cell 11 (row 2, col 4) */
-.grid-item12 { grid-area: 2 / 5 / 3 / 6; } /* Cell 12 (row 2, col 5) */
+.grid-item12 {
+     grid-area: 2 / 5 / 3 / 6; 
+     font-size: 16px;
+ 
+       
+        font-weight: bold;
+        vertical-align: top;
+        margin-bottom: 4%;
+} /* Cell 12 (row 2, col 5) */
 .grid-item13 { grid-area: 2 / 6 / 3 / 7; } /* Cell 13 (row 2, col 6) */
 .grid-item14 { grid-area: 2 / 7 / 3 / 8; } /* Cell 14 (row 2, col 7) */
 .link-VC{
@@ -294,6 +306,9 @@ h3{
 }
 .NameColumn{
     color:var(--lightTitle);
+}
+h4{
+    font-size: 18px;
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
