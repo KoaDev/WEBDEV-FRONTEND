@@ -40,6 +40,7 @@ svgIcons.forEach(svgIcon => {
 
       grayArea2.style.opacity = 1;
       grayArea.style.opacity = 0;
+     
 
     });
   } else {
@@ -67,5 +68,17 @@ function selectOverview() {
   const overviewIcon = document.getElementById('overview-id');
   overviewIcon.dispatchEvent(new Event('click'));
 }
+
+// Sélection de l'icône spécifique
+const yourIcon = document.querySelector('.your-icon');
+
+// Écouteur d'événement pour le clic sur l'icône
+yourIcon.addEventListener('click', function() {
+    // Sélection de l'élément à afficher
+    const closeIcon = document.querySelector('.close-icon2');
+    
+    // Ajouter la classe pour afficher l'élément
+    closeIcon.style.display = 'inline'; // ou 'block' si c'est un élément en bloc
+});
 
 window.addEventListener('load', selectOverview);

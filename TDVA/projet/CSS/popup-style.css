@@ -16,8 +16,14 @@
     border-top: 1px solid var(--border);
     background-color: var(--backgroundGrey);
     opacity: 0;
+    height: 25%;
 }
-
+.containerOverview{
+    opacity: 0.5;
+}
+.svg-icon:hover {
+    cursor: pointer; /* Définir le curseur comme une main lors du survol */
+}
 #gray-area-2 {
     position: absolute;
     margin-top: 5px;
@@ -48,13 +54,13 @@
     display: flex;
     flex-direction: column;
     align-items: left;
-    border: 1px solid var(--border);
+    border: 2px solid var(--border);
     margin-top: 1%;
     width: 20%;
     text-align: center;
     padding: 1%;
     text-align: left;
-    background-color: var(--backgroundRow);
+    background-color: var(--backgroundWhite);
 }
 
 h1 {
@@ -272,6 +278,11 @@ h3{
     grid-area: 1 / 2 / 2 / 3; /* Row 1, Column 2 */
 }
 
+.closeIcon {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 @media (min-width: 577px) and (max-width: 768px) {
     .grid-container, .grid-container3{
