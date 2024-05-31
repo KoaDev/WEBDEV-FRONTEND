@@ -20,6 +20,10 @@ section{
     margin: 0;
 }
 
+.horizontalScroll{
+    overflow-x: auto;
+}
+
 .smallTriSection{
     display: flex;
     align-items: center;
