@@ -273,21 +273,67 @@ h3{
 }
 
 
-@media (max-width: 700px) {
-
+@media (min-width: 577px) and (max-width: 768px) {
+    .grid-container, .grid-container3{
+        grid-template-columns: 1fr;
+        
+    }
+    .grid-container2{
+        grid-template-columns: repeat(2, 1fr);
+    }
     /*POUR TOUT LES grid-itemX*/
     .grid-item, .success-grid, .link-VC, .box-overview{
         /* Permet de couper les mots pour aller à la ligne */
         word-break: break-word;
         min-width: 3em;
     }
+    .info-hover, .info-hover2 {
+        display: grid;
+       
+        gap:5px;
+        width:300px;
+        height: auto; /* Adjust the max height for better fit on small screens */
+        left: 2.5%; /* Further center the hover element */
+        transform: none; /* Reset transformations for better positioning on small screens */
+        margin-top: 10px; /* Add space above the hover elements */
+        left: 50%; /* Center horizontally */
+        
+        z-index: 10;
+    }
+    .info-hover2{
+        transform: translateX(-300px);
+    }
+    .info-hover{
+        transform: translateX(-200px);
+    }
     
 }
-@media (max-width: 500px) {
+@media (max-width: 576px) {
     .grid-container, .grid-container3{
         grid-template-columns: 1fr;
+        
     }
     .grid-container2{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .info-hover, .info-hover2 {
+        display: grid;
+       
+        gap:5px;
+        width: 300px;
+        height: auto; /* Adjust the max height for better fit on small screens */
+        left: 2.5%; /* Further center the hover element */
+        transform: none; /* Reset transformations for better positioning on small screens */
+        margin-top: 10px; /* Add space above the hover elements */
+        z-index: 10;
+        left: 50%; /* Center horizontally */
+        
+        
+    }
+    .info-hover2{
+        transform: translateX(-300px);
+    }
+    .info-hover{
+        transform: translateX(-200px);
     }
 }
