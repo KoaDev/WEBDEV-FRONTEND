@@ -77,10 +77,26 @@
 
 .mRecherche{
     display: flex;
-    width: 65%;
+    width: max-content;
 }
 
 .mFiltre{
     display: flex;
-    width: 35%;
+    width: min-content;
+}
+
+.mStatTable{
+    display: flex;
+    margin:auto;
+    flex-wrap: nowrap;
+    text-wrap: wrap;
+    text-align: left;
+    align-items: right;
+    width: fit-content;
+}
+
+.upDown{
+    display: flex;
+    float: right;
+    width: min-content;
 }
