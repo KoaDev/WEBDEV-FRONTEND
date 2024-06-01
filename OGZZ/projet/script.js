@@ -103,7 +103,9 @@ function paginationFunction(idTable, buttonBoxId){
 
 
   let nbButtons = Math.ceil(rows.length/4) //pour ne pas avoir 7.5 mais 8 boutons
-
+  let previous = document.createElement("span");
+  previous.innerText = "<";
+  buttonBox.appendChild(previous);
   for (let index = currentIndex; index < nbButtons; index++) {
     let button = document.createElement("button");
     button.innerText = index + 1;
@@ -114,10 +116,15 @@ function paginationFunction(idTable, buttonBoxId){
     } 
     buttonBox.appendChild(button);
   }
+  let next = document.createElement("span");
+  next.innerText = ">";
+  buttonBox.appendChild(next);
 
 
-  displayRows(rows, currentIndex) //il le fait qu'une fois 
-  //nécéssaire sinon ca affiche toutes les colones 
+  displayRows(rows, currentIndex) 
+  buttonBox.getElementsByTagName("button")[0].focus();
+  //réali qu'une fois 
+  //nécéssaire sinon ca affiche toutes les colones, et avoir le boutons 1 en focus
 }
 
 function displayRows(rows, currentIndex){
