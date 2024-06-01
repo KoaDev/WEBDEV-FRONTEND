@@ -134,7 +134,7 @@ hgroup{
 }
 .leftSide > h2{
     margin: 0;
-    color: var(--orangeIcon);
+    color: var(--primary);
     font-size: 180%;
 }
 .leftSide > p{
@@ -164,7 +164,7 @@ hgroup{
 }
 
 .onglet:focus{
-    border-bottom: 3px solid var(--orangeIcon);
+    border-bottom: 3px solid var(--primary);
     margin-bottom: -1px;
 }
 
@@ -216,6 +216,52 @@ tr:nth-child(2n) {
 .sortBy {
     background-color: var(--draft);
 }
+
+
+
+
+
+
+
+/* Pagination */
+/* Pagination styling */
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+.pagination button, .pagination span {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    color: #333;
+}
+
+.pagination button:disabled, .pagination span.dots {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+}
+
+.pagination button:focus {
+    border: 2px solid var(--orangeIcon);
+    font-weight: bold;
+}
+
+.pagination .dots {
+    border: none;
+    cursor: default;
+}
+
+
+
+
+
+
+
+
 
 /*-------------------------------------- media --------------------------------------*/
 
