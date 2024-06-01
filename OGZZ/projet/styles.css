@@ -134,7 +134,7 @@ hgroup{
 }
 .leftSide > h2{
     margin: 0;
-    color: var(--orangeIcon);
+    color: var(--primary);
     font-size: 180%;
 }
 .leftSide > p{
@@ -164,7 +164,7 @@ hgroup{
 }
 
 .onglet:focus{
-    border-bottom: 3px solid var(--orangeIcon);
+    border-bottom: 3px solid var(--primary);
     margin-bottom: -1px;
 }
 
@@ -193,41 +193,84 @@ hgroup{
 
 /* -------------------------- Inventaires -------------------------- */
 #inventories {
-    background-color: #EEEEEE;
+    background-color: var(--backgroundGrey);
 }
 
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    display: none;
 }
   
 td, th {
-    border-bottom: 1px solid var(--lightgrey);
+    border-bottom: 1px solid var(--border);
     text-align: left;
     padding: 1%;
 }
 
-tr:nth-child(2n) {
-    background-color: var(--draft);
+tbody > tr:nth-child(2n + 1) {
+    background-color: var(--backgroundWhite);
 }
 
 .sortBy {
     background-color: var(--draft);
 }
 
+
+
+
+
+
+
+/* Pagination */
+/* Pagination styling */
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+.pagination button, .pagination span {
+    padding: 0.4% 1%;
+    margin: 0 0.3%;
+    background-color: var(--backgroundGrey);
+    cursor: pointer;
+    color: #333;
+}
+
+.pagination button:disabled, .pagination span.dots {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+}
+
+.pagination button:focus {
+    border: 2px solid var(--orangeIcon);
+    font-weight: bold;
+}
+
+.pagination .dots {
+    border: none;
+    cursor: default;
+}
+
+
+
+
+
+
+
+
+
 /*-------------------------------------- media --------------------------------------*/
 
 @media screen and (max-width : 850px){
-    section{
-        padding-left: 0;
 
-    }
     main{
         padding-left: 1%;
         padding-right: 1%;
-
     }
+    
     #card-grid{
         display: grid;
         grid-template-columns: auto auto;
@@ -267,15 +310,15 @@ tr:nth-child(2n) {
     }
 
     table tr {
-        border-bottom: 3px solid #ddd;
+        border: 1px solid var(--border);
         display: block;
         margin-bottom: .625em;
     }
 
     table td {
-        border-bottom: 1px solid #ddd;
+        border-bottom: none;
         display: block;
-        font-size: .8em;
+        font-size: var(--base_font_size);
         text-align: right;
     }
 
@@ -293,5 +336,4 @@ tr:nth-child(2n) {
     table td:last-child {
         border-bottom: 0;
     }
-
 }

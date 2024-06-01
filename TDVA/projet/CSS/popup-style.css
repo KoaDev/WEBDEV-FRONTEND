@@ -1,30 +1,40 @@
 #golden-bar {
-    width: 6%;
+    width: 99px;/*taille invariable utilisé des SVG pour le moment*/
     height: 5px;
     background-color: var(--primary);
     position: absolute;
     left: 0;
+    top: 0;
     display: none;
 }
 
 #gray-area {
     position: absolute;
     margin-top: 5px;
-    padding-bottom: 2%;
+    padding-bottom: 5em;
     width: 100%;
     border-top: 1px solid var(--border);
     background-color: var(--backgroundGrey);
     opacity: 0;
+   
+    
 }
-
+.containerOverview{
+    opacity: 0.5;
+}
+.svg-icon:hover {
+    cursor: pointer; /* Définir le curseur comme une main lors du survol */
+}
 #gray-area-2 {
     position: absolute;
     margin-top: 5px;
-    padding-bottom: 2%;
+    padding-bottom: 5em;
     width: 100%;
     border-top: 1px solid var(--border);
+    border-color:var(--border) ;
     background-color: var(--backgroundGrey);
     opacity: 0;
+ 
 }
 
 #cockpit-title-id {
@@ -47,13 +57,13 @@
     display: flex;
     flex-direction: column;
     align-items: left;
-    border: 1px solid var(--border);
+    border: 2px solid var(--border);
     margin-top: 1%;
     width: 20%;
     text-align: center;
     padding: 1%;
     text-align: left;
-    background-color: var(--backgroundRow);
+    background-color: var(--backgroundWhite);
 }
 
 h1 {
@@ -107,37 +117,46 @@ h3{
     left: 1.15%; /* Starts at 10% from the left to center the border */
     width: 94.2%; /* Border width is 80% of the container's width */
     height: 1px; /* Height of the border, adjust as necessary */
-    background: black; /* Color of the border */
+    background: var(--border); /* Color of the border */
 }
 
+
 .grid-item1 { 
+    color:var(--lightTitle);
     grid-area: 1 / 1 / 2 / 2; 
     margin-left: 8%;
     margin-top: 4%;
     margin-bottom: 2.35%;
 } /* Cell 1 (row 1, col 1) */
 .grid-item2 { 
+    color:var(--lightTitle);
     grid-area: 1 / 2 / 2 / 3; 
     margin-left: 8%;
     margin-top: 3%;
 
 } /* Cell 2 (row 1, col 2) */
 .grid-item3 { 
+    color:var(--lightTitle);
     position: relative;
     grid-area: 1 / 3 / 2 / 4; 
     margin-left: 8%;
     margin-top: 3%;
 } /* Cell 3 (row 1, col 3) */
 .grid-item4 { 
+    color:var(--lightTitle);
     grid-area: 1 / 4 / 2 / 5;
     position: relative; 
     margin-left: 8%;
     margin-top: 3%;
 } /* Cell 4 (row 1, col 4) */
-.grid-item5 { grid-area: 1 / 5 / 2 / 6; } /* Cell 5 (row 1, col 5) */
+.grid-item5 {
+     grid-area: 1 / 5 / 2 / 6;
+     color:var(--lightTitle);
+ } /* Cell 5 (row 1, col 5) */
 .grid-item6 { grid-area: 1 / 6 / 2 / 7; } /* Cell 6 (row 1, col 6) */
 .grid-item7 { grid-area: 1 / 7 / 2 / 8; } /* Cell 7 (row 1, col 7) */
 .grid-item8 { 
+    font-size: 16px;
     grid-area: 2 / 1 / 3 / 2; 
     margin-left: 8%;
     font-weight: bold;
@@ -146,6 +165,7 @@ h3{
    
 } /* Cell 8 (row 2, col 1) */
 .grid-item9 { 
+    font-size: 16px;
     grid-area: 2 / 2 / 3 / 3; 
     margin-left: 8%;
     font-weight: bold;
@@ -153,6 +173,7 @@ h3{
     margin-bottom: 4%;
 } /* Cell 9 (row 2, col 2) */
 .grid-item10 { 
+    font-size: 16px;
     grid-area: 2 / 3 / 3 / 4; 
     margin-left: 8%;
     font-weight: bold;
@@ -161,13 +182,22 @@ h3{
     
 } /* Cell 10 (row 2, col 3) */
 .grid-item11 { 
+    font-size: 16px;
     grid-area: 2 / 4 / 3 / 5; 
     margin-left: 8%;
     font-weight: bold;
     vertical-align: top;
     margin-bottom: 4%;
 } /* Cell 11 (row 2, col 4) */
-.grid-item12 { grid-area: 2 / 5 / 3 / 6; } /* Cell 12 (row 2, col 5) */
+.grid-item12 {
+     grid-area: 2 / 5 / 3 / 6; 
+     font-size: 16px;
+ 
+       
+        font-weight: bold;
+        vertical-align: top;
+        margin-bottom: 4%;
+} /* Cell 12 (row 2, col 5) */
 .grid-item13 { grid-area: 2 / 6 / 3 / 7; } /* Cell 13 (row 2, col 6) */
 .grid-item14 { grid-area: 2 / 7 / 3 / 8; } /* Cell 14 (row 2, col 7) */
 .link-VC{
@@ -208,16 +238,23 @@ h3{
     margin-left: 8%;
     font-weight: bold;
     vertical-align: top;
-    margin-bottom: 4%;
+    margin: 0 2% 2% 4%;
     background-color: var(--sucess); /* Green background */
     width: 25%;
    
+    padding: 0.5em;
     text-align: center; /* Centers text inside the button */
     border-radius: 20px; /* Rounded corners */
     font-weight: bold; /* Makes the font bold */
     display: inline-block; /* Allows padding and margin to be applied correctly */
     box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Subtle shadow for 3D effect */
     text-shadow: 0 -1px 1px rgba(0,0,0,0.25); /* Subtle text shadow for depth */
+}
+/*POUR TOUT LES grid-itemX*/
+.grid-item, .success-grid, .link-VC, .box-overview{
+    /* Permet de couper les mots pour aller à la ligne */
+    word-break: break-word;
+    min-width: 3em;
 }
 
 .info-hover {
@@ -267,4 +304,94 @@ h3{
 }
 .peername1-hover{
     grid-area: 1 / 2 / 2 / 3; /* Row 1, Column 2 */
+}
+
+.NameColumn{
+    color:var(--lightTitle);
+}
+h4{
+    font-size: 18px;
+}
+.close-section {
+    z-index: 10000;
+    transform: translateY(+1000%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-section2 {
+    z-index: 0;
+    transform: translateY(+750%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.close-section span {
+    margin-right: 10px;
+}
+
+.close-icon {
+    width: 20px;
+    height: 20px;
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .grid-container, .grid-container3{
+        grid-template-columns: 1fr;
+        
+    }
+    .grid-container2{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .info-hover, .info-hover2 {
+        display: grid;
+       
+        gap:5px;
+        width:300px;
+        height: auto; /* Adjust the max height for better fit on small screens */
+        left: 2.5%; /* Further center the hover element */
+        transform: none; /* Reset transformations for better positioning on small screens */
+        margin-top: 10px; /* Add space above the hover elements */
+        left: 50%; /* Center horizontally */
+        
+        z-index: 10;
+    }
+    .info-hover2{
+        transform: translateX(-300px);
+    }
+    .info-hover{
+        transform: translateX(-200px);
+    }
+    
+}
+@media (max-width: 576px) {
+    .grid-container, .grid-container3{
+        grid-template-columns: 1fr;
+        
+    }
+    .grid-container2{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .info-hover, .info-hover2 {
+        display: grid;
+       
+        gap:5px;
+        width: 300px;
+        height: auto; /* Adjust the max height for better fit on small screens */
+        left: 2.5%; /* Further center the hover element */
+        transform: none; /* Reset transformations for better positioning on small screens */
+        margin-top: 10px; /* Add space above the hover elements */
+        z-index: 10;
+        left: 50%; /* Center horizontally */
+        
+        
+    }
+    .info-hover2{
+        transform: translateX(-250px);
+    }
+    .info-hover{
+        transform: translateX(-200px);
+    }
 }

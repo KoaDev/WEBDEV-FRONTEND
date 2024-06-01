@@ -90,19 +90,25 @@
                     <h3 class="text_in_box">Down</h3>
                     <div>All links Status</div>
                 </div>
+                
+            </div>
+            <div class="close-section" onclick="hideSection()">
+            
+                <img src="../../TMAX/projet/svg/ico_cross_hover.svg" alt="close_icon" class="close-icon" onclick="hideSection()">
+                <span onclick="hideSection()">Close</span>
             </div>
         </div>
-
+       
         <div id="gray-area-2">
             <H1 id="location-overview">Edge monitoring</H1>
             <div class="grid-container">
-                <div class="grid-item1">Name</div>
-                <div class="grid-item2">Hostname</div>
-                <div class="grid-item8">Edge_Biot_1</div>
+                <div class="grid-item grid-item1" id="NameColumn">Name</div>
+                <div class="grid-item grid-item2">Hostname</div>
+                <div class="grid-item grid-item8">Edge_Biot_1</div>
 
-                <div class="grid-item9">Edge_Biot_1</div>
-                <div class="grid-item3">Attribut</div>
-                <div class="grid-item4">HA Status</div>
+                <div class="grid-item grid-item9">Edge_Biot_1</div>
+                <div class="grid-item grid-item3">Attribut</div>
+                <div class="grid-item grid-item4">HA Status</div>
                 <a class="link-VC" href="#">
                     <img src="../../TMAX/projet/svg/ico_href.svg" class="ico-ref" alt="ico_href">
                     Go to VC Orchestrator
@@ -117,8 +123,8 @@
             <div class="grid-container2">
                 <!-- Il faudra modifier les div des titres des grids par rapport à ce qu'a fait maxime (edge_biot_1 par exemple) -->
                 <h4 class="title-subgrid">Overview</h4>
-                <div class="grid-item2">Model</div>
-                <div class="grid-item9">edge-510-lte</div>
+                <div class="grid-item grid-item2">Model</div>
+                <div class="grid-item grid-item9">edge-510-lte</div>
 
 
             </div>
@@ -126,16 +132,16 @@
             <div class="grid-container2">
                 <!-- Il faudra modifier les div des titres des grids par rapport à ce qu'a fait maxime (edge_biot_1 par exemple) -->
                 <h4 class="title-subgrid">Links & Overlay Tunnels</h4>
-                <div class="grid-item2">Links
+                <div class="grid-item grid-item2">Links
                     <img src="../../TMAX/projet/svg/ico_info_black.svg" class="ico-ref" alt="ico_href">
 
                 </div>
 
-                <div class="grid-item9">
+                <div class="grid-item grid-item9">
                     <img src="../../TMAX/projet/svg/ico_warning.svg" class="ico-ref" alt="ico_href">
 
                 </div>
-                <div class="grid-item3">Overlay Tunnels
+                <div class="grid-item grid-item3">Overlay Tunnels
                     <img src="../../TMAX/projet/svg/ico_info_black.svg" class="ico-info" alt="ico_href">
                     <div class="info-hover">
 
@@ -158,12 +164,12 @@
 
                     </div>
                 </div>
-                <div class="grid-item10">
+                <div class="grid-item grid-item10">
                     <img src="../../TMAX/projet/svg/ico_warning.svg" class="ico-warning" alt="ico_href">
 
                 </div>
 
-                <div class="grid-item4"> QoE
+                <div class="grid-item grid-item4"> QoE
                     <img src="../../TMAX/projet/svg/ico_info_black.svg" class="ico-info2" alt="ico_href">
                     <div class="info-hover2">
 
@@ -186,7 +192,7 @@
 
                     </div>
                 </div>
-                <div class="grid-item11">
+                <div class="grid-item grid-item11">
                     <img src="../../TMAX/projet/svg/ico_success.svg" class="ico-success" alt="ico_href">
                 </div>
 
@@ -195,34 +201,34 @@
             <div class="grid-container3">
                 <!-- Il faudra modifier les div des titres des grids par rapport à ce qu'a fait maxime (edge_biot_1 par exemple) -->
                 <h4 class="title-subgrid">System</h4>
-                <div class="grid-item2">CPU usage
+                <div class="grid-item grid-item2">CPU usage
 
                 </div>
-                <div class="grid-item9">
+                <div class="grid-item grid-item9">
                     <div> 29%</div>
                 </div>
-                <div class="grid-item3">RAM usage</div>
-                <div class="grid-item10">
+                <div class="grid-item grid-item3">RAM usage</div>
+                <div class="grid-item grid-item10">
                     44.
                 </div>
 
-                <div class="grid-item5"> Flows</div>
-                <div class="grid-item12">
+                <div class="grid-item grid-item5"> Flows</div>
+                <div class="grid-item grid-item12">
                     11
                 </div>
 
 
             </div>
             <div class="grid-container">
-                <div class="grid-item1">Name</div>
-                <div class="grid-item2">Hostname</div>
-                <div class="grid-item8">Edge_Biot_1</div>
+                <div class="grid-item grid-item1" id="NameColumn">Name</div>
+                <div class="grid-item grid-item2">Hostname</div>
+                <div class="grid-item grid-item8">Edge_Biot_1</div>
 
-                <div class="grid-item9">Edge_Biot_1</div>
-                <div class="grid-item3">Attribut</div>
+                <div class="grid-item grid-item9">Edge_Biot_1</div>
+                <div class="grid-item grid-item3">Attribut</div>
                 <div class="success-grid">Active</div>
-                <div class="grid-item4">HA Status</div>
-                <div class="grid-item11">N/A</div>
+                <div class="grid-item grid-item4">HA Status</div>
+                <div class="grid-item grid-item11">N/A</div>
                 <a class="link-VC" href="#">
                     <img src="../../TMAX/projet/svg/ico_href.svg" class="ico-ref" alt="ico_href">
                     Go to VC Orchestrator
@@ -234,8 +240,15 @@
                 </a>
 
             </div>
+            <div class="close-section2" onclick="hideSection2()">
+            
+                <img src="../../TMAX/projet/svg/ico_cross_hover.svg" alt="close_icon" class="close-icon">
+                <span>Close</span>
+            </div>
         </div>
-
+        
+        
+        
 
 </body>
 

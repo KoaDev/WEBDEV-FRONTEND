@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Seance 1</title>
+</head>
+<body>
+    <section>
+        <form class="main">
+            <h1>INSCRIPTION</h1>
+            <div class="split">
+                <div class="sub1">
+                    <label>Nom</label>
+                    <input type="text" placeholder="votre nom" class="border">
+                    <span class="star">★</span>
+                </div>
+                <div class="sub2">
+                    <label>Prénom</label>
+                    <input type="text" placeholder="votre prénom" class="border">
+                    <span class="star">★</span>
+                </div>
+            </div>
+            <div class="column">
+                <dl style="width: 50%; padding-top: 2em;">
+                    <dt>Notice :</dt>
+                    <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</du>
+                </dl>
+            </div>
+            
+            <div class="column" style="padding-top: 2em;">
+                <div style="padding-top: 2em;">
+                    <label>Email</label>
+                    <input type="text" placeholder="votre email" class="border">
+                    <span class="star">★</span>
+                </div>
+                <div style="padding-top: 2em;">
+                    <label>Civilité</label>
+                    <input type="radio" id="mr" name="civilite">
+                    <label for="mr">Mr</label>
+                    <input type="radio" id="mme" name="civilite">
+                    <label for="mme">Mme</label>
+                    <input type="radio" id="me" name="civilite">
+                    <label for="me">Me</label>
+                </div>
+                <div style="padding-top: 2em;">
+                    <label>Commentaires</label>
+                    <textarea class="border"></textarea>
+                </div>
+                
+            </div>    
+            <div style="padding-top: 2em;">
+                <svg width="33" height="38" viewBox="0 0 33 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.5 2L30.7894 29H2.21058L16.5 2Z" fill="#FA5050"/>
+                    <path d="M17.9261 9.54545L17.7045 21.9801H15.3438L15.1222 9.54545H17.9261ZM16.5284 27.1619C16.0568 27.1619 15.6534 26.9972 15.3182 26.6676C14.983 26.3324 14.8182 25.929 14.8239 25.4574C14.8182 24.9915 14.983 24.5937 15.3182 24.2642C15.6534 23.929 16.0568 23.7614 16.5284 23.7614C16.9886 23.7614 17.3864 23.929 17.7216 24.2642C18.0568 24.5937 18.2273 24.9915 18.233 25.4574C18.2273 25.7699 18.1449 26.0568 17.9858 26.3182C17.8324 26.5739 17.6278 26.7784 17.3722 26.9318C17.1165 27.0852 16.8352 27.1619 16.5284 27.1619Z" fill="white"/>
+                </svg>                
+                <ul style="list-style-type: none;">
+                    <li>le champ nom est obligatoire</li>
+                    <li>le champ prénom est obligatoire</li>
+                    <li>le champ email est obligatoire</li>
+                </ul>                   
+            </div>
+            <div>
+                <input type="submit" value="Enregistrer" class="submit">
+            </div>
+        </form>
+    </section>
+</body>
+</html>

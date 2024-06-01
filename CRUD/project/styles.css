@@ -20,10 +20,14 @@ section{
     margin: 0;
 }
 
+.horizontalScroll{
+    overflow-x: auto;
+}
+
 .smallTriSection{
     display: flex;
     align-items: center;
-    color: var(--titleTab);
+    color: #333333;
     padding: 3rem 0 1rem 0;
     width: 9rem;
 }
@@ -31,7 +35,7 @@ section{
 .bigTriSection{
     display: flex;
     align-items: center;
-    color: var(--titleTab);
+    color: #333333;
     padding: 3rem 0 1rem 0;
     width: 14rem;
 }
@@ -188,6 +192,7 @@ button:hover{
     display: flex;
     align-items: center;
     padding-left: 8rem;
+    overflow-x: auto;
 }
 
 /*--------------------Network Items------------------*/
@@ -292,7 +297,7 @@ button:hover{
 }
 
 .provisioning{
-    background-color: var(--previsioning);
+    background-color: #ecfdef;
     border-radius: 60px;
     padding: 0.1rem 1.4rem 0.1rem 1.4rem;
 }
@@ -310,6 +315,82 @@ button:hover{
     color: var(--backgroundWhite);
 }
 
+/*------------------Modal---------------------*/
+
+.modal {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    width: 34%;
+    overflow: auto;
+    background-color: var(--backgroundWhite);
+    margin-top: 20rem;
+    padding: 2rem;
+    border-top: solid #F16E00 5px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), 6px 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.close{
+    display: flex;
+    justify-content: right;
+}
+
+.spaceBetween{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5rem;
+}
+
+.alignItemsCenter{
+    display: flex;
+    align-items: center;
+}
+
+.bloc{
+    border-bottom: solid var(--border) 1px;
+    padding-bottom: 2rem;
+}
+
+.spaceBox{
+    margin-left: 1rem;
+}
+
+.spaceLabel{
+    margin-top: 1rem;
+}
+
+.spaceLine{
+    margin-top: 2rem;
+}
+
+.showResultsButton{
+    width: 100%;
+    background-color: var(--backgroundWhite);
+    border: solid  var(--text) 1px ;
+    color: var(--text);
+    padding: 1rem 0 1rem 0;
+}
+
+#effacerBtn:hover{
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    width: 7%;
+    overflow: auto;
+    background-color: var(--backgroundWhite);
+    padding: 2rem;
+    border-top: solid #F16E00 5px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), 6px 6px 20px rgba(0, 0, 0, 0.19);
+}
+
 /* For Phones resolution*/
 @media (max-width: 576px) {
     /*------------------General CSS for HTML attribute--------------*/
@@ -318,8 +399,6 @@ button:hover{
     }
 
     section{
-        display: flex;
-        justify-content: center;
         padding-right: 0.2rem;
     }
 
@@ -329,6 +408,7 @@ button:hover{
         display: flex;
         justify-content: space-around;
         padding: 0;
+        overflow-x: auto;
     }
 
     .little-padding-top{
@@ -339,7 +419,7 @@ button:hover{
         display: flex;
         align-items: center;
         justify-content: center;
-        color: var(--titleTab);
+        color: #333333;
         padding: 0;
         width: auto;
         font-size: smaller;
@@ -361,10 +441,14 @@ button:hover{
         display: flex;
         align-items: center;
         justify-content: center;
-        color: var(--titleTab);
+        color: #333333;
         padding: 0;
         width: auto;
         font-size: small;
+    }
+
+    .horizontalScroll{
+        overflow-x: auto;
     }
 
 
@@ -411,135 +495,16 @@ button:hover{
 
     /*------------Tri Items Section------------*/
     .flexbox-center-tri{
-        padding: 3rem 0.3rem 0 0.3rem;
-        display: flex;
-        flex-direction: column;
-        width: auto;
+        overflow-x: auto;
     }
 
     /*------------Network Items Section-----------------*/
     .flexbox-center-list{
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: auto;
-        margin: 1rem 0 0 0.2rem;
+        width: 100%;
     }
 
-    .check{
-        width: auto;
+    /*----------------------Modal-------------*/
+    .modal {
+        margin-top: 26rem;
     }
-    
-    .stateActive{
-        width: auto;
-    }
-    
-    .stateActive > p{
-        width: auto;
-    }
-    
-    .stateUnkwown{
-        width: auto;
-        padding: 0 0.1rem 0 0.1rem;
-        font-size: small;
-    }
-    
-    .status{
-        width: auto;
-        font-weight: initial;
-        font-size: small;
-    }
-    
-    .statusUnkwown{
-        width: auto;
-        font-weight: initial;
-        font-size: small;
-    }
-    
-    .statusVoidProvising{
-        width: auto;
-        font-weight: initial;
-        font-size: small;
-        padding-top: 4.5rem;
-    }
-    
-    .statusVoidDraft{
-        width: auto;
-        font-weight: initial;
-        font-size: small;
-        padding-top: 2.67rem;
-    }
-    
-    .statusVoidInactive{
-        width: auto;
-        font-weight: initial;
-        font-size: small;
-        padding-top: 2.77rem;
-    }
-    
-    .network{
-        width: auto;
-        text-align: center;
-        font-size: small;
-    }
-    
-    .vendor{
-        width: auto;
-        font-size: small;
-    }
-    
-    .regions{
-        width: auto;
-        font-size: small;
-    }
-    
-    .gateways{
-        width: auto;
-        font-size: small;
-    }
-    
-    .locations{
-        width: auto;
-        font-size: small;
-    }
-    
-    .edges{
-        width: auto;
-        font-size: small;
-    }
-
-    /*State Background*/
-    .active{
-        background-color: var(--sucess);
-        padding: 0 0.1rem 0 0.1rem;
-        border-radius: 60px;
-        font-size: small;
-    }
-    
-    .provisioning{
-        background-color: var(--previsioning);
-        border-radius: 60px;
-        margin: 0.2rem 0.2rem 0 0.2rem;
-        padding: 0 0.1rem 0 0.1rem;
-        font-size: small;
-    }
-    
-    .draft{
-        background-color: var(--backgroundGrey);
-        border-radius: 60px;
-        padding: 0 0.1rem 0 0.1rem;
-        font-size: small;
-    }
-    
-    .inactive{
-        background-color: var(--text);
-        border-radius: 60px;
-        padding: 0 0.1rem 0 0.1rem;
-        color: var(--backgroundWhite);
-        font-size: smaller;
-    }
-
-
 }
