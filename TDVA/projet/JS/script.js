@@ -105,6 +105,8 @@ function hideSection() {
       section2.style.display = 'none';
       section3.style.display = 'none';
       section4.style.display = 'none';
+      grayArea.style.pointerEvents = 'none';
+      grayArea2.style.pointerEvents = 'none';
   }
 }
 
