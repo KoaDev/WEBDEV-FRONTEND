@@ -242,7 +242,7 @@ h3{
     background-color: var(--sucess); /* Green background */
     width: 22%;
    
-    padding: 0.em;
+    padding: 0.3em;
     text-align: center; /* Centers text inside the button */
     border-radius: 17px; /* Rounded corners */
     font-weight: bold; /* Makes the font bold */
