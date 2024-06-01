@@ -69,16 +69,24 @@ function selectOverview() {
   overviewIcon.dispatchEvent(new Event('click'));
 }
 
-// Sélection de l'icône spécifique
-const yourIcon = document.querySelector('.your-icon');
+function hideSection2() {
+  var section = document.getElementById("gray-area-2");
+  var section2 = document.getElementById("containerOverview");
+  var section3 = document.getElementById("golden-bar");
+  var section4 = document.getElementById("cockpit-title-id");
+ 
+  
+  
+  if (section) {
+      section.style.display = 'none';
+      section2.style.display = 'none';
+      section3.style.display = 'none';
+      section4.style.display = 'none';
+  }
+}
 
-// Écouteur d'événement pour le clic sur l'icône
-yourIcon.addEventListener('click', function() {
-    // Sélection de l'élément à afficher
-    const closeIcon = document.querySelector('.close-icon2');
-    
-    // Ajouter la classe pour afficher l'élément
-    closeIcon.style.display = 'inline'; // ou 'block' si c'est un élément en bloc
-});
+
+
+
 
 window.addEventListener('load', selectOverview);
