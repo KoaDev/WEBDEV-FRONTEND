@@ -27,7 +27,7 @@ h1 {
 .grid-item {
     margin: 1rem 2rem 2rem 0;
     padding: 1.5em;
-    border: 1.5px solid var(--border);
+    border: 2px solid var(--border);
 }
 
 h5 {
