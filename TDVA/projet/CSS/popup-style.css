@@ -16,6 +16,7 @@
     border-top: 1px solid var(--border);
     background-color: var(--backgroundGrey);
     opacity: 0;
+   
     
 }
 .containerOverview{
@@ -33,6 +34,7 @@
     border-color:var(--border) ;
     background-color: var(--backgroundGrey);
     opacity: 0;
+ 
 }
 
 #cockpit-title-id {
@@ -311,7 +313,7 @@ h4{
     font-size: 18px;
 }
 .close-section {
-    z-index: 0;
+    z-index: 10000;
     transform: translateY(+1000%);
     display: flex;
     align-items: center;
