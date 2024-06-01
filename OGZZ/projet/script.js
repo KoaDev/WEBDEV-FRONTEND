@@ -76,7 +76,6 @@ function display_NetworkInfo() {
 }
 
 /* Affichage des tables selons les onglets cliqués */
-
 function displayTable(idTable) {
   let tables = document.querySelectorAll("table");
   let title = document.getElementById("title-section");
@@ -94,6 +93,7 @@ function displayTable(idTable) {
   paginationFunction(idTable, pagination.id);
 }
 
+/*affiche n colonne et n boutons, on accède aux autre colonne en cliquant sur les boutons*/
 function paginationFunction(idTable, buttonBoxId){
   console.log(idTable);
   let rows = document.getElementById(idTable).getElementsByTagName("tbody")[0].children;
@@ -101,11 +101,12 @@ function paginationFunction(idTable, buttonBoxId){
   buttonBox.innerHTML = '';
   var currentIndex = 0;
 
-
+  /*creer n boutons en fonction du nombre de colonnes et du nombre de colonnes que l'on veut afficher*/
   let nbButtons = Math.ceil(rows.length/4) //pour ne pas avoir 7.5 mais 8 boutons
   let previous = document.createElement("span");
   previous.innerText = "<";
   buttonBox.appendChild(previous);
+
   for (let index = currentIndex; index < nbButtons; index++) {
     let button = document.createElement("button");
     button.innerText = index + 1;
@@ -119,7 +120,7 @@ function paginationFunction(idTable, buttonBoxId){
   let next = document.createElement("span");
   next.innerText = ">";
   buttonBox.appendChild(next);
-
+  /*--------------------------------------------------------------------------------------------------*/
 
   displayRows(rows, currentIndex) 
   buttonBox.getElementsByTagName("button")[0].focus();
@@ -127,6 +128,7 @@ function paginationFunction(idTable, buttonBoxId){
   //nécéssaire sinon ca affiche toutes les colones, et avoir le boutons 1 en focus
 }
 
+//affiche que les n colonnes en fonction du bouton appuyé
 function displayRows(rows, currentIndex){
   for (let index = 0; index < rows.length; index++) {
     if( index < currentIndex  || index > currentIndex + 4 -1 ){
@@ -138,6 +140,8 @@ function displayRows(rows, currentIndex){
     
   }
 }
+
+
 
 
 
