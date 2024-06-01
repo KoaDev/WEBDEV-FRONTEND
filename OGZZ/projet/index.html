@@ -72,7 +72,7 @@
 
                 <button class="flex-row" id="trash">
                     <img src="../../TMAX/projet/svg/ico_trash.svg">
-                    <p>Delete</p> <!--changer la couleur avec js si y'a des choses selectionnés-->
+                    <p>Delete</p> <!--changer la couleur avec js si y'a des choses selectionnÃ©s-->
                 </button>
 
                 <button class="flex-row">
@@ -210,31 +210,54 @@
                         <td data-label="Gateway name">Gateway A</td>
                         <td data-label="Region">Europe</td>
                         <td data-label="Type">Type1</td>
-                        <td data-label="Operational Status">Active</td>
-                    </tr>
+                        <td data-label="Operational Status">
+                            <div class="flex-row">
+                                <img src="../../TMAX/projet/svg/ico_warning.svg">
+                                <p>Degraded</p>
+                            </div>
+                        </td>                       </tr>
                     <tr>
                         <td data-label="Gateway name">Gateway B</td>
                         <td data-label="Region">Asia</td>
                         <td data-label="Type">Type2</td>
-                        <td data-label="Operational Status">Inactive</td>
-                    </tr>
+                        <td data-label="Operational Status">
+                            <div class="flex-row">
+                                <img src="../../TMAX/projet/svg/ico_danger.svg">
+                                <p>Down</p>
+                            </div>
+                        </td>                      </tr>
                     <tr>
                         <td data-label="Gateway name">Gateway C</td>
                         <td data-label="Region">North America</td>
                         <td data-label="Type">Type3</td>
-                        <td data-label="Operational Status">Active</td>
+                        <td data-label="Operational Status">
+                            <div class="flex-row">
+                                <img src="../../TMAX/projet/svg/ico_success.svg">
+                                <p>Up</p>
+                            </div>
+                        </td>                                           
                     </tr>
                     <tr>
                         <td data-label="Gateway name">Gateway D</td>
                         <td data-label="Region">South America</td>
                         <td data-label="Type">Type4</td>
-                        <td data-label="Operational Status">Inactive</td>
+                        <td data-label="Operational Status">
+                            <div class="flex-row">
+                                <img src="../../TMAX/projet/svg/ico_success.svg">
+                                <p>Up</p>
+                            </div>
+                        </td>                       
                     </tr>
                     <tr>
                         <td data-label="Gateway name">Gateway E</td>
                         <td data-label="Region">Africa</td>
                         <td data-label="Type">Type5</td>
-                        <td data-label="Operational Status">Active</td>
+                        <td data-label="Operational Status">
+                            <div class="flex-row">
+                                <img src="../../TMAX/projet/svg/ico_success.svg">
+                                <p>Up</p>
+                            </div>
+                        </td>                                          
                     </tr>
                 </tbody>
             </table>
@@ -252,43 +275,78 @@
                     <tr>
                         <td data-label="Site name">Alfreds Futterkiste</td>
                         <td data-label="Edges">5</td>
-                        <td data-label="Operational Status">Active</td>
+                        <td data-label="Operational Status">
+                            <div class="flex-row">
+                                <img src="../../TMAX/projet/svg/ico_success.svg">
+                                <p>Up</p>
+                            </div>
+                        </td>                       
                         <td data-label="Monitoring">Site monitoring <a href="#">></a></td>
                     </tr>
                     <tr>
                         <td data-label="Site name">Centro comercial Moctezuma</td>
                         <td data-label="Edges">3</td>
-                        <td data-label="Operational Status">Inactive</td>
+                        <td data-label="Operational Status">
+                            <div class="flex-row">
+                                <img src="../../TMAX/projet/svg/ico_danger.svg">
+                                <p>Down</p>
+                            </div>
+                        </td>       
                         <td data-label="Monitoring">Site monitoring <a href="#">></a></td>
                     </tr>
                     <tr>
                         <td data-label="Site name">Ernst Handel</td>
                         <td data-label="Edges">7</td>
-                        <td data-label="Operational Status">Active</td>
+                        <td data-label="Operational Status">
+                            <div class="flex-row">
+                                <img src="../../TMAX/projet/svg/ico_success.svg">
+                                <p>Up</p>
+                            </div>
+                        </td>                     
                         <td data-label="Monitoring">Site monitoring <a href="#">></a></td>
                     </tr>
                     <tr>
                         <td data-label="Site name">Island Trading</td>
                         <td data-label="Edges">4</td>
-                        <td data-label="Operational Status">Inactive</td>
+                        <td data-label="Operational Status">
+                            <div class="flex-row">
+                                <img src="../../TMAX/projet/svg/ico_success.svg">
+                                <p>Up</p>
+                            </div>
+                        </td> 
                         <td data-label="Monitoring">Site monitoring <a href="#">></a></td>
                     </tr>
                     <tr>
                         <td data-label="Site name">Laughing Bacchus Winecellars</td>
                         <td data-label="Edges">6</td>
-                        <td data-label="Operational Status">Active</td>
+                        <td data-label="Operational Status">
+                            <div class="flex-row">
+                                <img src="../../TMAX/projet/svg/ico_success.svg">
+                                <p>Up</p>
+                            </div>
+                        </td>                     
                         <td data-label="Monitoring">Site monitoring <a href="#">></a></td>
                     </tr>
                     <tr>
                         <td data-label="Site name">Magazzini Alimentari Riuniti</td>
                         <td data-label="Edges">2</td>
-                        <td data-label="Operational Status">Inactive</td>
+                        <td data-label="Operational Status">
+                            <div class="flex-row">
+                                <img src="../../TMAX/projet/svg/ico_danger.svg">
+                                <p>Down</p>
+                            </div>
+                        </td>      
                         <td data-label="Monitoring">Site monitoring <a href="#">></a></td>
                     </tr>
                     <tr>
                         <td data-label="Site name">Nowhere</td>
                         <td data-label="Edges">7</td>
-                        <td data-label="Operational Status">Inactive</td>
+                        <td data-label="Operational Status">
+                            <div class="flex-row">
+                                <img src="../../TMAX/projet/svg/ico_danger.svg">
+                                <p>Down</p>
+                            </div>
+                        </td>                   
                         <td data-label="Monitoring">Site monitoring <a href="#">></a></td>
                     </tr>
                 </tbody>
@@ -305,46 +363,76 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td data-label="Edge name">Edge1</td>
+                        <td data-label="Edge name">Edge 1</td>
                         <td data-label="Hostname">edge1-host</td>
                         <td data-label="Serial number">123456789</td>
                         <td data-label="Site">Alfreds Futterkiste</td>
-                        <td data-label="Operational Status">Active</td>
+                        <td data-label="Operational Status">
+                            <div class="flex-row">
+                                <img src="../../TMAX/projet/svg/ico_success.svg" >
+                                <p>Up</p>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
-                        <td data-label="Edge name">Edge2</td>
+                        <td data-label="Edge name">Edge 2</td>
                         <td data-label="Hostname">edge2-host</td>
                         <td data-label="Serial number">987654321</td>
                         <td data-label="Site">Centro comercial Moctezuma</td>
-                        <td data-label="Operational Status">Active</td>
+                        <td data-label="Operational Status">
+                            <div class="flex-row">
+                                <img src="../../TMAX/projet/svg/ico_success.svg" >
+                                <p>Up</p>
+                            </div>
+                        </td>                    
                     </tr>
                     <tr>
-                        <td data-label="Edge name">Edge3</td>
+                        <td data-label="Edge name">Edge 3</td>
                         <td data-label="Hostname">edge3-host</td>
                         <td data-label="Serial number">456789123</td>
                         <td data-label="Site">Ernst Handel</td>
-                        <td data-label="Operational Status">Inactive</td>
+                        <td data-label="Operational Status">
+                            <div class="flex-row">
+                                <img src="../../TMAX/projet/svg/ico_danger.svg" >
+                                <p>Down</p>
+                            </div>
+                        </td>                    
                     </tr>
                     <tr>
-                        <td data-label="Edge name">Edge4</td>
+                        <td data-label="Edge name">Edge 4</td>
                         <td data-label="Hostname">edge4-host</td>
                         <td data-label="Serial number">789123456</td>
                         <td data-label="Site">Island Trading</td>
-                        <td data-label="Operational Status">Active</td>
+                        <td data-label="Operational Status">
+                            <div class="flex-row">
+                                <img src="../../TMAX/projet/svg/ico_warning.svg">
+                                <p>Degraded</p>
+                            </div>
+                        </td>                      
                     </tr>
                     <tr>
-                        <td data-label="Edge name">Edge5</td>
+                        <td data-label="Edge name">Edge 5</td>
                         <td data-label="Hostname">edge5-host</td>
                         <td data-label="Serial number">321456987</td>
                         <td data-label="Site">Laughing Bacchus Winecellars</td>
-                        <td data-label="Operational Status">Inactive</td>
+                        <td data-label="Operational Status">
+                            <div class="flex-row">
+                                <img src="../../TMAX/projet/svg/ico_danger.svg" >
+                                <p>Down</p>
+                            </div>
+                        </td>                    
                     </tr>
                     <tr>
-                        <td data-label="Edge name">Edge6</td>
+                        <td data-label="Edge name">Edge 6</td>
                         <td data-label="Hostname">edge6-host</td>
                         <td data-label="Serial number">654321789</td>
                         <td data-label="Site">Magazzini Alimentari Riuniti</td>
-                        <td data-label="Operational Status">Active</td>
+                        <td data-label="Operational Status">
+                            <div class="flex-row">
+                                <img src="../../TMAX/projet/svg/ico_success.svg" >
+                                <p>Up</p>
+                            </div>
+                        </td>                    
                     </tr>
                 </tbody>
             </table>
