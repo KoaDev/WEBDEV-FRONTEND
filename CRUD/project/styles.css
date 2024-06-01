@@ -377,6 +377,20 @@ button:hover{
     cursor: pointer;
 }
 
+.popup {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    width: 7%;
+    overflow: auto;
+    background-color: var(--backgroundWhite);
+    padding: 2rem;
+    border-top: solid #F16E00 5px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), 6px 6px 20px rgba(0, 0, 0, 0.19);
+}
+
 /* For Phones resolution*/
 @media (max-width: 576px) {
     /*------------------General CSS for HTML attribute--------------*/
