@@ -114,8 +114,15 @@
 }
 
 /*========== Table de contenu ==========*/
+.mContentTable{
+    display: flex;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+
 .mContent{
-    display: block;
+    display: flex;
+    flex-wrap: nowrap;
     width: auto;
     border: solid;
     border-color: var(--secondary);
@@ -123,6 +130,11 @@
     margin: 0.25em;
 }
 
-.mContent tr th{
-    width: min-content;
+.mContent div{
+    background-color: aquamarine;
+
+    display: flex;
+    max-width: fit-content;
+    width: auto;
+    margin: auto 0 auto;
 }
