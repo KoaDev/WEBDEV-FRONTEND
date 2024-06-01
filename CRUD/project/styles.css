@@ -315,6 +315,68 @@ button:hover{
     color: var(--backgroundWhite);
 }
 
+/*------------------Modal---------------------*/
+
+.modal {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    width: 34%;
+    overflow: auto;
+    background-color: var(--backgroundWhite);
+    margin-top: 20rem;
+    padding: 2rem;
+    border-top: solid #F16E00 5px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), 6px 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.close{
+    display: flex;
+    justify-content: right;
+}
+
+.spaceBetween{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5rem;
+}
+
+.alignItemsCenter{
+    display: flex;
+    align-items: center;
+}
+
+.bloc{
+    border-bottom: solid var(--border) 1px;
+    padding-bottom: 2rem;
+}
+
+.spaceBox{
+    margin-left: 1rem;
+}
+
+.spaceLabel{
+    margin-top: 1rem;
+}
+
+.spaceLine{
+    margin-top: 2rem;
+}
+
+.showResultsButton{
+    width: 100%;
+    background-color: var(--backgroundWhite);
+    border: solid  var(--text) 1px ;
+    color: var(--text);
+    padding: 1rem 0 1rem 0;
+}
+
+#effacerBtn:hover{
+    cursor: pointer;
+}
+
 /* For Phones resolution*/
 @media (max-width: 576px) {
     /*------------------General CSS for HTML attribute--------------*/
@@ -425,5 +487,10 @@ button:hover{
     /*------------Network Items Section-----------------*/
     .flexbox-center-list{
         width: 100%;
+    }
+
+    /*----------------------Modal-------------*/
+    .modal {
+        margin-top: 26rem;
     }
 }
