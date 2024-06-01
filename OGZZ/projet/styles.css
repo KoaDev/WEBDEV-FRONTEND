@@ -201,12 +201,18 @@ table {
     border-collapse: collapse;
     width: 100%;
     display: none;
+    
 }
   
 td, th {
     border-bottom: 1px solid var(--border);
-    text-align: left;
     padding: 1%;
+    width: 100%;
+}
+
+tr{
+    display: flex;
+    justify-content: space-between;
 }
 
 tbody > tr:nth-child(2n + 1) {
@@ -216,7 +222,6 @@ tbody > tr:nth-child(2n + 1) {
 .sortBy {
     background-color: var(--draft);
 }
-
 
 
 
