@@ -11,12 +11,12 @@
 #gray-area {
     position: absolute;
     margin-top: 5px;
-    padding-bottom: 2%;
+    padding-bottom: 5em;
     width: 100%;
     border-top: 1px solid var(--border);
     background-color: var(--backgroundGrey);
     opacity: 0;
-    height: 25%;
+    
 }
 .containerOverview{
     opacity: 0.5;
@@ -27,9 +27,8 @@
 #gray-area-2 {
     position: absolute;
     margin-top: 5px;
-    padding-bottom: 2%;
+    padding-bottom: 5em;
     width: 100%;
-    height: 59%;
     border-top: 1px solid var(--border);
     border-color:var(--border) ;
     background-color: var(--backgroundGrey);
@@ -249,6 +248,12 @@ h3{
     box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Subtle shadow for 3D effect */
     text-shadow: 0 -1px 1px rgba(0,0,0,0.25); /* Subtle text shadow for depth */
 }
+/*POUR TOUT LES grid-itemX*/
+.grid-item, .success-grid, .link-VC, .box-overview{
+    /* Permet de couper les mots pour aller à la ligne */
+    word-break: break-word;
+    min-width: 3em;
+}
 
 .info-hover {
     position: absolute;
@@ -319,12 +324,7 @@ h4{
     .grid-container2{
         grid-template-columns: repeat(2, 1fr);
     }
-    /*POUR TOUT LES grid-itemX*/
-    .grid-item, .success-grid, .link-VC, .box-overview{
-        /* Permet de couper les mots pour aller à la ligne */
-        word-break: break-word;
-        min-width: 3em;
-    }
+    
     .info-hover, .info-hover2 {
         display: grid;
        
@@ -369,7 +369,7 @@ h4{
         
     }
     .info-hover2{
-        transform: translateX(-300px);
+        transform: translateX(-250px);
     }
     .info-hover{
         transform: translateX(-200px);
