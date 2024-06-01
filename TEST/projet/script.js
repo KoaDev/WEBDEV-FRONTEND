@@ -1,11 +1,11 @@
 function editContent(event){
-    console.log(event.target.id);
+    console.log(event.target.class);
     const element = event.target;
-    const testMalo=event.target.id;
+    const testMalo=event.target.class;
     console.log(element);
     console.log(testMalo);
 
-    document.getElementById(testMalo).innerHTML="test";
+    document.querySelectorAll(testMalo).innerHTML="test";
 }
 
 function initListeners(){
