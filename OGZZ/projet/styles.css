@@ -193,7 +193,7 @@ hgroup{
 
 /* -------------------------- Inventaires -------------------------- */
 #inventories {
-    background-color: #EEEEEE;
+    background-color: var(--backgroundGrey);
 }
 
 table {
@@ -204,13 +204,13 @@ table {
 }
   
 td, th {
-    border-bottom: 1px solid var(--lightgrey);
+    border-bottom: 1px solid var(--border);
     text-align: left;
     padding: 1%;
 }
 
-tr:nth-child(2n) {
-    background-color: var(--draft);
+tbody > tr:nth-child(2n + 1) {
+    background-color: var(--backgroundWhite);
 }
 
 .sortBy {
@@ -232,10 +232,9 @@ tr:nth-child(2n) {
 }
 
 .pagination button, .pagination span {
-    padding: 8px 12px;
-    margin: 0 5px;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    padding: 0.4% 1%;
+    margin: 0 0.3%;
+    background-color: var(--backgroundGrey);
     cursor: pointer;
     color: #333;
 }
