@@ -83,18 +83,46 @@
     width: min-content;
 }
 
+/*========== Tableau ==========*/
 .mStatTable{
-    display: flex;
     margin:auto;
     flex-wrap: nowrap;
-    text-wrap: wrap;
-    text-align: left;
     align-items: right;
-    width: fit-content;
+    width: auto;
+}
+
+.mStatTable tr th{
+    flex-wrap: nowrap;
+    width: auto;
+    align-items: center;
 }
 
 .upDown{
-    display: flex;
     float: right;
+    width: min-content;
+    height: inherit;
+    margin-left: auto;
+    color: var(--lightTitle);
+}
+
+.mStatTable p{
+    float: left;
+    text-wrap: wrap;
+    text-align: left;
+    margin: 0;
+    max-width: min-content;
+}
+
+/*========== Table de contenu ==========*/
+.mContent{
+    display: block;
+    width: auto;
+    border: solid;
+    border-color: var(--secondary);
+    border-width: 0.1em;
+    margin: 0.25em;
+}
+
+.mContent tr th{
     width: min-content;
 }
