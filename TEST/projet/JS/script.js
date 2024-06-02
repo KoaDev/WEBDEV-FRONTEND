@@ -9,7 +9,7 @@ const Network = {
     "Gateway Version": "5.0",
     "Orchestrator": "Go to VM-WARE Orchestrator",
     Description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, ante a malesuada eleifend, ligula urna vestibulum purus, nec mattis nunc est eget lacus. Donec congue arcu velit, ac fermentum eros finibus facilisis. Curabitur nec est eleifend, laoreet mi sit amet, hendrerit enim. Quisque consequat aliquet aliquet. Nullam pretium suscipit risus, id porttitor mi dictum quis. Quisque id porttitor leo. Praesent sit amet lacus eu tellus vulputate feugiat. Etiam at pharetra massa. Ut augue lectus, molestie vitae ante in, mollis feugiat ligula. Fusce hendrerit dolor id pretium feugiat.",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, ante a malesuada eleifend, ligula urna vestibulum purus, nec mattis nunc est eget lacus. Donec congue arcu velit, ac fermentum eros finibus facilisis. Curabitur nec est eleifend, laoreet mi sit amet, hendrerit enim. Quisque consequat aliquet aliquet. Nullam pretium suscipit risus, id porttitor mi dictum quis. Quisque id porttitor leo. Praesent sit amet lacus eu tellus vulputate feugiat. Etiam at pharetra massa. Ut augue lectus, molestie vitae ante in, mollis feugiat ligula. Fusce hendrerit dolor id pretium feugiat.",
   };
   
   //bon la fonction est longue mais j'ai pas trouvé mieux, au moins ça fait en fonction de l'objet juste au dessus
@@ -64,7 +64,12 @@ const Network = {
         div.appendChild(titre);
         div.appendChild(orch);
         group.appendChild(div);
-    } else {
+    } else if(info === "Network") { 
+        texte.className = "underline";
+        titre.className = "Network";
+        group.appendChild(titre);
+        group.appendChild(texte);
+    }else {
         group.appendChild(titre);
         group.appendChild(texte);
     }
@@ -81,7 +86,6 @@ const Network = {
   }
   
   window.onload = display_NetworkInfo();
-  
   /*------------------------------- Pop-UP ----------------------------------------*/
   const boutonsPopup = document.querySelectorAll('.afficheDetails');
 const popup = document.getElementById('popupid');
@@ -183,4 +187,3 @@ document.querySelectorAll('.checkbox').forEach(checkbox => {
 });
 
 document.getElementById('effacerBtn').addEventListener('click', reinitialiserCheckboxes);
-

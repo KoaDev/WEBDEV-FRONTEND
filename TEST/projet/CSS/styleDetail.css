@@ -14,7 +14,13 @@ section{
     align-items: center;
     column-gap: 10px;
 }
-
+.underline{
+    text-decoration: underline;
+    margin-top: -4%;
+}
+.Network{
+    margin-top: -2%;
+}
 
 .state_svg{
     width: 15%;
@@ -449,7 +455,7 @@ hgroup{
         display: flex;
         flex-direction: column-reverse;
     }
-    #rightBox{ 
+    #rightBox{
         justify-content: space-between;
     }
     #rightBox .search{
