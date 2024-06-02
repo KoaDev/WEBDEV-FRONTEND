@@ -141,7 +141,6 @@
 .mStatTable div{
     display: flex;
     flex-wrap: nowrap;
-    width: auto;
     align-items: center;
     text-align: center;
 }
@@ -173,13 +172,51 @@
     margin: 0.25em;
 }
 
-.mContent div{
+.mContent > div{
     display: flex;
-    max-width: auto;
-    width: auto;
-    min-width: fit-content;
-    margin: 0 auto 0 auto;
     align-items: center;
+    justify-content: center;
+    padding: 0.1rem;
+}
+
+.Provisioning{
+    width: 6.5rem;
+    justify-content: center;
+}
+
+.Operational{
+    width: 6rem;
+    justify-content: center;
+}
+
+.Region{
+    width: 5.75rem;
+    justify-content: center;
+}
+
+.Vendor{
+    width: 4.5rem;
+    justify-content: center;
+}
+
+.Network{
+    width: 6rem;
+    justify-content: center;
+}
+
+.Gateways{
+    width: 6rem;
+    justify-content: center;
+}
+
+.Locations{
+    width: 6rem;
+    justify-content: center;
+}
+
+.Edges{
+    width: 4rem;
+    justify-content: center;
 }
 
 .mActive{
@@ -187,4 +224,9 @@
     padding: 0.5rem 1rem;
     margin: 0.25rem;
     border-radius: 1rem;
+}
+
+.Extremitee{
+    max-width: 1rem;
+    width: 100%;
 }
