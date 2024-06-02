@@ -273,18 +273,21 @@ tbody > tr:nth-child(2n + 1) {
 
 /*-------------------------------------- media --------------------------------------*/
 
-@media screen and (max-width : 850px){
+@media screen and (max-width : 768px){
 
-    main{
-        padding-left: 1%;
-        padding-right: 1%;
-    }
-
-    
-    
     #card-grid{
         display: grid;
         grid-template-columns: auto auto;
+    }
+    .cards{
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #description{
+        width: 100%;
     }
     #summary
     {
@@ -293,29 +296,43 @@ tbody > tr:nth-child(2n + 1) {
         white-space: nowrap;
 
     }
-    .cards{
-        padding-top: 3%;
-        padding-bottom: 3%;
-        padding-left: 6%;
-        padding-right: 6%;
-    }
-
-
-    #description{
-        width: 100%;
-    }
     #search-bar{
         display: flex;
         flex-direction: column-reverse;
+        
     }
+    #rightBox
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+
+@media screen and (max-width : 576px){
+    tr{
+        font-size: 13px;
+    }
+    main{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    #summary
+    {
+        display: flex;
+        overflow: auto;
+        white-space: nowrap;
+
+    }
+  
     #rightBox{
-        justify-content: space-between;
+        justify-content:space-around;
     }
     #rightBox .search{
         height: 70px;
     }
-
-
 
     table thead {
         display: none;
