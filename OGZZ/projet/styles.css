@@ -1,361 +1,346 @@
 @import url(../../TMAX/style.css);
 
-
-section{
-    padding-left: 2%;
-    padding-right: 2%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-    border-bottom: 1px solid var(--border);
+section {
+  padding-left: 2%;
+  padding-right: 2%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  border-bottom: 1px solid var(--border);
 }
-.flex-row{
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
+.flex-row {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
 }
 
-
-.state_svg{
-    width: 15%;
-    height: 15%;
+.state_svg {
+  width: 15%;
+  height: 15%;
 }
-button{
-    border: none;
-    background-color: var(--white);
-    cursor: pointer;
+button {
+  border: none;
+  background-color: var(--backgroundWhite);
+  cursor: pointer;
 }
 /*----------------------------------------NETWORK NAME, 3 BOUTONS, et fil d'ariane-------------------------*/
-nav{
-    display: flex;
+nav {
+  display: flex;
 }
-#network-name{
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
-}
-
-#actions{
-    display: flex;
-    gap: 1%;
+#network-name {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
 }
 
-#actions button{
-    padding: 0%;
-    border: none;
+#actions {
+  display: flex;
+  gap: 1%;
 }
 
-#actions button:not(:last-child)::after{   /*permet de faire le sÃ©parateur entre les boutons ref: https://stackoverflow.com/questions/41631136/add-dividing-line-between-flex-items-with-equal-space-distribution + w3school (::after) */
-    content: " ";
-    width: 0px;
-    height: 100%;
-    border: 1px solid var(--border);
+#actions button {
+  padding: 0%;
+  border: none;
 }
 
-#trash{
-    color: var(--border);
+#actions button:not(:last-child)::after {
+  /*permet de faire le sÃ©parateur entre les boutons ref: https://stackoverflow.com/questions/41631136/add-dividing-line-between-flex-items-with-equal-space-distribution + w3school (::after) */
+  content: " ";
+  width: 0px;
+  height: 100%;
+  border: 1px solid var(--border);
+}
+
+#trash {
+  color: var(--border);
 }
 
 /*-------------------------------------------------------------------------------------------------------------------*/
 
-#info-section{
-    padding-top: 2%;
-    padding-bottom: 2%;
-    border : none;
+#info-section {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border: none;
 }
-
-
-
 
 /*---------------------------------------------------INFO SUR LE NETWORK-------------------------------------------*/
-#card-grid{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    column-gap: 2%;
-    row-gap: 15px;
+#card-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  column-gap: 2%;
+  row-gap: 15px;
 }
-hgroup{
-    padding-top: 6%;
-    padding-bottom: 6%;
+hgroup {
+  padding-top: 6%;
+  padding-bottom: 6%;
 }
-#state, #status{                   /*c'est mieux d'avoir des id, pour pouvoir afficher les bons svg avec le js*/
-    border: 2px solid var(--border);
-    display: flex;
-    justify-content: center;
+#state,
+#status {
+  /*c'est mieux d'avoir des id, pour pouvoir afficher les bons svg avec le js*/
+  border: 2px solid var(--border);
+  display: flex;
+  justify-content: center;
 }
-.group-title{
-    margin: 0;
-    margin-bottom: 2%;
-    color: var(--lightTitle);
+.group-title {
+  margin: 0;
+  margin-bottom: 2%;
+  color: var(--lightTitle);
 }
-.group-text{
-    margin: 0;
-    font-size: 100%;
-}
-
-#description{
-    width: 75%;
+.group-text {
+  margin: 0;
+  font-size: 100%;
 }
 
+#description {
+  width: 75%;
+}
 
 /*-------------------------------------STYLE SPECIFIQUE STATUT---------------------------------------------------*/
-#state .group-text{
-    background-color: var(--sucess);
-    border-radius: 10px;
-    width: 50%;
-    text-align: center;
+#state .group-text {
+  background-color: var(--success);
+  border-radius: 10px;
+  width: 50%;
+  text-align: center;
 }
-#down, #degraded{
-    display: none;
+#down,
+#degraded {
+  display: none;
 }
 /*--------------------------------------------------------------------------------------------------------------*/
-
-
 
 /*------------------------TOPO DES SITE, REGION, EDGES ECT SOUS FORME DE CARTES DE VISITE-----------------------*/
-#summary{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    column-gap: 2%;
+#summary {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 2%;
 }
-.cards{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    align-items: center;
+.cards {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
 
-    padding-top: 10%;
-    padding-bottom: 10%;
-    padding-left: 13%;
-    padding-right: 13%;
-    border : 2px solid var(--border);
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 13%;
+  padding-right: 13%;
+  border: 2px solid var(--border);
 }
-.leftSide{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.leftSide > h2{
-    margin: 0;
-    color: var(--primary);
-    font-size: 180%;
+.leftSide > h2 {
+  margin: 0;
+  color: var(--primary);
+  font-size: 180%;
 }
-.leftSide > p{
-    margin: 0;
+.leftSide > p {
+  margin: 0;
 }
 /*--------------------------------------------------------------------------------------------------------------*/
 
-
-#search-bar{
-    display: grid;
-    grid-template-columns: 30% auto;
+#search-bar {
+  display: grid;
+  grid-template-columns: 30% auto;
 }
 
-
-#leftBox{
-    display: flex;
-    justify-content: space-between;
-
+#leftBox {
+  display: flex;
+  justify-content: space-between;
 }
 
-.onglet{
-    border: none;
-    justify-content: center;
-    align-items: center;
-    padding: 3%;
-    background-color: none;
+.onglet {
+  border: none;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  background-color: none;
 }
 
-.onglet:focus{
-    border-bottom: 3px solid var(--primary);
-    margin-bottom: -1px;
+.onglet:focus {
+  border-bottom: 3px solid var(--primary);
+  margin-bottom: -1px;
 }
 
-#rightBox{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    column-gap: 5%;
-    padding: 0%;
+#rightBox {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 5%;
+  padding: 0%;
 }
-#text-input{
-    height: 100%;
-    border: none;
-    border-bottom: 2px solid var(--lightTitle);
-    padding-right: 1%;
-}
-
-#text-input > *{
-    height: 95%;
-    border: none;
+#text-input {
+  height: 100%;
+  border: none;
+  border-bottom: 2px solid var(--lightTitle);
+  padding-right: 1%;
 }
 
-#text-input > input:focus-visible{
-    outline: none;
+#text-input > * {
+  height: 95%;
+  border: none;
 }
 
-
+#text-input > input:focus-visible {
+  outline: none;
+}
 
 /* -------------------------- Tableau/Inventaires -------------------------- */
 #inventories {
-    background-color: var(--backgroundGrey);
+  background-color: var(--backgroundGrey);
 }
 
 table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-    display: none;
-    
-}
-  
-td, th {
-    border-bottom: 1px solid var(--border);
-    padding: 1%;
-    width: 100%;
-    display: flex;
-    align-items: center;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  display: none;
 }
 
-tr{
-    display: flex;
-    justify-content: space-between;
+td,
+th {
+  border-bottom: 1px solid var(--border);
+  padding: 1%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+tr {
+  color: var(--titleTab);
+  display: flex;
+  justify-content: space-between;
 }
 
 tbody > tr:nth-child(2n + 1) {
-    background-color: var(--backgroundWhite);
+  background-color: var(--backgroundWhite);
 }
 
 .sortBy {
-    background-color: var(--draft);
+  background-color: var(--draft);
 }
 
-.site-monitoring-link{
-    display: flex;
-    align-items: center;
-    color: var(--secondary);
+.site-monitoring-link {
+  display: flex;
+  align-items: center;
+  color: var(--secondary);
 }
 
 /* Pagination */
 /* Pagination styling */
 .pagination {
-    display: flex;
-    justify-content: flex-end;
-    margin: 20px 0;
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
 }
 
-.pagination button, .pagination span {
-    padding: 0.4% 1%;
-    margin: 0 0.3%;
-    background-color: var(--backgroundGrey);
-    cursor: pointer;
-    color: var(--verydarkgray);
+.pagination button,
+.pagination span {
+  padding: 0.4% 1%;
+  margin: 0 0.3%;
+  background-color: var(--backgroundGrey);
+  cursor: pointer;
+  color: var(--titleTab);
 }
 
-.pagination button:disabled, .pagination span.dots {
-    background-color: var(--honeydew);
-    cursor: not-allowed;
+.pagination button:disabled,
+.pagination span.dots {
+  background-color: var(--previsioning);
+  cursor: not-allowed;
 }
 
 .pagination button:focus {
-    border: 2px solid var(--orangeIcon);
-    font-weight: bold;
+  border: 2px solid var(--orangeIcon);
+  font-weight: bold;
 }
 
 .pagination .dots {
-    border: none;
-    cursor: default;
+  border: none;
+  cursor: default;
 }
 
 /*-------------------------------------- media --------------------------------------*/
 
-@media screen and (max-width : 768px){
+@media screen and (max-width: 768px) {
+  #card-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .cards {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 
-    #card-grid{
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-    .cards{
-        padding-top: 3%;
-        padding-bottom: 3%;
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-
-    #description{
-        width: 100%;
-    }
-    #summary
-    {
-        display: flex;
-        overflow: auto;
-        white-space: nowrap;
-
-    }
-    #search-bar{
-        display: flex;
-        flex-direction: column-reverse;
-        
-    }
-    #rightBox
-    {
-        display: flex;
-        justify-content: space-around;
-    }
+  #description {
+    width: 100%;
+  }
+  #summary {
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  #search-bar {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #rightBox {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
+@media screen and (max-width: 576px) {
+  tr {
+    font-size: 13px;
+  }
+  main {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
 
+  #summary {
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+  }
 
-@media screen and (max-width : 576px){
-    tr{
-        font-size: 13px;
-    }
-    main{
-        padding-left: 1%;
-        padding-right: 1%;
-    }
+  #rightBox {
+    justify-content: space-around;
+  }
+  #rightBox .search {
+    height: 70px;
+  }
 
-    #summary
-    {
-        display: flex;
-        overflow: auto;
-        white-space: nowrap;
+  table thead {
+    display: none;
+  }
 
-    }
-  
-    #rightBox{
-        justify-content:space-around;
-    }
-    #rightBox .search{
-        height: 70px;
-    }
+  table tr {
+    display: flex;
+    flex-direction: column;
 
-    table thead {
-        display: none;
-    }
+    border: 1px solid var(--border);
+  }
 
-    table tr {
-        display: flex;
-        flex-direction: column;
+  table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 
-        border: 1px solid var(--border);
-    }
-  
-    table td::before {
-        content: attr(data-label);
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-    
-    table td {
-        display: grid;
-        grid-template-columns: auto 40%;
-        align-items: center;
+  table td {
+    display: grid;
+    grid-template-columns: auto 40%;
+    align-items: center;
 
-        border-bottom: none;
-        font-size: var(--base_font_size);
-    }
+    border-bottom: none;
+    font-size: var(--base_font_size);
+  }
 
-    table td:last-child {
-        border-bottom: 0;
-    }
+  table td:last-child {
+    border-bottom: 0;
+  }
 }

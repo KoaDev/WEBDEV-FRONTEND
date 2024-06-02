@@ -85,7 +85,7 @@ h3{
     margin: 20px;
     margin-left: 2%;
     margin-bottom: 0px;
-    background-color:white;
+    background-color:var(--backgroundWhite);
 }
 
 .grid-container2 {
@@ -239,7 +239,7 @@ h3{
     font-weight: bold;
     vertical-align: top;
     margin: 0 2% 2% 4%;
-    background-color: var(--sucess); /* Green background */
+    background-color: var(--success); /* Green background */
     width: 22%;
    
     padding: 0.3em;
@@ -270,7 +270,7 @@ h3{
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
     grid-template-rows: repeat(4, auto); /* 4 rows, height adjusts to content */
     gap: 20px; /* Space between grid items */
-    background-color: white; /* A modif par la variable que maxime va faire*/
+    background-color: var(--backgroundWhite); /* A modif par la variable que maxime va faire*/
     border: 1px solid var(--border);
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add shadow effect */
@@ -287,7 +287,7 @@ h3{
     grid-template-columns: repeat(2, auto); /* 3 columns */
     grid-template-rows: repeat(4, auto); /* 4 rows, height adjusts to content */
     gap: 15px; /* Space between grid items */
-    background-color: white; /* A modif par la variable que maxime va faire*/
+    background-color: var(--backgroundWhite); /* A modif par la variable que maxime va faire*/
     border: 1px solid var(--border);
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add shadow effect */

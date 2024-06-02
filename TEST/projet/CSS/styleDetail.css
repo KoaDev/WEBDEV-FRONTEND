@@ -28,7 +28,7 @@ section{
 }
 button{
     border: none;
-    background-color: var(--white);
+    background-color: var(--backgroundWhite);
     cursor: pointer;
 }
 /*----------------------------------------NETWORK NAME, 3 BOUTONS, et fil d'ariane-------------------------*/
@@ -110,7 +110,7 @@ hgroup{
 
 /*-------------------------------------STYLE SPECIFIQUE STATUT---------------------------------------------------*/
 #state .group-text{
-    background-color: var(--sucess);
+    background-color: var(--success);
     border-radius: 10px;
     width: 50%;
     text-align: center;
@@ -144,7 +144,7 @@ hgroup{
 }
 .leftSide > h2{
     margin: 0;
-    color: var(--orangeIcon);
+    color: var(--primary);
     font-size: 180%;
 }
 .leftSide > p{
@@ -306,7 +306,7 @@ hgroup{
     }
   
   .inventory{
-      background-color: #F4F4F4;
+      background-color: var(--backgroundGrey);
       align-items: center;
       margin: 0.4rem 3rem 0 3rem;
       padding: 0 0 0 1.5rem;
@@ -319,7 +319,7 @@ hgroup{
     }
     
     tr:nth-child(even) {
-      background-color: #ffffff;
+      background-color: var(--backgroundWhite);
     }
   
   /*nav barre bottom right*/
@@ -377,7 +377,7 @@ hgroup{
     background-color: var(--backgroundWhite);
     margin-top: 53.1rem;
     padding: 2rem;
-    border-top: solid #F16E00 5px;
+    border-top: solid var(--orangeIcon) 5px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), 6px 6px 20px rgba(0, 0, 0, 0.19);
   }
   
