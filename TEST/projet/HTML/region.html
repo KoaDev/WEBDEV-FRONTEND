@@ -81,128 +81,144 @@
             </div>
 
             <div class="mActions">
-                <div class="mActionGauche">Test</div>
+                <div class="mActionGauche">
+                    <div id="mAction">Action&nbsp<img src="../../../TMAX/projet/svg/ico_arrow_down_hover.svg" alt="">
+                    </div>
+                    <div id="mRefresh"><img src="../../../TMAX/projet/svg/ico_refresh.svg" alt="">&nbspRefresh</div>
+                </div>
 
                 <div class="mActionDroite">
                     <div class="mRecherche">
-                        <input type="text" class="entree" placeholder="Search for...">
+                        <p>Search for...</p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <img id="image" src="../../../TMAX/projet/svg/ico_search_hover.svg">
                     </div>
-                    <div class="mFiltre">Filtrer</div>
+                    <div class="mFiltre">
+                        <img id="image" src="../../../TMAX/projet/svg/ico_config.svg">
+                        Filtrer
+                    </div>
                 </div>
             </div>
 
-            <table class="mStatTable">
-                <tr>
-                    <th>
-                        <div class="upDown">↑↓</div>
-                        <p>Provisioning state</p>
-                    </th>
-                    <th>
-                        <div class="upDown">↑↓</div>
-                        <p>Operational status</p>
-                    </th>
-                    <th>
-                        <div class="upDown">↑↓</div>
-                        <p>Region</p>
-                    </th>
-                    <th>
-                        <div class="upDown">↑↓</div>
-                        <p>Vendor</p>
-                    </th>
-                    <th>
-                        <div class="upDown">↑↓</div>
-                        <p>Network</p>
-                    </th>
-                    <th>
-                        <div class="upDown">↑↓</div>
-                        <p>Gateways</p>
-                    </th>
-                    <th>
-                        <div class="upDown">↑↓</div>
-                        <p>Locations</p>
-                    </th>
-                    <th>
-                        <div class="upDown">↑↓</div>
-                        <p>Edges</p>
-                    </th>
-                </tr>
-            </table>
+            <div class="mStatTable">
+                <div class="Provisioning">
+                    <p>Provisioning State</p>
+                    <img src="../../../TMAX/projet/svg/ico_tri.svg">
+                </div>
+                <div class="Operational">
+                    <p>Operational status</p>
+                    <img src="../../../TMAX/projet/svg/ico_tri.svg">
+                </div>
+                <div class="Region">
+                    <p>Regions</p>
+                    <img src="../../../TMAX/projet/svg/ico_tri.svg">
+                </div>
+                <div class="Vendor">
+                    <p>Vendor</p>
+                    <img src="../../../TMAX/projet/svg/ico_tri.svg">
+                </div>
+                <div class="Network">
+                    <p>Network name</p>
+                    <img src="../../../TMAX/projet/svg/ico_tri.svg">
+                </div>
+                <div class="Gateways">
+                    <p>Gateways</p>
+                    <img src="../../../TMAX/projet/svg/ico_tri.svg">
+                </div>
+                <div class="Locations">
+                    <p>Locations</p>
+                    <img src="../../../TMAX/projet/svg/ico_tri.svg">
+                </div>
+                <div class="Edges">
+                    <p>Edges</p>
+                    <img src="../../../TMAX/projet/svg/ico_tri.svg">
+                </div>
+            </div>
 
-            <table class="mContentTable">
-                <tr>
-                    <div class="mContent">
-                        <input class="content1" type="checkbox">
-                        <div class="content1" id="Provisioning"></div>
-                        <div class="content1" id="Operational"></div>
-                        <div class="content1" id="Region"></div>
-                        <div class="content1" id="Vendor"></div>
-                        <div class="content1" id="Network"></div>
-                        <div class="content1" id="Gateways"></div>
-                        <div class="content1" id="Locations"></div>
-                        <div class="content1" id="Edges"></div>
-                        <div class="content1" id="Actions">...</div>
+            <div class="mContentTable">
+                <div class="mContent">
+                    <input type="checkbox" class="Extremitee">
+                    <div class="Provisioning">
+                        <p class="mActive">Active</p>
                     </div>
-                </tr>
-                <tr>
-                    <div class="mContent">
-                        <input class="content2" type="checkbox">
-                        <div class="content2" id="Provisioning"></div>
-                        <div class="content2" id="Operational"></div>
-                        <div class="content2" id="Region"></div>
-                        <div class="content2" id="Vendor"></div>
-                        <div class="content2" id="Network"></div>
-                        <div class="content2" id="Gateways"></div>
-                        <div class="content2" id="Locations"></div>
-                        <div class="content2" id="Edges"></div>
-                        <div class="content2" id="Actions">...</div>
+                    <div class="Operational">
+                        <img src="../../../TMAX/projet/svg/ico_success.svg">
+                        &nbspUp
                     </div>
-                </tr>
-                <tr>
-                    <div class="mContent">
-                        <input class="content3" type="checkbox">
-                        <div class="content3" id="Provisioning"></div>
-                        <div class="content3" id="Operational"></div>
-                        <div class="content3" id="Region"></div>
-                        <div class="content3" id="Vendor"></div>
-                        <div class="content3" id="Network"></div>
-                        <div class="content3" id="Gateways"></div>
-                        <div class="content3" id="Locations"></div>
-                        <div class="content3" id="Edges"></div>
-                        <div class="content3" id="Actions">...</div>
+                    <div class="Region">Region Name</div>
+                    <div class="Vendor">VMWARE</div>
+                    <div class="Network">Network Name</div>
+                    <div class="Gateways">4</div>
+                    <div class="Locations">30</div>
+                    <div class="Edges">15</div>
+                    <div class="Actions Extremitee">...</div>
+                </div>
+                <div class="mContent">
+                    <input type="checkbox" class="Extremitee">
+                    <div class="Provisioning">
+                        <p class="mActive">Active</p>
                     </div>
-                </tr>
-                <tr>
-                    <div class="mContent">
-                        <input class="content4" type="checkbox">
-                        <div class="content4" id="Provisioning"></div>
-                        <div class="content4" id="Operational"></div>
-                        <div class="content4" id="Region"></div>
-                        <div class="content4" id="Vendor"></div>
-                        <div class="content4" id="Network"></div>
-                        <div class="content4" id="Gateways"></div>
-                        <div class="content4" id="Locations"></div>
-                        <div class="content4" id="Edges"></div>
-                        <div class="content4" id="Actions">...</div>
+                    <div class="Operational">
+                        <img src="../../../TMAX/projet/svg/ico_warning.svg" alt="icône warning">
+                        &nbspDegraded
                     </div>
-                </tr>
-                <tr>
-                    <div class="mContent">
-                        <input class="content5" type="checkbox">
-                        <div class="content5" id="Provisioning"></div>
-                        <div class="content5" id="Operational"></div>
-                        <div class="content5" id="Region"></div>
-                        <div class="content5" id="Vendor"></div>
-                        <div class="content5" id="Network"></div>
-                        <div class="content5" id="Gateways"></div>
-                        <div class="content5" id="Locations"></div>
-                        <div class="content5" id="Edges"></div>
-                        <div class="content5" id="Actions">...</div>
+                    <div class="Region">Region Name</div>
+                    <div class="Vendor">VMWARE</div>
+                    <div class="Network">Network Name</div>
+                    <div class="Gateways">4</div>
+                    <div class="Locations">30</div>
+                    <div class="Edges">15</div>
+                    <div class="Actions Extremitee">...</div>
+                </div>
+                <div class="mContent">
+                    <input type="checkbox" class="Extremitee">
+                    <div class="Provisioning">
+                        <p class="mActive">Active</p>
                     </div>
-                </tr>
-            </table>
+                    <div class="Operational">
+                        <img src="../../../TMAX/projet/svg/ico_danger.svg" alt="icône danger">
+                        &nbspDown
+                    </div>
+                    <div class="Region">Region Name</div>
+                    <div class="Vendor">VMWARE</div>
+                    <div class="Network">Network Name</div>
+                    <div class="Gateways">4</div>
+                    <div class="Locations">30</div>
+                    <div class="Edges">15</div>
+                    <div class="Actions Extremitee">...</div>
+                </div>
+                <div class="mContent">
+                    <input type="checkbox" class="Extremitee">
+                    <div class="Provisioning">
+                        <p class="mDraft">Draft</p>
+                    </div>
+                    <div class="Operational"></div>
+                    <div class="Region">Region Name</div>
+                    <div class="Vendor">VMWARE</div>
+                    <div class="Network">Network Name</div>
+                    <div class="Gateways">4</div>
+                    <div class="Locations">30</div>
+                    <div class="Edges">15</div>
+                    <div class="Actions Extremitee">...</div>
+                </div>
+                <div class="mContent">
+                    <input type="checkbox" class="Extremitee">
+                    <div class="Provisioning">
+                        <p class="mInactive">Inactive</p>
+                    </div>
+                    <div class="Operational"></div>
+                    <div class="Region">Region Name</div>
+                    <div class="Vendor">VMWARE</div>
+                    <div class="Network">Network Name</div>
+                    <div class="Gateways">4</div>
+                    <div class="Locations">30</div>
+                    <div class="Edges">15</div>
+                    <div class="Actions Extremitee">...</div>
+                </div>
+            </div>
         </div>
     </main>
 
 </body>
-<script src="../script.js" type="text/javascript"></script>
+<script src="../JS/mscript.js" type="text/javascript"></script>
+
 </html>

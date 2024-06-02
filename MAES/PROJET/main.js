@@ -1,28 +1,11 @@
-function toggleVisibility(section) {
-    const contentDiv = document.getElementById(`${section}Content`);
-    const viewButton = document.querySelector(`#${section}Content`).previousElementSibling; // Sélectionne le bouton lié à cette section
-
-    // Basculer la visibilité du contenu et le texte du bouton
-    if (contentDiv.style.display === "none" || contentDiv.style.display === "") {
-        contentDiv.style.display = "block";
-        viewButton.textContent = "Close"; // Change le texte en "Close"
+function toggleDetails(event, id) {
+    event.preventDefault();
+    var details = document.getElementById(id);
+    if (details.style.display === "none" || details.style.display === "") {
+        details.style.display = "block";
+        event.target.innerHTML = 'Close <i class="fas fa-chevron-up"></i>';
     } else {
-        contentDiv.style.display = "none";
-        viewButton.textContent = "View More"; // Change le texte en "View More"
+        details.style.display = "none";
+        event.target.innerHTML = 'View more <i class="fas fa-chevron-down"></i>';
     }
-}
-
-function loadContent(section) {
-    const contentDiv = document.getElementById(`${section}Content`);
-    const message = document.getElementById(`${section}Message`);
-    const table = document.getElementById(`${section}Table`);
-    const loadButton = contentDiv.querySelector('button'); // Sélectionne le bouton "Charger"
-
-    if (table) {
-        table.style.display = "block"; // Affiche le tableau
-    }
-
-    // Cache le message et le bouton Charger
-    message.style.display = "none";
-    loadButton.style.display = "none";
 }

@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <title>Location Name</title>
     <link rel="icon" href="../../TMAX/projet/svg/ico_logo.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../../TMAX/projet/custom.css">
     <link rel="stylesheet" href="../../TMAX/projet/style.css">
+    <link rel="stylesheet" href="../../TMAX/projet/custom.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -52,7 +52,7 @@
     <nav class="breadcrumb">
         <a href="#">Home</a>
         <a href="#">Regions</a>
-        <a href="#">Location Name</a>
+        <a href="#">Location Name2</a>
     </nav>
 
     <hr class="spacer-line">
@@ -227,36 +227,10 @@
         </div>
         <div class="details" id="delivery-details">
             <p>Find Here all deliveries for hardware components</p>
-            <table class="delivery-table">
-                <thead>
-                    <tr>
-                        <th>Device</th>
-                        <th>Model</th>
-                        <th>Number</th>
-                        <th>Expected Delivery</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Edge</td>
-                        <td>Edge510-lte</td>
-                        <td>4</td>
-                        <td>01/09/2023</td>
-                    </tr>
-                    <tr>
-                        <td>Edge</td>
-                        <td>Edge530-lte</td>
-                        <td>2</td>
-                        <td>28/08/2023</td>
-                    </tr>
-                    <tr>
-                        <td>Edge</td>
-                        <td>Edge550</td>
-                        <td>1</td>
-                        <td>30/09/2023</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="no-deliveries-alert"
+                style="background-color: #fffaeb; color: #856404; padding: 10px; border: 1px solid #ffeeba; border-radius: 5px;">
+                <i class="fas fa-exclamation-circle"></i> No deliveries to display
+            </div>
         </div>
     </div>
 

@@ -38,71 +38,111 @@
 .mActions{
     display: flex;
     flex-wrap: nowrap;
-    border: solid;
-    border-color: var(--secondary);
-    border-width: 1px;
+    justify-content: space-between;
 
     width: auto;
+    border:solid;
+    border-color: var(--border);
+    border-width: 0.1rem 0 0.1rem 0;
 }
 
+/*Actions à gauche du haut du site*/
 .mActions .mActionGauche{
     margin: 0;
     padding: 0;
-    width: 65%;
-
-    border: solid;
-    border-color: black;
-    border-width: 1px;
-
+    max-width: fit-content;
+    display: flex;
+    flex-wrap: nowrap;
+    
     float: left;
-    color: red;
 }
 
+.mActionGauche div{
+    display: flex;
+    border: solid;
+    padding: 0 1rem;
+    border-color: var(--border);
+    border-width: 0 0.1rem 0 0;
+    width: min-content;
+    text-align: center;
+    align-items: center;
+
+}
+
+/*#mAction{
+    float: left;
+    height: 1rem;
+    padding: 0.25rem 0.5rem;
+    border: solid;
+    border-width: 0.1rem 0.1rem 0.1rem 0;
+    width: fit-content;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+}
+
+#mRefresh{
+    float: left;
+    height: 1rem;
+    padding: 0.25rem 0.5rem;
+    border: solid;
+    border-width: 0.1rem 0.05rem 0.1rem 0;
+    width: fit-content;
+    margin: 0;
+    text-align: center;
+    align-content: baseline;
+}*/
+
+/*Actions à droite du haut du site*/
 .mActions .mActionDroite{
     margin: 0;
     padding: 0;
-    width: 35%;
+    max-width: fit-content;
     display: flex;
     flex-wrap: nowrap;
-    background-color: aqua;
-
-    border: solid;
-    border-color: black;
-    border-width: 1px;
     
     float: right;
 }
 
 .mRecherche{
     display: flex;
-    width: max-content;
+    border:solid;
+    max-width: fit-content;
+    width: auto;
+    border-color: var(--border);
+    border-width: 0 0.1rem 0 0.1rem;
+    margin: 0;
+    align-items: center;
+}
+
+.mRecherche > p{
+    text-wrap: nowrap;
 }
 
 .mFiltre{
     display: flex;
     width: min-content;
+    text-align: center;
+    align-items: center;
+    margin: auto 1rem;
 }
 
 /*========== Tableau ==========*/
 .mStatTable{
+    display: flex;
     margin:auto;
+    padding: 0.75rem 0 0.5rem;
     flex-wrap: nowrap;
-    align-items: right;
-    width: auto;
-}
-
-.mStatTable tr th{
-    flex-wrap: nowrap;
-    width: auto;
+    justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
-.upDown{
-    float: right;
-    width: min-content;
-    height: inherit;
-    margin-left: auto;
-    color: var(--lightTitle);
+.mStatTable div{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
 }
 
 .mStatTable p{
@@ -116,7 +156,9 @@
 /*========== Table de contenu ==========*/
 .mContentTable{
     display: flex;
-    width: fit-content;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -125,16 +167,81 @@
     flex-wrap: nowrap;
     width: auto;
     border: solid;
-    border-color: var(--secondary);
+    border-color: var(--border);
     border-width: 0.1em;
     margin: 0.25em;
 }
 
-.mContent div{
-    background-color: aquamarine;
-
+.mContent > div{
     display: flex;
-    max-width: fit-content;
-    width: auto;
-    margin: auto 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 0.1rem;
+}
+
+.Provisioning{
+    width: 6.5rem;
+    /*justify-content: center;*/
+}
+
+.Operational{
+    width: 6rem;
+    /*justify-content: center;*/
+}
+
+.Region{
+    width: 5.75rem;
+    /*justify-content: center;*/
+}
+
+.Vendor{
+    width: 4.5rem;
+    /*justify-content: center;*/
+}
+
+.Network{
+    width: 6.5rem;
+    /*justify-content: center;*/
+}
+
+.Gateways{
+    width: 6rem;
+    /*justify-content: center;*/
+}
+
+.Locations{
+    width: 6rem;
+    /*justify-content: center;*/
+}
+
+.Edges{
+    width: 4rem;
+    /*justify-content: center;*/
+}
+
+.mActive{
+    background-color: var(--sucess);
+    padding: 0.25rem 0.75rem;
+    margin: 0.25rem;
+    border-radius: 1rem;
+}
+
+.mDraft{
+    background-color: var(--draft);
+    padding: 0.25rem 0.75rem;
+    margin: 0.25rem;
+    border-radius: 1rem;
+}
+
+.mInactive{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 0.25rem 0.75rem;
+    margin: 0.25rem;
+    border-radius: 1rem;
+}
+
+.Extremitee{
+    max-width: 1rem;
+    width: 100%;
 }

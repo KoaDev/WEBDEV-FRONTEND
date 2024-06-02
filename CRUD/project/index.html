@@ -65,15 +65,14 @@
                 <div class="siteSection">
                     <p>Site</p>
                 </div>
-                <div class="blankSection">
-
+                <div class="addButtonDiv">
+                    <button type="button" class="flexbox-line">
+                        <img src="../../TMAX/projet/svg/ico_add.svg">
+                        <p>&nbsp&nbspAdd a new Network</p>
+                    </button>
                 </div>
-                <button type="button" class="flexbox-line">
-                    <img src="../../TMAX/projet/svg/ico_add.svg">
-                    <p>&nbsp&nbspAdd a new Network</p>
-                </button>
             </div>
-            <div class="flexbox-line">
+            <div class="flexbox-line horizontalScroll">
                 <div class="provisionSection">
                     <img src="../../TMAX/projet/svg/ico_play.svg">
                     <p class="noMargin">&nbspProvision</p>
@@ -93,7 +92,8 @@
 
                 </div>
                 <div class="searchSection">
-                    <p class="noMargin center">Search for...</p>
+                    <p class="noMargin center searchText">Search for...</p>
+                    <img src="../../TMAX/projet/svg/ico_search_hover.svg" class="searchIcon" id="searchIcon">
                 </div>
                 <div class="filterSection" id="afficheFiltre">
                     <img id="image" src="../../TMAX/projet/svg/ico_config.svg">
@@ -101,167 +101,381 @@
                 </div>
             </div>
         </div>
-        <section>
-            <div class="flexbox-center-tri horizontalScroll">
-                <div class="smallTriSection">
-                    <div class="spaceImage">
-                        <p class="noMargin">Provisioning</p>
-                        <p class="noMargin">State</p>
-                    </div>
-                    <img src="../../TMAX/projet/svg/ico_tri.svg">
-                </div>
-                <div class="smallTriSection smallTriSectionVertical">
-                    <div class="spaceImage">
-                        <p class="noMargin">Operational</p>
-                        <p class="noMargin">status</p>
-                    </div>
-                    <img src="../../TMAX/projet/svg/ico_tri.svg">
-                </div>
-                <div class="bigTriSection smallTriSectionVertical">
-                    <p class="noMargin spaceImage">Network name</p>
-                    <img src="../../TMAX/projet/svg/ico_tri.svg">
-                </div>
-                <div class="smallTriSection midTriSectionVertical">
-                    <p class="noMargin spaceImage">Vendor</p>
-                    <img src="../../TMAX/projet/svg/ico_tri.svg">
-                </div>
-                <div class="smallTriSection bigTriSectionVertical">
-                    <p class="noMargin spaceImage ">Regions</p>
-                    <img src="../../TMAX/projet/svg/ico_tri.svg">
-                </div>
-                <div class="smallTriSection bigTriSectionVertical">
-                    <p class="noMargin">Gateways</p>
-                    <img src="../../TMAX/projet/svg/ico_tri.svg">
-                </div>
-                <div class="smallTriSection bigTriSectionVertical">
-                    <p class="noMargin spaceImage">Locations</p>
-                    <img src="../../TMAX/projet/svg/ico_tri.svg">
-                </div>
-                <div class="smallTriSection bigTriSectionVertical">
-                    <p class="noMargin spaceImage">Edges</p>
-                    <img src="../../TMAX/projet/svg/ico_tri.svg">
-                </div>
-            </div>
-            <div class="horizontalScroll">
-                <div class="flexbox-center-list">
-                    <div class="check">
-                        <input type="checkbox" class="rectangle">
-                    </div>
-                    <div class="stateActive">
-                        <p class="active">Active</p>
-                    </div>
-                    <div class="flexbox-center status">
-                        <img src="../../TMAX/projet/svg/ico_success.svg">
-                        <p>&nbspUp</p>
-                    </div>
-                    <p class="network">CRUD XX25N1</p>
-                    <P class="vendor">CRUD</P>
-                    <p class="regions">5</p>
-                    <p class="gateways">4</p>
-                    <p class="locations">15</p>
-                    <p class="edges">30</p>
-                    <div id="afficheDetails" class="edit afficheDetails" >
-                        <img src="../../TMAX/projet/svg/ico_actions.svg">
-                    </div>
-                </div>
-    
-                <div class="flexbox-center-list">
-                    <div class="check">
-                        <input type="checkbox" class="rectangle">
-                    </div>
-                    <div class="stateActive">
-                        <p class="active">Active</p>
-                    </div>
-                    <div class="flexbox-center status">
-                        <img src="../../TMAX/projet/svg/ico_danger.svg">
-                        <p>&nbspDown</p>
-                    </div>
-                    <p class="network">CRUD XX25N1</p>
-                    <P class="vendor">CRUD</P>
-                    <p class="regions">5</p>
-                    <p class="gateways">4</p>
-                    <p class="locations">15</p>
-                    <p class="edges">30</p>
-                    <div id="afficheDetails" class="edit afficheDetails" >
-                        <img src="../../TMAX/projet/svg/ico_actions.svg">
-                    </div>
-                </div>
-    
-                <div class="flexbox-center-list">
-                    <div class="check">
-                        <input type="checkbox" class="rectangle">
-                    </div>
-                    <p class="stateUnkwown">Unkwown</p>
-                    <p class="statusUnkwown">Unkwown</p>
-                    <p class="network">CRUD XX25N1</p>
-                    <P class="vendor">CRUD</P>
-                    <p class="regions">5</p>
-                    <p class="gateways">4</p>
-                    <p class="locations">15</p>
-                    <p class="edges">30</p>
-                    <div id="afficheDetails" class="edit afficheDetails" >
-                        <img src="../../TMAX/projet/svg/ico_actions.svg">
-                    </div>
-                </div>
-    
-                <div class="flexbox-center-list">
-                    <div class="check">
-                        <input type="checkbox" class="rectangle">
-                    </div>
-                    <div class="flexbox-center provisioning">
-                        <img src="../../TMAX/projet/svg/ico_progress.svg">
-                        <p class="noMargin">&nbspProvisioning</p>
-                    </div>
-                    <div class="statusVoidProvising">
-    
-                    </div>
-                    <p class="network">CRUD XX25N1</p>
-                    <P class="vendor  little-padding-top">CRUD</P>
-                    <p class="regions">5</p>
-                    <p class="gateways">4</p>
-                    <p class="locations">15</p>
-                    <p class="edges">30</p>
-                    <div id="afficheDetails" class="edit afficheDetails" >
-                        <img src="../../TMAX/projet/svg/ico_actions.svg">
-                    </div>
-                </div>
-    
-                <div class="flexbox-center-list">
-                    <div class="check">
-                        <input type="checkbox" class="rectangle">
-                    </div>
-                    <p class="state draft">Draft</p>
-                    <div class="statusVoidDraft">
-                    </div>
-                    <p class="network">CRUD XX25N1</p>
-                    <P class="vendor">CRUD</P>
-                    <p class="regions">5</p>
-                    <p class="gateways">4</p>
-                    <p class="locations">15</p>
-                    <p class="edges">30</p>
-                    <div id="afficheDetails" class="edit afficheDetails" >
-                        <img src="../../TMAX/projet/svg/ico_actions.svg">
-                    </div>
-                </div>
-    
-                <div class="flexbox-center-list">
-                    <div class="check">
-                        <input type="checkbox" class="rectangle">
-                    </div>
-                    <p class="inactive">Inactive</p>
-                    <div class="statusVoidInactive">
-                    </div>
-                    <p class="network">CRUD XX25N1</p>
-                    <P class="vendor">CRUD</P>
-                    <p class="regions">5</p>
-                    <p class="gateways">4</p>
-                    <p class="locations">15</p>
-                    <p class="edges">30</p>
-                    <div id="afficheDetails" class="edit afficheDetails" >
-                        <img src="../../TMAX/projet/svg/ico_actions.svg">
-                    </div>
-                </div>
-            </div>
+        <section class="horizontalScroll">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>
+                            <div>
+                                <div>
+                                    <p class="noMargin spaceImage">Providing</p>
+                                    <p class="noMargin spaceImage">State</p>
+                                </div>
+                                <img src="../../TMAX/projet/svg/ico_tri.svg">
+                            </div>
+                        </th>
+                        <th>
+                            <div>
+                                <div>
+                                    <p class="noMargin spaceImage">Operational</p>
+                                    <p class="noMargin spaceImage">status</p>
+                                </div>
+                                <img src="../../TMAX/projet/svg/ico_tri.svg">
+                            </div>
+                        </th>
+                        <th>
+                            <div>
+                                <p class="noMargin spaceImage">Network name</p>
+                                <img src="../../TMAX/projet/svg/ico_tri.svg">
+                            </div> 
+                        </th>
+                        <th>
+                            <div>
+                                <p class="noMargin spaceImage">Vendor</p>
+                                <img src="../../TMAX/projet/svg/ico_tri.svg">
+                            </div>
+                        </th>
+                        <th>
+                            <div>
+                                <p class="noMargin spaceImage">Regions</p>
+                                <img src="../../TMAX/projet/svg/ico_tri.svg">
+                            </div>
+                        </th>
+                        <th>
+                            <div>
+                                <p class="noMargin spaceImage">Gateways</p>
+                                <img src="../../TMAX/projet/svg/ico_tri.svg">
+                            </div>
+                        </th>
+                        <th>
+                            <div>
+                                <p class="noMargin spaceImage">Locations</p>
+                                <img src="../../TMAX/projet/svg/ico_tri.svg">
+                            </div>
+                        </th>
+                        <th>
+                            <div>
+                                <p class="noMargin spaceImage">Edges</p>
+                                <img src="../../TMAX/projet/svg/ico_tri.svg">
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tdLeftBorder">
+                            <div>
+                                <input type="checkbox" class="rectangle">
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p class="active">Active</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img src="../../TMAX/projet/svg/ico_success.svg" class="spaceImage">
+                                <p class="Opstatus">Up</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>CRUD XX25N1</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>CRUD</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>5</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>4</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>15</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>30</p>
+                            </div>
+                        </td>
+                        <td class="tdRightBorder">
+                            <div>
+                                <img src="../../TMAX/projet/svg/ico_actions.svg" class="edit afficheDetails">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdLeftBorder">
+                            <div>
+                                <input type="checkbox" class="rectangle">
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p class="active">Active</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img src="../../TMAX/projet/svg/ico_danger.svg" class="spaceImage">
+                                <p class="Opstatus">Down</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>CRUD XX25N1</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>CRUD</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>5</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>4</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>15</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>30</p>
+                            </div>
+                        </td>
+                        <td class="tdRightBorder">
+                            <div>
+                                <img src="../../TMAX/projet/svg/ico_actions.svg" class="edit afficheDetails">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdLeftBorder">
+                            <div>
+                                <input type="checkbox" class="rectangle">
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>Unknown</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p class="Opstatus">Unknown</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>CRUD XX25N1</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>CRUD</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>5</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>4</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>15</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>30</p>
+                            </div>
+                        </td>
+                        <td class="tdRightBorder"> 
+                            <div>
+                                <img src="../../TMAX/projet/svg/ico_actions.svg" class="edit afficheDetails">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdLeftBorder">
+                            <div>
+                                <input type="checkbox" class="rectangle">
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <div class="provisioning flexbox-line">
+                                    <img src="../../TMAX/projet/svg/ico_progress.svg" class="spaceImage">
+                                    <p class="noMargin">Provisioning</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div>
+                                <p>CRUD XX25N1</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>CRUD</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>5</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>4</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>15</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>30</p>
+                            </div>
+                        </td>
+                        <td class="tdRightBorder">
+                            <div>
+                                <img src="../../TMAX/projet/svg/ico_actions.svg" class="edit afficheDetails">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdLeftBorder">
+                            <div>
+                                <input type="checkbox" class="rectangle">
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p class="draft">Draft</p>
+                            </div>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div>
+                                <p>CRUD XX25N1</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>CRUD</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>5</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>4</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>15</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>30</p>
+                            </div>
+                        </td>
+                        <td class="tdRightBorder">
+                            <div>
+                                <img src="../../TMAX/projet/svg/ico_actions.svg" class="edit afficheDetails">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdLeftBorder">
+                            <div>
+                                <input type="checkbox" class="rectangle">
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p class="inactive">Inactive</p>
+                            </div>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div>
+                                <p>CRUD XX25N1</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>CRUD</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>5</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>4</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>15</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p>30</p>
+                            </div>
+                        </td>
+                        <td class="tdRightBorder">
+                            <div>
+                                <img src="../../TMAX/projet/svg/ico_actions.svg" class="edit afficheDetails">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
             
         </section>
     </main>
@@ -269,8 +483,8 @@
     <div id="contenu" class="modal">
         <div id="filter_bar">
             <div class="close" id="exit">
-                <img src="../../TMAX/projet/svg/ico_cross_hover.svg">
-                <p>Close</p>
+                <img src="../../TMAX/projet/svg/ico_cross_hover.svg" class="closePoint">
+                <p class="closePoint">Close</p>
             </div>
             <div id="content">
                 <div class="bloc">
@@ -280,20 +494,20 @@
                     <div>
                         <div class="spaceBetween">
                             <div class="alignItemsCenter spaceLabel">
-                                <input type="checkbox" class="rectangle checkbox-section1 checkbox" id="inactive" name="inactive" unchecked />
+                                <input type="checkbox" class="rectangle checkbox-section1 checkbox filterCheck" id="inactive" name="inactive" unchecked />
                                 <label for="active" class="spaceBox">Active</label>
                             </div>
                             <div class="alignItemsCenter spaceLabel">
-                                <input type="checkbox" class="rectangle checkbox-section1 checkbox" id="inactive" name="inactive" unchecked />
+                                <input type="checkbox" class="rectangle checkbox-section1 checkbox filterCheck" id="inactive" name="inactive" unchecked />
                                 <label for="inactive" class="spaceBox">Inactive</label>
                             </div>
                             <div class="alignItemsCenter spaceLabel">
-                                <input type="checkbox" class="rectangle checkbox-section1 checkbox" id="draft" name="draft" unchecked />
+                                <input type="checkbox" class="rectangle checkbox-section1 checkbox filterCheck" id="draft" name="draft" unchecked />
                                 <label for="draft" class="spaceBox">Draft</label>
                             </div>
                         </div>
                         <div class="alignItemsCenter spaceLine">
-                            <input type="checkbox" class="rectangle checkbox-section1 checkbox" id="provisioning" name="provisioning" unchecked />
+                            <input type="checkbox" class="rectangle checkbox-section1 checkbox filterCheck" id="provisioning" name="provisioning" unchecked />
                             <label for="provisioning" class="spaceBox">Provisioning</label>
                         </div>
                     </div>
@@ -304,15 +518,15 @@
                     </div>
                     <div class="spaceBetween spaceLabel">
                         <div class="alignItemsCenter">
-                            <input type="checkbox" class="rectangle checkbox-section2 checkbox" id="inactive" name="vmware" unchecked />
+                            <input type="checkbox" class="rectangle checkbox-section2 checkbox filterCheck" id="inactive" name="vmware" unchecked />
                             <label for="vmware" class="spaceBox">VMWare</label>
                         </div>
                         <div class="alignItemsCenter">
-                            <input type="checkbox" class="rectangle checkbox-section2 checkbox" id="fortinet" name="fortinet" unchecked />
+                            <input type="checkbox" class="rectangle checkbox-section2 checkbox filterCheck" id="fortinet" name="fortinet" unchecked />
                             <label for="fortinet" class="spaceBox">Fortinet</label>
                         </div>
                         <div class="alignItemsCenter">
-                            <input type="checkbox" class="rectangle checkbox-section2 checkbox" id="cisco" name="cisco" unchecked />
+                            <input type="checkbox" class="rectangle checkbox-section2 checkbox filterCheck" id="cisco" name="cisco" unchecked />
                             <label for="cisco" class="spaceBox">Cisco</label>
                         </div>
                     </div>
@@ -324,20 +538,20 @@
                     <div>
                         <div class="spaceBetween spaceLabel">
                             <div class="alignItemsCenter">
-                                <input type="checkbox" class="rectangle checkbox-section3 checkbox" id="up" name="up" unchecked />
+                                <input type="checkbox" class="rectangle checkbox-section3 checkbox filterCheck" id="up" name="up" unchecked />
                                 <label for="up" class="spaceBox">Up</label>
                             </div>
                             <div class="alignItemsCenter">
-                                <input type="checkbox" class="rectangle checkbox-section3 checkbox" id="down" name="down" unchecked />
+                                <input type="checkbox" class="rectangle checkbox-section3 checkbox filterCheck" id="down" name="down" unchecked />
                                 <label for="down" class="spaceBox">Down</label>
                             </div>
                             <div class="alignItemsCenter">
-                                <input type="checkbox" class="rectangle checkbox-section3 checkbox" id="degraded" name="degraded" unchecked />
+                                <input type="checkbox" class="rectangle checkbox-section3 checkbox filterCheck" id="degraded" name="degraded" unchecked />
                                 <label for="degraded" class="spaceBox">Degraded</label>
                             </div>
                         </div>
                         <div class="alignItemsCenter spaceLine">
-                            <input type="checkbox" class="rectangle checkbox-section3 checkbox" id="unknown" name="unknown" unchecked />
+                            <input type="checkbox" class="rectangle checkbox-section3 checkbox filterCheck" id="unknown" name="unknown" unchecked />
                             <label for="unknown" class="spaceBox">Unknown</label>
                         </div>
                     </div>
@@ -354,10 +568,10 @@
     </div>
 
     <div id="popupid" class="popup">
-        <div>
+        <div class="edit">
             <p>See details</p>
         </div>
-        <div class="spaceLine">
+        <div class="spaceLine edit">
             <p>Edit the resource</p>
         </div>
     </div>
