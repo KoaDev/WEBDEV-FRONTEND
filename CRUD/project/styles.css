@@ -27,7 +27,7 @@ section{
 .smallTriSection{
     display: flex;
     align-items: center;
-    color: #333333;
+    color: var(--titleTab);
     padding: 3rem 0 1rem 0;
     width: 9rem;
 }
@@ -35,7 +35,7 @@ section{
 .bigTriSection{
     display: flex;
     align-items: center;
-    color: #333333;
+    color: var(--titleTab);
     padding: 3rem 0 1rem 0;
     width: 14rem;
 }
@@ -110,9 +110,18 @@ section{
     width: 55rem;
 }
 
+.addButtonDiv{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2rem;
+    margin-bottom: 0.7rem;
+    margin: 0 2rem 0.7rem 1rem;
+    width: 100%;
+}
+
 /*Add Network button*/
 button{
-    margin: 0 0 1rem 0;
     background-color: var(--secondary);
     color: var(--backgroundWhite);
     align-items: center;
@@ -165,9 +174,18 @@ button:hover{
 .searchSection{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     border-right: solid var(--border) 1px;
-    padding: 1em 12em 1em 1em;
+    padding: 1rem;
     color: var(--lightTitle);
+}
+
+.searchText{
+    padding-right: 11rem;
+}
+
+.searchIcon{
+    display: none;
 }
 
 /*Filtering Action (JS)*/
@@ -187,27 +205,60 @@ button:hover{
     border-left: solid var(--border) 1px;
 }
 
-/*-------------------Tri Section--------------------*/
-.flexbox-center-tri{
-    display: flex;
-    align-items: center;
-    padding-left: 8rem;
-    overflow-x: auto;
+/*--------------------Network Items (tab)------------------*/
+
+table{
+    width: 94%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    margin: 2rem 2rem 0 2rem;
 }
 
-/*--------------------Network Items------------------*/
-.flexbox-center-list{
-    display: flex;
-    align-items: center;
-    margin: 0.4rem 3rem 0 3rem;
+td {
+    border-bottom: solid var(--border) 1px;
+    border-top: solid var(--border) 1px;
+    padding: 1rem 0.1rem 1rem 0.1rem;
+}
+
+th{
+    font-weight: normal;
+    color: var(--titleTab);
+}
+
+.tdLeftBorder{
+    border-left: solid var(--border) 1px;
+    padding-left: 1rem;
+}
+
+.tdRightBorder{
+    border-right: solid var(--border) 1px;
+    padding-right: 1rem;
+}
+
+tbody {
     background-color: var(--backgroundWhite);
-    border: solid var(--border) 1px;
-    padding: 0 0 0 1.5rem;
+    white-space: nowrap; /* Pour éviter que le texte ne se coupe */
 }
 
-/*Network Items attributes*/
-.check{
-    width: 3.5rem;
+th > div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+td > div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+td > div > p{
+    margin: 0;
+}
+
+.Opstatus{
+    font-size: small;
+    font-weight: 0;
 }
 
 .rectangle{
@@ -217,72 +268,6 @@ button:hover{
 }
 .rectangle:hover{
     cursor: pointer;
-}
-
-.stateActive{
-    width: 9rem;
-}
-
-.stateActive > p{
-    width: 3rem;
-}
-
-.stateUnkwown{
-    width: 9.2rem;
-}
-
-.status{
-    width: 9rem;
-    font-weight: initial;
-    font-size: small;
-}
-
-.statusUnkwown{
-    width: 8.8rem;
-    font-weight: initial;
-    font-size: small;
-}
-
-.statusVoidProvising{
-    width: 9.3rem;
-    font-weight: initial;
-    font-size: small;
-}
-
-.statusVoidDraft{
-    width: 13.1rem;
-    font-weight: initial;
-    font-size: small;
-}
-
-.statusVoidInactive{
-    width: 12rem;
-    font-weight: initial;
-    font-size: small;
-}
-
-.network{
-    width: 16em;
-}
-
-.vendor{
-    width: 9rem;
-}
-
-.regions{
-    width: 9rem;
-}
-
-.gateways{
-    width: 9rem;
-}
-
-.locations{
-    width: 9rem;
-}
-
-.edges{
-    width: 7rem;
 }
 
 .edit:hover{
@@ -297,9 +282,9 @@ button:hover{
 }
 
 .provisioning{
-    background-color: #ecfdef;
+    background-color: var(--previsioning);
     border-radius: 60px;
-    padding: 0.1rem 1.4rem 0.1rem 1.4rem;
+    padding: 0.1rem 1rem 0.1rem 1rem;
 }
 
 .draft{
@@ -328,13 +313,17 @@ button:hover{
     background-color: var(--backgroundWhite);
     margin-top: 20rem;
     padding: 2rem;
-    border-top: solid #F16E00 5px;
+    border-top: solid var(--orangeIcon) 5px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), 6px 6px 20px rgba(0, 0, 0, 0.19);
 }
 
 .close{
     display: flex;
     justify-content: right;
+}
+
+.closePoint:hover{
+    cursor: pointer;
 }
 
 .spaceBetween{
@@ -372,6 +361,34 @@ button:hover{
     color: var(--text);
     padding: 1rem 0 1rem 0;
 }
+.filterCheck {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 5px;
+    height: 5px;
+    padding: 0.5rem;
+    border: 2px solid gray;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Apparence de la checkbox lorsqu'elle est cochée */
+.filterCheck:checked {
+    border-color: var(--orangeIcon);
+}
+
+/* Apparence de la croix lorsqu'elle est cochée */
+.filterCheck:checked::after {
+    content: '✔';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: var(--orangeIcon);
+}
 
 #effacerBtn:hover{
     cursor: pointer;
@@ -387,7 +404,7 @@ button:hover{
     overflow: auto;
     background-color: var(--backgroundWhite);
     padding: 2rem;
-    border-top: solid #F16E00 5px;
+    border-top: solid var(--orangeIcon) 5px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), 6px 6px 20px rgba(0, 0, 0, 0.19);
 }
 
@@ -403,13 +420,6 @@ button:hover{
     }
 
     /*-----------------General CSS for personalized CSS Class-------------*/
-    .flexbox-line{
-        max-width: 100%;
-        display: flex;
-        justify-content: space-around;
-        padding: 0;
-        overflow-x: auto;
-    }
 
     .little-padding-top{
         padding-top: 0.77rem;
@@ -419,7 +429,7 @@ button:hover{
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #333333;
+        color: var(--titleTab);
         padding: 0;
         width: auto;
         font-size: smaller;
@@ -441,14 +451,10 @@ button:hover{
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #333333;
+        color: var(--titleTab);
         padding: 0;
         width: auto;
         font-size: small;
-    }
-
-    .horizontalScroll{
-        overflow-x: auto;
     }
 
 
@@ -476,11 +482,6 @@ button:hover{
         display: none;
     }
 
-    button{
-        width: 35%;
-        margin-top: 1rem;
-    }
-
     .provisionSection{
         padding: 1rem;
     }
@@ -491,16 +492,6 @@ button:hover{
         align-items: center;
         padding: 0 0 0 1rem;
         border-left: solid var(--border) 1px;
-    }
-
-    /*------------Tri Items Section------------*/
-    .flexbox-center-tri{
-        overflow-x: auto;
-    }
-
-    /*------------Network Items Section-----------------*/
-    .flexbox-center-list{
-        width: 100%;
     }
 
     /*----------------------Modal-------------*/
