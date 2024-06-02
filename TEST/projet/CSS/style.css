@@ -181,47 +181,62 @@
 
 .Provisioning{
     width: 6.5rem;
-    justify-content: center;
+    /*justify-content: center;*/
 }
 
 .Operational{
     width: 6rem;
-    justify-content: center;
+    /*justify-content: center;*/
 }
 
 .Region{
     width: 5.75rem;
-    justify-content: center;
+    /*justify-content: center;*/
 }
 
 .Vendor{
     width: 4.5rem;
-    justify-content: center;
+    /*justify-content: center;*/
 }
 
 .Network{
-    width: 6rem;
-    justify-content: center;
+    width: 6.5rem;
+    /*justify-content: center;*/
 }
 
 .Gateways{
     width: 6rem;
-    justify-content: center;
+    /*justify-content: center;*/
 }
 
 .Locations{
     width: 6rem;
-    justify-content: center;
+    /*justify-content: center;*/
 }
 
 .Edges{
     width: 4rem;
-    justify-content: center;
+    /*justify-content: center;*/
 }
 
 .mActive{
     background-color: var(--sucess);
-    padding: 0.5rem 1rem;
+    padding: 0.25rem 0.75rem;
+    margin: 0.25rem;
+    border-radius: 1rem;
+}
+
+.mDraft{
+    background-color: var(--draft);
+    padding: 0.25rem 0.75rem;
+    margin: 0.25rem;
+    border-radius: 1rem;
+}
+
+.mInactive{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 0.25rem 0.75rem;
     margin: 0.25rem;
     border-radius: 1rem;
 }
