@@ -41,28 +41,32 @@
     justify-content: space-between;
 
     width: auto;
+    border:solid;
+    border-color: var(--border);
+    border-width: 0.1rem 0 0.1rem 0;
 }
 
 /*Actions à gauche du haut du site*/
 .mActions .mActionGauche{
     margin: 0;
     padding: 0;
-    max-width: 65%;
-    width: auto;
-
+    max-width: fit-content;
+    display: flex;
+    flex-wrap: nowrap;
+    
     float: left;
 }
 
-.mActionGauche > div{
-    float: left;
-    height: 1rem;
-    padding: 0.25rem 0.5rem;
+.mActionGauche div{
+    display: flex;
     border: solid;
-    border-width: 0.1rem 0.1rem 0.1rem 0;
-    width: fit-content;
-    margin: 0;
+    padding: 0 1rem;
+    border-color: var(--border);
+    border-width: 0 0.1rem 0 0;
+    width: min-content;
     text-align: center;
     align-items: center;
+
 }
 
 /*#mAction{
@@ -105,8 +109,8 @@
     border:solid;
     max-width: fit-content;
     width: auto;
-    border-color: var(--lightTitle);
-    border-width: 0.1rem;
+    border-color: var(--border);
+    border-width: 0 0.1rem 0 0.1rem;
     margin: 0;
     align-items: center;
 }
@@ -125,24 +129,21 @@
 
 /*========== Tableau ==========*/
 .mStatTable{
+    display: flex;
     margin:auto;
+    padding: 0.75rem 0 0.5rem;
     flex-wrap: nowrap;
-    align-items: right;
-    width: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
-.mStatTable tr th{
+.mStatTable div{
+    display: flex;
     flex-wrap: nowrap;
     width: auto;
     align-items: center;
-}
-
-.upDown{
-    float: right;
-    width: min-content;
-    height: inherit;
-    margin-left: auto;
-    color: var(--lightTitle);
+    text-align: center;
 }
 
 .mStatTable p{
@@ -165,7 +166,7 @@
     flex-wrap: nowrap;
     width: auto;
     border: solid;
-    border-color: var(--secondary);
+    border-color: var(--border);
     border-width: 0.1em;
     margin: 0.25em;
 }
