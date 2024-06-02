@@ -1,0 +1,497 @@
+@import url(../../TMAX/projet/style.css);
+
+
+section{
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    border-bottom: 1px solid var(--border);
+}
+.flex-row{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+
+.state_svg{
+    width: 15%;
+    height: 15%;
+}
+button{
+    border: none;
+    background-color: var(--white);
+    cursor: pointer;
+}
+/*----------------------------------------NETWORK NAME, 3 BOUTONS, et fil d'ariane-------------------------*/
+nav{
+    display: flex;
+}
+#network-name{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+#actions{
+    display: flex;
+    gap: 1%;
+}
+
+#actions button{
+    padding: 0%;
+    border: none;
+}
+
+#actions button:not(:last-child)::after{   /*permet de faire le sÃ©parateur entre les boutons ref: https://stackoverflow.com/questions/41631136/add-dividing-line-between-flex-items-with-equal-space-distribution + w3school (::after) */
+    content: " ";
+    width: 0px;
+    height: 100%;
+    border: 1px solid var(--border);
+}
+
+#trash{
+    color: var(--border);
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+#info-section{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border : none;
+}
+
+
+
+
+/*---------------------------------------------------INFO SUR LE NETWORK-------------------------------------------*/
+#card-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    column-gap: 2%;
+    row-gap: 15px;
+}
+hgroup{
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+#state, #status{                   /*c'est mieux d'avoir des id, pour pouvoir afficher les bons svg avec le js*/
+    border: 2px solid var(--border);
+    display: flex;
+    justify-content: center;
+}
+.orch{
+    width: 5%;
+    height: 5%;
+}
+.group-title{
+    margin: 0;
+    margin-bottom: 2%;
+    color: var(--lightTitle);
+}
+.group-text{
+    margin: 0;
+    font-size: 100%;
+}
+
+#description{
+    width: 75%;
+}
+
+
+/*-------------------------------------STYLE SPECIFIQUE STATUT---------------------------------------------------*/
+#state .group-text{
+    background-color: var(--sucess);
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+}
+#down, #degraded{
+    display: none;
+}
+/*--------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*------------------------TOPO DES SITE, REGION, EDGES ECT SOUS FORME DE CARTES DE VISITE-----------------------*/
+#summary{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 2%;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 18%;
+    padding-right: 18%;
+    border : 2px solid var(--border);
+}
+.leftSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.leftSide > h2{
+    margin: 0;
+    color: var(--orangeIcon);
+    font-size: 180%;
+}
+.leftSide > p{
+    margin: 0;
+}
+/*--------------------------------------------------------------------------------------------------------------*/
+
+
+#search-bar{
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+
+
+#leftBox{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.onglet{
+    border: none;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    background-color: none;
+}
+
+.onglet:focus{
+    border-bottom: 3px solid var(--orangeIcon);
+    margin-bottom: -1px;
+}
+
+#rightBox{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 5%;
+    padding: 0%;
+}
+#text-input{
+    height: 100%;
+    border: none;
+    border-bottom: 2px solid var(--lightTitle);
+    padding-right: 1%;
+}
+
+#text-input > *{
+    height: 95%;
+    border: none;
+}
+
+#text-input > input:focus-visible{
+    outline: none;
+}
+
+/* -------------------------- Inventaires -------------------------- */
+
+/*-------------- Mini navigation bar ------------------*/
+.header_nav{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header_nav > h1{
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .header_nav > div{
+    padding: 0;
+  }
+  
+  .header_nav > div{
+    padding-left: 2rem;
+  }
+  
+  .header_nav > h1{
+    padding-left: 2rem;
+  }
+  
+  .mini_nav{
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  /*mini_nav tab*/
+  .select{
+    font-weight: bold;
+    border-bottom: solid var(--primary) 5px;
+    padding: 0 1rem 0 1rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  .select:hover{
+    cursor: pointer;
+  }
+  .select > p{
+    margin: 0;
+  }
+  
+  .section_inventory{
+    background-color: var(--backgroundGrey);
+  }
+  
+  .Section{
+    margin: 1rem 0 0 2rem;
+    display: flex;
+    align-items: center;
+  }
+  .Section:hover{
+    cursor: pointer;
+  }
+  .Section > p{
+    margin: 0;
+  }
+  
+  /*Filter and search*/
+  .filter{
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+    padding-left: 2em;
+  }
+  .filter:hover{
+    cursor: pointer;
+  }
+  
+  .search{
+    display: flex;
+    align-items:center;
+    padding: 1em 1em 1em 1em;
+    color: var(--lightTitle);
+    border-bottom: solid var(--lightgrey) 1.5px;
+  }
+  
+  .unused{
+    width: 44rem;
+  }
+  
+  /*----------- Gray part ------------*/
+  .table_inventory{
+    overflow-x: auto;
+    padding-bottom: 5em;
+  }
+  
+  .up-down{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+  
+  table {
+      font-family: arial, sans-serif;
+      border: 0px;
+      width: 100%;
+    }
+  
+  .inventory{
+      background-color: #F4F4F4;
+      align-items: center;
+      margin: 0.4rem 3rem 0 3rem;
+      padding: 0 0 0 1.5rem;
+  }
+    
+    td, th {
+      border: 0px;
+      text-align: left;
+      padding: 1em;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #ffffff;
+    }
+  
+  /*nav barre bottom right*/
+  .numb_nav {
+    text-align: right;
+    background-color: var(--draft);
+  }
+  
+  .numb_page {
+    display: inline-block;
+  }
+  
+  .numb_page a {
+    color: var(--secondary);
+    float: left;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+  
+  .numb_page a.active {
+    color: var(--secondary);
+    border: 2px solid var(--orangeIcon);
+  }
+  
+  .numb_page a:hover:not(.active) {
+    background-color: var(--backgroundWhite);
+  }
+  
+  .numb_page a .select {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    width: 100%;
+    height: 0.094rem;
+    background-color: var(--lightTitle);
+  }
+  
+  a.select {
+    display: inline-block;
+    border-bottom: 2px solid var(--secondary);
+    margin-top: 0.125rem;
+  }
+  
+  /*------------------popup---------------------*/
+  
+  .pop-up {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    width: 34%;
+    overflow: auto;
+    background-color: var(--backgroundWhite);
+    margin-top: 53.1rem;
+    padding: 2rem;
+    border-top: solid #F16E00 5px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), 6px 6px 20px rgba(0, 0, 0, 0.19);
+  }
+  
+  .close{
+    display: flex;
+    justify-content: right;
+  }
+  
+  .spaceBetween{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5rem;
+  }
+  
+  .alignItemsCenter{
+    display: flex;
+    align-items: center;
+  }
+  
+  .bloc{
+    border-bottom: solid var(--border) 1px;
+    padding-bottom: 2rem;
+  }
+  
+  .spaceBox{
+    margin-left: 1rem;
+  }
+  
+  .spaceLabel{
+    margin-top: 1rem;
+  }
+  
+  .spaceLine{
+    margin-top: 2rem;
+  }
+  
+  .showResultsButton{
+    width: 100%;
+    background-color: var(--backgroundWhite);
+    border: solid  var(--text) 1px ;
+    color: var(--text);
+    padding: 1rem 0 1rem 0;
+  }
+  
+  #effacerBtn:hover{
+    cursor: pointer;
+  }
+
+/*-------------------------------------- media --------------------------------------*/
+
+@media screen and (max-width : 850px){
+
+    main{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    
+    #card-grid{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    #summary
+    {
+        display: flex;
+        overflow: auto;
+        white-space: nowrap;
+
+    }
+
+
+    #description{
+        width: 100%;
+    }
+    #search-bar{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #rightBox{ 
+        justify-content: space-between;
+    }
+    #rightBox .search{
+        height: 70px;
+    }
+
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table tr {
+        border: 1px solid var(--border);
+        display: block;
+        margin-bottom: .625em;
+    }
+
+    table td {
+        border-bottom: none;
+        display: block;
+        font-size: var(--base_font_size);
+        text-align: right;
+    }
+
+    table td::before {
+        /*
+        * aria-label has no advantage, it won't be read inside a table
+        content: attr(aria-label);
+        */
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+}

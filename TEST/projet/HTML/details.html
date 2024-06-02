@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Region Detail</title>
+    <link rel="icon" href="../../../TMAX/projet/svg/ico_logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../../../TMAX/projet/style.css">
+    <link rel="stylesheet" href="../../../TMAX/projet/custom.css">
+    <link rel="stylesheet" href="../CSS/styleDetail.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#" class="navbar-brand">
+            <img src="../../../TMAX/projet/svg/ico_logo.svg" alt="Logo" class="logo">
+            <h3 class="wh">My Network</h3>
+        </a>
+        <ul class="navbar-menu">
+            <li class="dropdown">
+                <button class="dropbtn">Solutions</button>
+            </li>
+            <li class="dropdown">
+                <button class="dropbtn">Regions <img src="../../../TMAX/projet/svg/ico_arrow_down_hover.svg" class="ico"
+                        alt="ico_arrow_down_hover"></button>
+                <div class="dropdown-content">
+                    <a href="#">Region 1</a>
+                    <a href="#">Region 2</a>
+                    <a href="#">Region 3</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button class="dropbtn">Locations <img src="../../../TMAX/projet/svg/ico_arrow_down_hover.svg" class="ico"
+                        alt="ico_arrow_down_hover"></button>
+                <div class="dropdown-content">
+                    <a href="#">Location 1</a>
+                    <a href="#">Location 2</a>
+                    <a href="#">Location 3</a>
+                </div>
+            </li>
+        </ul>
+        <div class="navbar-user">
+            <img src="../../../TMAX/projet/svg/ico_avatar.svg" class="ico-avatar" alt="ico_avatar">
+            <span>FirstName LastName</span>
+        </div>
+    </nav>
+
+    <nav class="breadcrumb">
+        <a href="#">Home</a>
+        <a href="#">Networking</a>
+        <a href="#">Flexible</a>
+        <a href="#">Network name</a>
+    </nav>
+
+    <hr class="spacer-line">
+
+    <main>
+        <section>
+            <div id="network-name">
+                <h1>Region Name</h1>
+                <div class="flex-row">
+                    <img src="../../../TMAX/projet/svg/ico_cross_hover.svg">
+                    <p>Close</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="actions">
+
+                <button class="flex-row" id="trash">
+                    <img src="../../../TMAX/projet/svg/ico_trash.svg">
+                    <p>Delete</p> <!--changer la couleur avec js si y'a des choses selectionnés-->
+                </button>
+
+                <button class="flex-row">
+                    <img src="../../../TMAX/projet/svg/ico_refresh.svg">
+                    <p>Refresh</p>
+                </button>
+            </div>
+        </section>
+
+        <section id="info-section">
+            <div id="card-grid">
+            </div>
+
+            <div id="description">
+            </div>
+
+            <div id="summary">
+                <div class="cards">
+                    <div class="leftSide">
+                        <h2>4</h2>
+                        <p>Gateways</p>
+                    </div>
+                    <div class="rightSide">
+                        <div class="flex-row">
+                            <img src="../../../TMAX/projet/svg/ico_success.svg" class="state_svg">
+                            <p class="group-text">3 Up</p>
+                        </div>
+                        <div class="flex-row">
+                            <img src="../../../TMAX/projet/svg/ico_warning.svg" class="state_svg">
+                            <p class="group-text">1 Degraded</p>
+                        </div>
+                        <div class="flex-row">
+                            <img src="../../../TMAX/projet/svg/ico_danger.svg" class="state_svg">
+                            <p class="group-text">1 Down</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="leftSide">
+                        <h2>15</h2>
+                        <p>Sites</p>
+                    </div>
+                    <div class="rightSide">
+                        <div class="flex-row">
+                            <img src="../../../TMAX/projet/svg/ico_success.svg" class="state_svg">
+                            <p class="group-text">3 Up</p>
+                        </div>
+                        <div class="flex-row">
+                            <img src="../../../TMAX/projet/svg/ico_warning.svg" class="state_svg">
+                            <p class="group-text">1 Degraded</p>
+                        </div>
+                        <div class="flex-row">
+                            <img src="../../../TMAX/projet/svg/ico_danger.svg" class="state_svg">
+                            <p class="group-text">1 Down</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="leftSide">
+                        <h2>30</h2>
+                        <p>Edges</p>
+                    </div>
+                    <div class="rightSide">
+                        <div class="flex-row">
+                            <img src="../../../TMAX/projet/svg/ico_success.svg" class="state_svg">
+                            <p class="group-text">3 Up</p>
+                        </div>
+                        <div class="flex-row">
+                            <img src="../../../TMAX/projet/svg/ico_warning.svg" class="state_svg">
+                            <p class="group-text">1 Degraded</p>
+                        </div>
+                        <div class="flex-row">
+                            <img src="../../../TMAX/projet/svg/ico_danger.svg" class="state_svg">
+                            <p class="group-text">1 Down</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="section_header_nav">
+            <div class="header_nav">
+                <div class="mini_nav">
+                    <div class="select">
+                        <p>Gateways</p>
+                    </div>
+                    <div class="Section">
+                        <p>Sites</p>
+                    </div>
+                    <div class="Section">
+                        <p>Edges</p>
+                    </div>
+                    <div class="Section">
+                        <p>Map</p>
+                    </div>
+                    <div class="unused">
+                    </div>
+                    <div class="search">
+                        <p style="margin: 0%;">Search for a product, resour..</p>&nbsp&nbsp&nbsp
+                        <img id="image" src="../../../TMAX/projet/svg/ico_search_hover.svg">
+                    </div>
+                    <div class="filter" id="afficheFiltre">
+                        <img id="image" src="../../../TMAX/projet/svg/ico_filter.svg">
+                        <p class="noMargin">&nbspFiltrer</p>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <section class="section_inventory">
+                <div class="table_inventory">
+    
+                    <div class="inventory">
+                        <h2>Gateways inventory</h2>
+                        <table>
+                            <tr>
+                                <td>Gateway name &nbsp <img src="../../../TMAX/projet/svg/ico_tri.svg"></td>
+                                <td>Region &nbsp <img src="../../../TMAX/projet/svg/ico_tri.svg"></td>
+                                <td>Type &nbsp <img src="../../../TMAX/projet/svg/ico_tri.svg"></td>
+                                <td>Operational Status &nbsp <img src="../../../TMAX/projet/svg/ico_tri.svg"></td>
+                            </tr>
+                            <tr>
+                                <td>Gateway USA</td>
+                                <td>AMER</td>
+                                <td>Service</td>
+                                <td>
+                                    <div class="up-down">
+                                        <img src="../../../TMAX/projet/svg/ico_success.svg">
+                                        <p class="group-text"> Up</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Gateway MALAYSIA</td>
+                                <td>APAC</td>
+                                <td>Management</td>
+                                <td>
+                                    <div class="up-down">
+                                        <img src="../../../TMAX/projet/svg/ico_success.svg">
+                                        <p class="group-text"> Up</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Gateway CHINA</td>
+                                <td>APAC</td>
+                                <td>Management</td>
+                                <td>
+                                    <div class="up-down">
+                                        <img src="../../../TMAX/projet/svg/ico_success.svg">
+                                        <p class="group-text"> Up</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Gateway SOPHIA</td>
+                                <td>EMEA</td>
+                                <td>Service</td>
+                                <td>
+                                    <div class="up-down">
+                                        <img src="../../../TMAX/projet/svg/ico_danger.svg">
+                                        <p class="group-text"> Down</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                </div>
+                <div class="numb_nav">
+    
+                    <div class="numb_page">
+                        <a href="#"><img src="../../../TMAX/projet/svg/ico_arrow_left.svg" class="ico" alt="ico_arrow_left"></a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a class="dots"><img src="../../../TMAX/projet/svg/ico_actions.svg" class="ico" alt="ico_actions"></a>
+                        <a href="#">30</a>
+                        <a href="#"><img src="../../../TMAX/projet/svg/ico_arrow_right.svg" class="ico" alt="ico_arrow_right"></a>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <div id="contenu" class="pop-up">
+        <div id="filter_bar">
+            <div class="close" id="exit">
+                <img src="../../../TMAX/projet/svg/ico_cross_hover.svg">
+                <p>Close</p>
+            </div>
+            <div id="content">
+                <div class="bloc">
+                    <div class="label">
+                        <legend>Region (<span id="compteur-section1">0</span>)</legend>
+                    </div>
+                    <div>
+                        <div class="spaceBetween">
+                            <div class="alignItemsCenter spaceLabel">
+                                <input type="checkbox" class="rectangle checkbox-section1 checkbox" id="inactive"
+                                    name="AMER" unchecked />
+                                <label for="AMER" class="spaceBox">AMER</label>
+                            </div>
+                            <div class="alignItemsCenter spaceLabel">
+                                <input type="checkbox" class="rectangle checkbox-section1 checkbox" id="inactive"
+                                    name="APAC" unchecked />
+                                <label for="APAC" class="spaceBox">APAC</label>
+                            </div>
+                            <div class="alignItemsCenter spaceLabel">
+                                <input type="checkbox" class="rectangle checkbox-section1 checkbox" id="draft"
+                                    name="EMEA" unchecked />
+                                <label for="EMEA" class="spaceBox">EMEA</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bloc">
+                    <div class="label spaceLabel">
+                        <legend>Type (<span id="compteur-section2">0</span>)</legend>
+                    </div>
+                    <div class="spaceBetween spaceLabel">
+                        <div class="alignItemsCenter">
+                            <input type="checkbox" class="rectangle checkbox-section2 checkbox" id="inactive"
+                                name="Service" unchecked />
+                            <label for="Service" class="spaceBox">Service</label>
+                        </div>
+                        <div class="alignItemsCenter">
+                            <input type="checkbox" class="rectangle checkbox-section2 checkbox" id="Management"
+                                name="Management" unchecked />
+                            <label for="Management" class="spaceBox">Management</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="bloc">
+                    <div class="label spaceLabel">
+                        <legend>Operational Status (<span id="compteur-section3">0</span>)</legend>
+                    </div>
+                    <div>
+                        <div class="spaceBetween spaceLabel">
+                            <div class="alignItemsCenter">
+                                <input type="checkbox" class="rectangle checkbox-section3 checkbox" id="up" name="up"
+                                    unchecked />
+                                <label for="up" class="spaceBox">Up</label>
+                            </div>
+                            <div class="alignItemsCenter">
+                                <input type="checkbox" class="rectangle checkbox-section3 checkbox" id="up"
+                                    name="down" unchecked />
+                                <label for="down" class="spaceBox">Down</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="effacerBtn" class="spaceLabel">
+                <div class="alignItemsCenter">
+                    <img src="../../../TMAX/projet/svg/ico_left.svg" />
+                    <p class="spaceBox">Effacer (<span id="compteur">0</span>)</p>
+                </div>
+            </div>
+            <button id="result-button" class="showResultsButton">Show all results</button>
+        </div>
+    </div>
+</body>
+<script src="../JS/script.js" type="text/javascript"></script>
+</html>
