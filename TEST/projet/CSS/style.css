@@ -38,6 +38,7 @@
 .mActions{
     display: flex;
     flex-wrap: nowrap;
+    justify-content: space-between;
 
     width: auto;
 }
@@ -46,14 +47,27 @@
 .mActions .mActionGauche{
     margin: 0;
     padding: 0;
-    width: 65%;
+    max-width: 65%;
+    width: auto;
 
     float: left;
 }
 
-#mAction{
+.mActionGauche > div{
     float: left;
-    height: max-content;
+    height: 1rem;
+    padding: 0.25rem 0.5rem;
+    border: solid;
+    border-width: 0.1rem 0.1rem 0.1rem 0;
+    width: fit-content;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+}
+
+/*#mAction{
+    float: left;
+    height: 1rem;
     padding: 0.25rem 0.5rem;
     border: solid;
     border-width: 0.1rem 0.1rem 0.1rem 0;
@@ -65,22 +79,21 @@
 
 #mRefresh{
     float: left;
-    height: max-content;
+    height: 1rem;
     padding: 0.25rem 0.5rem;
     border: solid;
     border-width: 0.1rem 0.05rem 0.1rem 0;
     width: fit-content;
     margin: 0;
     text-align: center;
-    align-items: center;
-}
+    align-content: baseline;
+}*/
 
 /*Actions à droite du haut du site*/
 .mActions .mActionDroite{
     margin: 0;
     padding: 0;
     max-width: fit-content;
-    width: 35%;
     display: flex;
     flex-wrap: nowrap;
     
@@ -107,6 +120,7 @@
     width: min-content;
     text-align: center;
     align-items: center;
+    margin: auto 1rem;
 }
 
 /*========== Tableau ==========*/
