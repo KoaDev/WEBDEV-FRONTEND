@@ -38,49 +38,75 @@
 .mActions{
     display: flex;
     flex-wrap: nowrap;
-    border: solid;
-    border-color: var(--secondary);
-    border-width: 1px;
 
     width: auto;
 }
 
+/*Actions à gauche du haut du site*/
 .mActions .mActionGauche{
     margin: 0;
     padding: 0;
     width: 65%;
 
-    border: solid;
-    border-color: black;
-    border-width: 1px;
-
     float: left;
-    color: red;
 }
 
+#mAction{
+    float: left;
+    height: max-content;
+    padding: 0.25rem 0.5rem;
+    border: solid;
+    border-width: 0.1rem 0.1rem 0.1rem 0;
+    width: fit-content;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+}
+
+#mRefresh{
+    float: left;
+    height: max-content;
+    padding: 0.25rem 0.5rem;
+    border: solid;
+    border-width: 0.1rem 0.05rem 0.1rem 0;
+    width: fit-content;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+}
+
+/*Actions à droite du haut du site*/
 .mActions .mActionDroite{
     margin: 0;
     padding: 0;
+    max-width: fit-content;
     width: 35%;
     display: flex;
     flex-wrap: nowrap;
-    background-color: aqua;
-
-    border: solid;
-    border-color: black;
-    border-width: 1px;
     
     float: right;
 }
 
 .mRecherche{
     display: flex;
-    width: max-content;
+    border:solid;
+    max-width: fit-content;
+    width: auto;
+    border-color: var(--lightTitle);
+    border-width: 0.1rem;
+    margin: 0;
+    align-items: center;
+}
+
+.mRecherche > p{
+    text-wrap: nowrap;
 }
 
 .mFiltre{
     display: flex;
     width: min-content;
+    text-align: center;
+    align-items: center;
 }
 
 /*========== Tableau ==========*/
@@ -131,10 +157,17 @@
 }
 
 .mContent div{
-    background-color: aquamarine;
-
     display: flex;
-    max-width: fit-content;
+    max-width: auto;
     width: auto;
-    margin: auto 0 auto;
+    min-width: fit-content;
+    margin: 0 auto 0 auto;
+    align-items: center;
+}
+
+.mActive{
+    background-color: var(--sucess);
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    border-radius: 1rem;
 }
