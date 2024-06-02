@@ -30,7 +30,7 @@
   --backgroundNavbar: var(--darkgreen);
   --backgroundNavbarHover: var(--lightgreen);
   --error: var(--red);
-  --sucess: var(--limegreen);
+  --success: var(--limegreen);
   --warning: var(--yellow);
   --ligthError: var(--ligthred);
   --text: var(--black);

@@ -276,7 +276,7 @@ td > div > p{
 
 /*State Background*/
 .active{
-    background-color: var(--sucess);
+    background-color: var(--success);
     padding: 0.1rem 1.4rem 0.1rem 1.4rem;
     border-radius: 60px;
 }
