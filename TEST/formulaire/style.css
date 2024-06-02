@@ -1,0 +1,149 @@
+:root{
+    --blanc: #FFFFFF;
+    --bleu: #021FB4;
+    --red: #FF0000;
+    --black: #000000;
+    --gris: #F7F7F7;
+    --gris2: #AAAAAA;
+    --gris3:#EEEEEE;
+    --primery: var(--blanc);
+    --secondary: var(--gris);
+    --titre: var(--bleu);
+    --notice:var(--gris2);
+    --bnotice:var(--gris3);
+    --text_light: var(--black);
+    --error: var(--red);
+
+}
+
+body{
+    background-color: var(--primery);
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+#erreur{
+    color: var(--error);
+    display: inline;
+}
+
+#page{
+    background-color: var(--secondary);
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#INSCRIPTION{
+    margin-top: 0%; 
+    padding-top: 3%;
+    text-align: center;
+    color: var(--titre);
+    font-family: Arial;
+    font-weight: 500;
+    size: 24px;
+    line-height: 36px;
+}
+
+.identity{
+    margin: auto;
+    display:flex;
+}
+
+.name{
+    margin: auto;
+    display: flex;
+}
+
+#name{
+    width: 207px;
+    height: 30px; 
+    border-radius: 10px;
+}
+
+#notice{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#titrenotice{
+    color: var(--notice);
+}
+
+#textnotice{
+    background-color: var(--bnotice);
+}
+
+.email{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.civilite{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.Monsieur{
+    text-align: center;
+}
+
+.comm{
+    margin: auto;
+    display: flex;
+}
+
+.Commentaire{
+    margin: auto;
+    display: flex;
+}
+
+#commentaire{
+    
+    border-radius: 10px;
+}
+
+.error-box {
+    display: flex;
+    align-items: center;
+    background-color: #ffe6e6;
+    border: 1px dashed #ff9999;
+    padding: 5px;
+    max-width: 250px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.error-icon {
+    color: #ff4d4d;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.error-message {
+    color: #ff3333;
+    font-size: 12px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 2em;
+}
+
+.submit-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.submit-button:hover {
+    background-color: #333;
+}
