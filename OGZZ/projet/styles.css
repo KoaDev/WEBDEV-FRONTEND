@@ -297,7 +297,7 @@ tbody > tr:nth-child(2n + 1) {
     #rightBox
     {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
     }
 }
 
@@ -332,7 +332,7 @@ tbody > tr:nth-child(2n + 1) {
     }
   
     #rightBox{
-        justify-content:center;
+        justify-content:space-around;
     }
     #rightBox .search{
         height: 70px;
