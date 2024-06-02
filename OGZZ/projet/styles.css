@@ -275,6 +275,7 @@ tbody > tr:nth-child(2n + 1) {
 
 @media screen and (max-width : 768px){
 
+   
     .cards{
         padding-top: 3%;
         padding-bottom: 3%;
@@ -293,19 +294,25 @@ tbody > tr:nth-child(2n + 1) {
         flex-direction: column-reverse;
         
     }
+    #rightBox
+    {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 
 
 @media screen and (max-width : 576px){
-
+    tr{
+        font-size: 13px;
+    }
     main{
         padding-left: 1%;
         padding-right: 1%;
     }
 
-    
-    
+
     #card-grid{
         display: grid;
         grid-template-columns: auto auto;
@@ -317,12 +324,7 @@ tbody > tr:nth-child(2n + 1) {
         white-space: nowrap;
 
     }
-    .cards{
-        padding-top: 3%;
-        padding-bottom: 3%;
-        padding-left: 6%;
-        padding-right: 6%;
-    }
+
 
 
     #description{
@@ -330,7 +332,7 @@ tbody > tr:nth-child(2n + 1) {
     }
   
     #rightBox{
-        justify-content: space-between;
+        justify-content:center;
     }
     #rightBox .search{
         height: 70px;
