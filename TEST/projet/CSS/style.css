@@ -119,13 +119,23 @@
     text-wrap: nowrap;
 }
 
-.mFiltre{
+/*.mFiltre{
     display: flex;
     width: min-content;
     text-align: center;
     align-items: center;
     margin: auto 1rem;
-}
+}*/
+
+.filter{
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+    padding-left: 2em;
+  }
+  .filter:hover{
+    cursor: pointer;
+  }
 
 /*========== Tableau ==========*/
 .mStatTable{
