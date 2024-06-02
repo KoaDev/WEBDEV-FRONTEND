@@ -220,7 +220,7 @@
 }
 
 .mActive{
-    background-color: var(--sucess);
+    background-color: var(--success);
     padding: 0.25rem 0.75rem;
     margin: 0.25rem;
     border-radius: 1rem;
@@ -234,7 +234,7 @@
 }
 
 .mInactive{
-    background-color: var(--black);
+    background-color: var(--secondary);
     color: var(--white);
     padding: 0.25rem 0.75rem;
     margin: 0.25rem;

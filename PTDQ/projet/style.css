@@ -196,7 +196,7 @@ h5 {
 }
 
 .status.active {
-    background-color: var(--sucess);
+    background-color: var(--success);
 }
 
 .status.degraded {

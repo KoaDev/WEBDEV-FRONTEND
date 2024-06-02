@@ -31,7 +31,7 @@ html {
 .menu {
     width: 80%;
     height: 50px;
-    border: 2px solid black;
+    border: 2px solid var(--secondary);
 }
 
 .main-content {
@@ -47,13 +47,13 @@ html {
 .small-box {
     width: 100%;
     height: 150px;
-    border: 2px solid black;
+    border: 2px solid var(--secondary);
 }
 
 .bottom-content {
     width: 90%;
     height: 200px;
-    border: 2px solid black;
+    border: 2px solid var(--secondary);
     margin-bottom: 20px;
 }
 
@@ -70,7 +70,7 @@ body {
     align-items: center;
     padding: 20px;
     margin: 10px;
-    background-color: #fff;
+    background-color: var(--backgroundWhite);
 }
 
 .header-left {
@@ -85,17 +85,17 @@ body {
 
 .header-left p {
     margin: 0;
-    color: #666;
+    color: var(--lightTitle);
 }
 
 .cockpit-button {
     display: flex;
     align-items: center;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
+    background-color: var(--backgroundGrey);
+    border: 1px solid var(--border);
     padding: 10px 20px;
     text-decoration: none;
-    color: #000;
+    color: var(--secondary);
     font-weight: bold;
 }
 
@@ -111,7 +111,7 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     margin: 10px;
-    background-color: #fff;
+    background-color: var(--backgroundWhite);
 }
 
 .box {
@@ -119,10 +119,10 @@ body {
 }
 
 .status-not-in-production {
-    background-color: #ffe6e6;
+    background-color: var(--ligthError);
     padding: 10px;
-    color: #d9534f;
-    border: 1px solid #d9534f;
+    color: var(--orangeIcon);
+    border: 1px solid var(--orangeIcon);
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -161,15 +161,15 @@ body {
 }
 
 .additional-box {
-    border: 1px solid #ccc;
+    border: 1px solid var(--border);
     padding: 20px;
     margin: 10px 10px 0 10px;
-    background-color: #f9f9f9;
+    background-color: var(--backgroundGrey);
 }
 
 .details {
     display: none;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid var(--border);
     padding-top: 20px;
     margin-top: 20px;
 }
@@ -187,7 +187,7 @@ body {
 .details select {
     width: 100%;
     padding: 8px;
-    border: 1px solid #fff;
+    border: 1px solid var(--backgroundWhite);
 }
 
 .details .checkbox-grid {
@@ -218,11 +218,11 @@ body {
 }
 
 .delivery-table th {
-    background-color: #f9f9f9;
+    background-color: var(--backgroundGrey);
 }
 
 .delivery-table tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: var(--backgroundGrey);
 }
 
 body {
@@ -235,7 +235,7 @@ body {
     align-items: center;
     padding: 20px;
     margin: 10px;
-    background-color: #fff;
+    background-color: var(--backgroundWhite);
     flex-wrap: wrap;
 }
 
@@ -251,17 +251,17 @@ body {
 
 .header-left p {
     margin: 0;
-    color: #666;
+    color: var(--lightTitle);
 }
 
 .cockpit-button {
     display: flex;
     align-items: center;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
+    background-color: var(--backgroundGrey);
+    border: 1px solid var(--border);
     padding: 10px 20px;
     text-decoration: none;
-    color: #000;
+    color: var(--secondary);
     font-weight: bold;
     margin-top: 10px;
 }
@@ -278,7 +278,7 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     margin: 10px;
-    background-color: #fff;
+    background-color: var(--backgroundWhite);
     flex-wrap: wrap;
 }
 
@@ -295,10 +295,10 @@ body {
 }
 
 .status-not-in-production {
-    background-color: #ffe6e6;
+    background-color: var(--ligthError);
     padding: 10px;
-    color: #d9534f;
-    border: 1px solid #d9534f;
+    color: var(--orangeIcon);
+    border: 1px solid var(--orangeIcon);
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -338,15 +338,15 @@ body {
 }
 
 .additional-box {
-    border: 1px solid #ccc;
+    border: 1px solid var(--border);
     padding: 20px;
     margin: 10px 10px 0 10px;
-    background-color: #ffff;
+    background-color: var(--backgroundWhite);
 }
 
 .details {
     display: none;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid var(--border);
     padding-top: 20px;
     margin-top: 20px;
 }
@@ -384,15 +384,15 @@ body {
 .details .form-group .form-field input {
     width: 100%;
     padding: 8px;
-    border-bottom: 1px solid black;
-    background-color: white;
+    border-bottom: 1px solid var(--secondary);
+    background-color: var(--backgroundWhite);
     outline: none;
 }
 
 .details button {
-    background-color: white;
-    color: #000;
-    border: solid 1px black;
+    background-color: var(--backgroundWhite);
+    color: var(--secondary);
+    border: solid 1px var(--secondary);
     padding: 10px 20px;
     cursor: pointer;
 }
@@ -411,7 +411,7 @@ body {
 .availability label {
     margin-right: 20px;
     padding: 10px 20px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--border);
     border-radius: 20px;
     cursor: pointer;
 }
@@ -421,9 +421,9 @@ body {
 }
 
 .availability input[type="radio"]:checked+label {
-    border: solid 2px goldenrod;
-    background-color: white;
-    color: black;
+    border: solid 2px var(--orangeIcon);
+    background-color: var(--backgroundWhite);
+    color: var(--secondary);
     font-weight: bold;
 }
 
@@ -444,7 +444,7 @@ body {
 }
 
 .checkbox-grid div.empty {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid var(--border);
 }
 
 .checkbox-grid input[type="checkbox"] {
@@ -452,8 +452,8 @@ body {
 }
 
 .checkbox-grid input[type="checkbox"]:checked {
-    border: solid 1px  goldenrod;
-    color: #fff;
+    border: solid 1px  var(--orangeIcon);
+    color: var(--backgroundWhite);
 }
 
 .delivery-table {
@@ -469,11 +469,11 @@ body {
 }
 
 .delivery-table th {
-    background-color: white;
+    background-color: var(--backgroundWhite);
 }
 
 .delivery-table tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: var(--backgroundGrey);
 }
 
 @media (max-width: 768px) {
