@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>INSCRIPTION</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="page">
+        <h1 id="INSCRIPTION">INSCRIPTION</h1>
+        <form action="/submit" method="post">
+            <div class="identity">
+                <div class="name">
+                    <label for="name" style="margin-top: 7px;">Nom </label>&nbsp
+                    <div>
+                        <input type="text" id="name" name="name" placeholder="votre nom">
+                        <p id="erreur">★</p><br>
+                        <p id="erreur">le champ nom est obligatoire</p>
+                    </div>
+
+                </div>
+                <div class="name">
+                    <label for="prenom" style="margin-top: 7px;">Prénom </label>&nbsp
+                    <div>
+                        <input type="text" id="name" name="prenom" placeholder="votre prénom">
+                        <p id="erreur">★</p><br>
+                        <p id="erreur">le champ nom est obligatoire</p>
+                    </div>
+
+                </div>
+            </div>
+            <div id="notice">
+                <h3 id="titrenotice">Notice:</h3>
+                <div id="textnotice">
+                    <p style="margin-left: 10px; margin-right: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Aliquam sit amet sollicitudin
+                        diam, at aliquet
+                        mauris.
+                        Pellentesque sed fermentum massa, sed pharetra enim. Phasellus aliquet quis massa eu cursus. Sed
+                        eget
+                        viverra ante.
+                        Cras sollicitudin ullamcorper ante, eget elementum tellus. Nunc vitae ullamcorper sem.
+                        Duis scelerisque neque sit amet elit interdum, vel suscipit dui varius.
+                        Aenean maximus, massa in viverra eleifend, tortor ante euismod elit, non dictum erat est eu
+                        quam.
+                    </p>
+                </div>
+
+            </div>
+
+            <div id="info">
+                <div class="email">
+                    <label for="name">Email:</label>&nbsp
+                    <input type="text" id="name" name="name" placeholder="votre email">
+                    <p id="erreur">★</p><br>
+                    <p id="erreur">le champ nom est obligatoire</p>
+                </div>
+
+                <div class="civilite">
+                    <label for="name">Civilité</label>&nbsp
+                    <input type="radio" id="civilite" name="civilite" checked value="Mr">
+                    <label for="name">Mr</label>&nbsp
+                    <input type="radio" id="civilite" name="civilite" checked value="Mme">
+                    <label for="email">Mme</label>&nbsp
+                    <input type="radio" id="civilite" name="civilite" checked value="Me">
+                    <label for="email">Me</label>&nbsp
+                </div>
+                <div class="Monsieur">
+                    <p style="margin-left: 10px; margin-right: 10px;">
+                        Monsieur &nbsp&nbsp&nbsp [NOM]
+                    </p>
+                </div>
+
+                <br><br>
+
+                <div class="comm">
+                    <div class="Commentaire">
+                        <label id="text" for="text">Commentaires</label>&nbsp&nbsp
+                        <div>
+                            <textarea id="commentaire" name="text" rows="4" cols="50"> </textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="error-box">
+                    <img src="../../TMAX/projet/svg/ico_danger.svg"> &nbsp&nbsp
+                    <div class="error-message">
+                        <p>le champ nom est obligatoire</p>
+                        <p>le champ prénom est obligatoire</p>
+                        <p>le champ email est obligatoire</p>
+                    </div>
+                </div>
+
+
+                <br><br><br>
+                <div class="button-container">
+                    <button class="submit-button" value="ENREGISTRER" href="../Formulaire/main.html">ENREGISTRER</button>
+                </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
