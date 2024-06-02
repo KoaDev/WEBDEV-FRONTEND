@@ -76,10 +76,10 @@ function display_NetworkInfo() {
 }
 
 /* Affichage des tables selons les onglets cliqués */
-
 function displayTable(idTable) {
-  tables = document.querySelectorAll("table");
-  title = document.getElementById("title-section");
+  let tables = document.querySelectorAll("table");
+  let title = document.getElementById("title-section");
+  let pagination = document.getElementById("pagination");
 
   tables.forEach((element) => {
     element.id != idTable
@@ -87,7 +87,63 @@ function displayTable(idTable) {
       : (element.style = "display: table;");
   });
   title.innerText = idTable + " inventory";
+  pagination.id.value = String("pagination" + idTable);
+
+
+  paginationFunction(idTable, pagination.id);
 }
+
+/*affiche n colonne et n boutons, on accède aux autre colonne en cliquant sur les boutons*/
+function paginationFunction(idTable, buttonBoxId){
+  console.log(idTable);
+  let rows = document.getElementById(idTable).getElementsByTagName("tbody")[0].children;
+  let buttonBox = document.getElementById(buttonBoxId);
+  buttonBox.innerHTML = '';
+  var currentIndex = 0;
+
+  /*creer n boutons en fonction du nombre de colonnes et du nombre de colonnes que l'on veut afficher*/
+  let nbButtons = Math.ceil(rows.length/4) //pour ne pas avoir 7.5 mais 8 boutons
+  let previous = document.createElement("span");
+  previous.innerText = "<";
+  buttonBox.appendChild(previous);
+
+  for (let index = currentIndex; index < nbButtons; index++) {
+    let button = document.createElement("button");
+    button.innerText = index + 1;
+    button.onclick = function name() {
+      console.log(button) //remplacer par la fonction qu'on veut
+      currentIndex = 4*Number(button.innerText) - 4;
+      displayRows(rows, currentIndex);
+    } 
+    buttonBox.appendChild(button);
+  }
+  let next = document.createElement("span");
+  next.innerText = ">";
+  buttonBox.appendChild(next);
+  /*--------------------------------------------------------------------------------------------------*/
+
+  displayRows(rows, currentIndex) 
+  buttonBox.getElementsByTagName("button")[0].focus();
+  //réali qu'une fois 
+  //nécéssaire sinon ca affiche toutes les colones, et avoir le boutons 1 en focus
+}
+
+//affiche que les n colonnes en fonction du bouton appuyé
+function displayRows(rows, currentIndex){
+  for (let index = 0; index < rows.length; index++) {
+    if( index < currentIndex  || index > currentIndex + 4 -1 ){
+      rows[index].style.display = "none";
+    }
+    else{
+      rows[index].style.display = "";
+    }
+    
+  }
+}
+
+
+
+
 
 /*                                                                       *
                                      TRI                
@@ -141,5 +197,6 @@ function sortTable(columnIndex, idTable) {
   }
   sortOrder[columnIndex] = direction;
 }
+
 
 window.onload = display_NetworkInfo();

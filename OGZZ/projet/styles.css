@@ -121,10 +121,12 @@ hgroup{
 .cards{
     display: grid;
     grid-template-columns: 50% 50%;
+    align-items: center;
+
     padding-top: 10%;
     padding-bottom: 10%;
-    padding-left: 18%;
-    padding-right: 18%;
+    padding-left: 13%;
+    padding-right: 13%;
     border : 2px solid var(--border);
 }
 .leftSide{
@@ -134,7 +136,7 @@ hgroup{
 }
 .leftSide > h2{
     margin: 0;
-    color: var(--orangeIcon);
+    color: var(--primary);
     font-size: 180%;
 }
 .leftSide > p{
@@ -164,7 +166,7 @@ hgroup{
 }
 
 .onglet:focus{
-    border-bottom: 3px solid var(--orangeIcon);
+    border-bottom: 3px solid var(--primary);
     margin-bottom: -1px;
 }
 
@@ -191,9 +193,11 @@ hgroup{
     outline: none;
 }
 
-/* -------------------------- Inventaires -------------------------- */
+
+
+/* -------------------------- Tableau/Inventaires -------------------------- */
 #inventories {
-    background-color: #EEEEEE;
+    background-color: var(--backgroundGrey);
 }
 
 table {
@@ -201,34 +205,84 @@ table {
     border-collapse: collapse;
     width: 100%;
     display: none;
+    
 }
   
 td, th {
-    border-bottom: 1px solid var(--lightgrey);
-    text-align: left;
+    border-bottom: 1px solid var(--border);
     padding: 1%;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
-tr:nth-child(2n) {
-    background-color: var(--draft);
+tr{
+    display: flex;
+    justify-content: space-between;
+}
+
+tbody > tr:nth-child(2n + 1) {
+    background-color: var(--backgroundWhite);
 }
 
 .sortBy {
     background-color: var(--draft);
 }
 
+.site-monitoring-link{
+    display: flex;
+    align-items: center;
+    color: var(--secondary);
+}
+
+/* Pagination */
+/* Pagination styling */
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+.pagination button, .pagination span {
+    padding: 0.4% 1%;
+    margin: 0 0.3%;
+    background-color: var(--backgroundGrey);
+    cursor: pointer;
+    color: var(--verydarkgray);
+}
+
+.pagination button:disabled, .pagination span.dots {
+    background-color: var(--honeydew);
+    cursor: not-allowed;
+}
+
+.pagination button:focus {
+    border: 2px solid var(--orangeIcon);
+    font-weight: bold;
+}
+
+.pagination .dots {
+    border: none;
+    cursor: default;
+}
+
 /*-------------------------------------- media --------------------------------------*/
 
-@media screen and (max-width : 850px){
+@media screen and (max-width : 768px){
 
-    main{
-        padding-left: 1%;
-        padding-right: 1%;
-    }
-    
     #card-grid{
         display: grid;
         grid-template-columns: auto auto;
+    }
+    .cards{
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #description{
+        width: 100%;
     }
     #summary
     {
@@ -237,55 +291,68 @@ tr:nth-child(2n) {
         white-space: nowrap;
 
     }
-
-
-    #description{
-        width: 100%;
-    }
     #search-bar{
         display: flex;
         flex-direction: column-reverse;
+        
     }
+    #rightBox
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+
+@media screen and (max-width : 576px){
+    tr{
+        font-size: 13px;
+    }
+    main{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    #summary
+    {
+        display: flex;
+        overflow: auto;
+        white-space: nowrap;
+
+    }
+  
     #rightBox{
-        justify-content: space-between;
+        justify-content:space-around;
     }
     #rightBox .search{
         height: 70px;
     }
 
     table thead {
-        border: none;
-        clip: rect(0 0 0 0);
-        height: 1px;
-        margin: -1px;
-        overflow: hidden;
-        padding: 0;
-        position: absolute;
-        width: 1px;
+        display: none;
     }
 
     table tr {
+        display: flex;
+        flex-direction: column;
+
         border: 1px solid var(--border);
-        display: block;
-        margin-bottom: .625em;
     }
-
-    table td {
-        border-bottom: none;
-        display: block;
-        font-size: var(--base_font_size);
-        text-align: right;
-    }
-
+  
     table td::before {
-        /*
-        * aria-label has no advantage, it won't be read inside a table
-        content: attr(aria-label);
-        */
         content: attr(data-label);
-        float: left;
         font-weight: bold;
         text-transform: uppercase;
+    }
+    
+    table td {
+        display: grid;
+        grid-template-columns: auto 40%;
+        align-items: center;
+
+        border-bottom: none;
+        font-size: var(--base_font_size);
     }
 
     table td:last-child {
