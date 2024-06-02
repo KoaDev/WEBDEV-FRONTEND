@@ -275,12 +275,19 @@ tbody > tr:nth-child(2n + 1) {
 
 @media screen and (max-width : 768px){
 
-   
+    #card-grid{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
     .cards{
         padding-top: 3%;
         padding-bottom: 3%;
         padding-left: 10%;
         padding-right: 10%;
+    }
+
+    #description{
+        width: 100%;
     }
     #summary
     {
@@ -312,23 +319,12 @@ tbody > tr:nth-child(2n + 1) {
         padding-right: 1%;
     }
 
-
-    #card-grid{
-        display: grid;
-        grid-template-columns: auto auto;
-    }
     #summary
     {
         display: flex;
         overflow: auto;
         white-space: nowrap;
 
-    }
-
-
-
-    #description{
-        width: 100%;
     }
   
     #rightBox{
@@ -337,8 +333,6 @@ tbody > tr:nth-child(2n + 1) {
     #rightBox .search{
         height: 70px;
     }
-
-
 
     table thead {
         display: none;
