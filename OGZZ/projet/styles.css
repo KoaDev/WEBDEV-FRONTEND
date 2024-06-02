@@ -273,7 +273,31 @@ tbody > tr:nth-child(2n + 1) {
 
 /*-------------------------------------- media --------------------------------------*/
 
-@media screen and (max-width : 850px){
+@media screen and (max-width : 768px){
+
+    .cards{
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    #summary
+    {
+        display: flex;
+        overflow: auto;
+        white-space: nowrap;
+
+    }
+    #search-bar{
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+}
+
+
+
+@media screen and (max-width : 576px){
 
     main{
         padding-left: 1%;
@@ -304,10 +328,7 @@ tbody > tr:nth-child(2n + 1) {
     #description{
         width: 100%;
     }
-    #search-bar{
-        display: flex;
-        flex-direction: column-reverse;
-    }
+  
     #rightBox{
         justify-content: space-between;
     }
