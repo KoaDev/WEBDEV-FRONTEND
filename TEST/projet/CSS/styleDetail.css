@@ -1,5 +1,10 @@
 @import url(../../TMAX/projet/style.css);
 
+a {
+  text-decoration: none;
+  color : var(--secondary);
+}
+
 
 section{
     padding-left: 2%;

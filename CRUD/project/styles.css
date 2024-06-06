@@ -1,5 +1,10 @@
 @import url(../../TMAX/style.css);
 
+a {
+    text-decoration: none;
+    color : var(--secondary);
+}
+
 /*------------------General CSS for HTML attribute--------------*/
 h1{
     margin-bottom: 0;

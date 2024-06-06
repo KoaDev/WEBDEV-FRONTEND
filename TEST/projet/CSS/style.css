@@ -1,257 +1,494 @@
-@import url(../../../TMAX/projet/style.css);
+@import url(../../TMAX/style.css);
 
+a {
+    text-decoration: none;
+    color : var(--secondary);
+}
 
-.mTableLink{
+/*------------------General CSS for HTML attribute--------------*/
+h1{
+    margin-bottom: 0;
+}
+
+section{
+    background-color: var(--backgroundGrey);
+    padding-bottom: 20rem;
+}
+
+/*-----------------General CSS for personalized CSS Class-------------*/
+.flexbox-line{
     display: flex;
-    background-color: var(--backgroundWhite);
-    max-width: max-content;
+    justify-content: flex-start;
 }
 
-.mRedirection{
-    padding: 5px;
+.noMargin{
+    margin: 0;
 }
 
-.mRedirection a{
+.margin{
+    margin: 0 1em 0 0;
+}
+
+.horizontalScroll{
+    overflow-x: auto;
+}
+
+.smallTriSection{
+    display: flex;
+    align-items: center;
+    color: var(--titleTab);
+    padding: 3rem 0 1rem 0;
+    width: 9rem;
+}
+
+.bigTriSection{
+    display: flex;
+    align-items: center;
+    color: var(--titleTab);
+    padding: 3rem 0 1rem 0;
+    width: 14rem;
+}
+
+.flexbox-center{
+    display: flex;
+    align-items: center;
+}
+
+.spaceImage{
+    padding-right: 0.5rem;
+}
+
+/*------------------------CSS Header-----------------------*/
+
+/*Path Header*/
+.main-header > div{
+    border-bottom: solid var(--border) 1px;
+    padding-left: 2rem;
+}
+
+/*Page Title*/
+.main-header > h1{
+    padding-left: 2rem;
+}
+
+/*Navbar of our page*/
+/*Network link*/
+.selected-nav{
+    margin: 1rem 2rem 0 0;
+    display: flex;
+    align-items: center;
+}
+.selected-nav:hover{
+    cursor: pointer;
+}
+.selected-nav > p{
+    margin: 0;
+}
+
+/*Region link*/
+.regionSection{
+    font-weight: bold;
+    border-bottom: solid var(--primary) 5px;
+    padding: 0 1rem 0 1rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+.regionSection:hover{
+    cursor: pointer;
+}
+.regionSection > p{
+    margin: 0;
+}
+
+/*Site link*/
+.siteSection{
+    margin: 1rem 0 0 2rem;
+    display: flex;
+    align-items: center;
+}
+.siteSection:hover{
+    cursor: pointer;
+}
+.siteSection > p{
+    margin: 0;
+}
+
+/*blank*/
+.blankSection{
+    width: 55rem;
+}
+
+.addButtonDiv{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2rem;
+    margin-bottom: 0.7rem;
+    margin: 0 2rem 0.7rem 1rem;
+    width: 100%;
+}
+
+/*Add Network button*/
+button{
+    background-color: var(--secondary);
+    color: var(--backgroundWhite);
+    align-items: center;
+    padding: 0 3.5rem 0 3.5rem;
+}
+button:hover{
+    cursor: pointer;
+}
+
+/*Action Choice Nav*/
+
+/*Action Action*/
+.actionSection{
+    display: flex;
+    align-items: center;
+    border-right: solid var(--border) 1px;
+    padding: 1em;
+}
+.actionSection:hover{
+    cursor: pointer;
+}
+
+/*Refresh Action*/
+.refreshSection{
+    display: flex;
+    align-items: center;
+    padding: 1em;
+}
+.refreshSection:hover{
+    cursor: pointer;
+}
+
+/*Search Action*/
+.searchSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-right: solid var(--border) 1px;
+    padding: 1rem;
     color: var(--lightTitle);
 }
 
-#mActuel{
-    border-bottom: 3px solid var(--primary);
+.searchText{
+    padding-right: 11rem;
 }
 
-/*Sert à séparer le titre des autres éléments*/
-.mSeparator{
-    display: flex;
-    flex-wrap: nowrap;
-    width: auto;
+.searchIcon{
+    display: none;
 }
 
-#addANewRegion{
+/*Filtering Action (JS)*/
+.filterSection{
     display: flex;
     align-items: center;
-    background-color: var(--secondary);
-    color: var(--white);
-    margin-left: auto;
+    padding: 1em;
 }
-
-/*========== Début code Actions ==========*/
-.mActions{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-
-    width: auto;
-    border:solid;
-    border-color: var(--border);
-    border-width: 0.1rem 0 0.1rem 0;
-}
-
-/*Actions à gauche du haut du site*/
-.mActions .mActionGauche{
-    margin: 0;
-    padding: 0;
-    max-width: fit-content;
-    display: flex;
-    flex-wrap: nowrap;
-    
-    float: left;
-}
-
-.mActionGauche div{
-    display: flex;
-    border: solid;
-    padding: 0 1rem;
-    border-color: var(--border);
-    border-width: 0 0.1rem 0 0;
-    width: min-content;
-    text-align: center;
-    align-items: center;
-
-}
-
-/*#mAction{
-    float: left;
-    height: 1rem;
-    padding: 0.25rem 0.5rem;
-    border: solid;
-    border-width: 0.1rem 0.1rem 0.1rem 0;
-    width: fit-content;
-    margin: 0;
-    text-align: center;
-    align-items: center;
-}
-
-#mRefresh{
-    float: left;
-    height: 1rem;
-    padding: 0.25rem 0.5rem;
-    border: solid;
-    border-width: 0.1rem 0.05rem 0.1rem 0;
-    width: fit-content;
-    margin: 0;
-    text-align: center;
-    align-content: baseline;
-}*/
-
-/*Actions à droite du haut du site*/
-.mActions .mActionDroite{
-    margin: 0;
-    padding: 0;
-    max-width: fit-content;
-    display: flex;
-    flex-wrap: nowrap;
-    
-    float: right;
-}
-
-.mRecherche{
-    display: flex;
-    border:solid;
-    max-width: fit-content;
-    width: auto;
-    border-color: var(--border);
-    border-width: 0 0.1rem 0 0.1rem;
-    margin: 0;
-    align-items: center;
-}
-
-.mRecherche > p{
-    text-wrap: nowrap;
-}
-
-/*.mFiltre{
-    display: flex;
-    width: min-content;
-    text-align: center;
-    align-items: center;
-    margin: auto 1rem;
-}*/
-
-.filter{
-    display: flex;
-    align-items: center;
-    padding: 0.5em;
-    padding-left: 2em;
-  }
-  .filter:hover{
+.filterSection:hover{
     cursor: pointer;
-  }
-
-/*========== Tableau ==========*/
-.mStatTable{
-    display: flex;
-    margin:auto;
-    padding: 0.75rem 0 0.5rem;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
 }
 
-.mStatTable div{
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    text-align: center;
+/*blank*/
+.blankSection2{
+    width: 37rem;
+    border-right: solid var(--border) 1px;
+    border-left: solid var(--border) 1px;
 }
 
-.mStatTable p{
-    float: left;
-    text-wrap: wrap;
-    text-align: left;
+/*--------------------Network Items (tab)------------------*/
+
+table{
+    width: 94%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    margin: 2rem 2rem 0 2rem;
+}
+
+td {
+    border-bottom: solid var(--border) 1px;
+    border-top: solid var(--border) 1px;
+    padding: 1rem 0.1rem 1rem 0.1rem;
+}
+
+th{
+    font-weight: normal;
+    color: var(--titleTab);
+}
+
+.tdLeftBorder{
+    border-left: solid var(--border) 1px;
+    padding-left: 1rem;
+}
+
+.tdRightBorder{
+    border-right: solid var(--border) 1px;
+    padding-right: 1rem;
+}
+
+tbody {
+    background-color: var(--backgroundWhite);
+    white-space: nowrap; /* Pour éviter que le texte ne se coupe */
+}
+
+th > div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+td > div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+td > div > p{
     margin: 0;
-    max-width: min-content;
 }
 
-/*========== Table de contenu ==========*/
-.mContentTable{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.Opstatus{
+    font-size: small;
+    font-weight: 0;
 }
 
-.mContent{
-    display: flex;
-    flex-wrap: nowrap;
-    width: auto;
-    border: solid;
-    border-color: var(--border);
-    border-width: 0.1em;
-    margin: 0.25em;
+.rectangle{
+    border: solid var(--secondary);
+    width: 20px;
+    height: 20px;
+}
+.rectangle:hover{
+    cursor: pointer;
 }
 
-.mContent > div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.1rem;
+.edit:hover{
+    cursor: pointer;
 }
 
-.Provisioning{
-    width: 6.5rem;
-    /*justify-content: center;*/
-}
-
-.Operational{
-    width: 6rem;
-    /*justify-content: center;*/
-}
-
-.Region{
-    width: 5.75rem;
-    /*justify-content: center;*/
-}
-
-.Vendor{
-    width: 4.5rem;
-    /*justify-content: center;*/
-}
-
-.Network{
-    width: 6.5rem;
-    /*justify-content: center;*/
-}
-
-.Gateways{
-    width: 6rem;
-    /*justify-content: center;*/
-}
-
-.Locations{
-    width: 6rem;
-    /*justify-content: center;*/
-}
-
-.Edges{
-    width: 4rem;
-    /*justify-content: center;*/
-}
-
-.mActive{
+/*State Background*/
+.active{
     background-color: var(--success);
-    padding: 0.25rem 0.75rem;
-    margin: 0.25rem;
-    border-radius: 1rem;
+    padding: 0.1rem 1.4rem 0.1rem 1.4rem;
+    border-radius: 60px;
 }
 
-.mDraft{
-    background-color: var(--draft);
-    padding: 0.25rem 0.75rem;
-    margin: 0.25rem;
-    border-radius: 1rem;
+.provisioning{
+    background-color: var(--previsioning);
+    border-radius: 60px;
+    padding: 0.1rem 1rem 0.1rem 1rem;
 }
 
-.mInactive{
-    background-color: var(--secondary);
-    color: var(--white);
-    padding: 0.25rem 0.75rem;
-    margin: 0.25rem;
-    border-radius: 1rem;
+.draft{
+    background-color: var(--backgroundGrey);
+    border-radius: 60px;
+    padding: 0.1rem 1.4rem 0.1rem 1.4rem;
 }
 
-.Extremitee{
-    max-width: 1rem;
+.inactive{
+    background-color: var(--text);
+    border-radius: 60px;
+    padding: 0.1rem 1.4rem 0.1rem 1.4rem;
+    color: var(--backgroundWhite);
+}
+
+/*------------------Modal---------------------*/
+
+.modal {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    width: 34%;
+    overflow: auto;
+    background-color: var(--backgroundWhite);
+    margin-top: 20rem;
+    padding: 2rem;
+    border-top: solid var(--orangeIcon) 5px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), 6px 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.close{
+    display: flex;
+    justify-content: right;
+}
+
+.closePoint:hover{
+    cursor: pointer;
+}
+
+.spaceBetween{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5rem;
+}
+
+.alignItemsCenter{
+    display: flex;
+    align-items: center;
+}
+
+.bloc{
+    border-bottom: solid var(--border) 1px;
+    padding-bottom: 2rem;
+}
+
+.spaceBox{
+    margin-left: 1rem;
+}
+
+.spaceLabel{
+    margin-top: 1rem;
+}
+
+.spaceLine{
+    margin-top: 2rem;
+}
+
+.showResultsButton{
     width: 100%;
+    background-color: var(--backgroundWhite);
+    border: solid  var(--text) 1px ;
+    color: var(--text);
+    padding: 1rem 0 1rem 0;
+}
+.filterCheck {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 5px;
+    height: 5px;
+    padding: 0.5rem;
+    border: 2px solid gray;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Apparence de la checkbox lorsqu'elle est cochée */
+.filterCheck:checked {
+    border-color: var(--orangeIcon);
+}
+
+/* Apparence de la croix lorsqu'elle est cochée */
+.filterCheck:checked::after {
+    content: '✔';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: var(--orangeIcon);
+}
+
+#effacerBtn:hover{
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    width: 7%;
+    overflow: auto;
+    background-color: var(--backgroundWhite);
+    padding: 2rem;
+    border-top: solid var(--orangeIcon) 5px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), 6px 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+/* For Phones resolution*/
+@media (max-width: 576px) {
+    /*------------------General CSS for HTML attribute--------------*/
+    main{
+        padding: 0;
+    }
+
+    section{
+        padding-right: 0.2rem;
+    }
+
+    /*-----------------General CSS for personalized CSS Class-------------*/
+
+    .little-padding-top{
+        padding-top: 0.77rem;
+    }
+
+    .smallTriSection{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--titleTab);
+        padding: 0;
+        width: auto;
+        font-size: smaller;
+    }
+
+    .smallTriSectionVertical{
+        margin-top: 1rem;
+    }
+
+    .midTriSectionVertical{
+        margin-top: 1.3rem;
+    }
+
+    .bigTriSectionVertical{
+        margin-top: 1.6rem;
+    }
+    
+    .bigTriSection{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--titleTab);
+        padding: 0;
+        width: auto;
+        font-size: small;
+    }
+
+
+    /*---------------Header-------------*/
+    .main-header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-header > h1{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .main-header > div{
+        padding: 0;
+    }
+
+    .blankSection{
+        display: none;
+    }
+
+    .blankSection2{
+        display: none;
+    }
+
+    .provisionSection{
+        padding: 1rem;
+    }
+
+    .searchSection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 0 1rem;
+        border-left: solid var(--border) 1px;
+    }
+
+    /*----------------------Modal-------------*/
+    .modal {
+        margin-top: 26rem;
+    }
 }
