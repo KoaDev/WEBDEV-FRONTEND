@@ -29,19 +29,19 @@ boutonsPopup.forEach(function(bouton) {
 document.getElementById('afficheFiltre').addEventListener('click', function() {
     var contenu = document.getElementById('contenu');
     var filtrelabel=document.getElementById('afficheFiltre');
-    var img=document.getElementById('image');
+    var filtreImg=document.getElementById('filterImage');
     var search=document.getElementById('searchIcon');
     if (contenu.style.display === 'none') {
         contenu.style.display = 'block';
         filtrelabel.style.color="#F16E00";
         popup.style.display='none';
-        img.src="../../../TMAX/projet/svg/ico_config_hover.svg";
+        filtreImg.src="../../../TMAX/projet/svg/ico_config_hover.svg";
         search.style.display='block';
     } else {
         contenu.style.display = 'none';
         filtrelabel.style.color="black";
         popup.style.display='none';
-        img.src = "../../../TMAX/projet/svg/ico_config.svg";
+        filtreImg.src = "../../../TMAX/projet/svg/ico_config.svg";
         search.style.display='none';
     }
 });
@@ -49,11 +49,11 @@ document.getElementById('afficheFiltre').addEventListener('click', function() {
 document.getElementById('exit').addEventListener('click',function(){
     var contenu=document.getElementById('contenu');
     var filtrelabel=document.getElementById('afficheFiltre');
-    var img=document.getElementById('image');
+    var filtreImg=document.getElementById('filterImage');
     var search=document.getElementById('searchIcon');
     contenu.style.display='none';
     filtrelabel.style.color="black";
-    img.src = "../../../TMAX/projet/svg/ico_config.svg";
+    filtreImg.src = "../../../TMAX/projet/svg/ico_config.svg";
     search.style.display='none';
 });
 

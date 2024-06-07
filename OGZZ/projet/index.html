@@ -14,43 +14,45 @@
 
 <body>
     <nav class="navbar">
-    <a href="../../OGZZ/projet/index.html" class="navbar-brand">
-        <img src="../../TMAX/projet/svg/ico_logo.svg" alt="Logo" class="logo">
-        <h3>My Network</h3>
-    </a>
-    <ul class="navbar-menu">
-        <li class="dropdown">
-            <a href="../../PTDQ/projet/index.html" class="dropbtn">Solutions</a>
-        </li>
-        <li class="dropdown">
-            <button class="dropbtn">Regions <img src="../../TMAX/projet/svg/ico_arrow_down_hover.svg" class="ico"
-                                                 alt="ico_arrow_down_hover"></button>
-            <div class="dropdown-content">
-                <a href="../../TEST/projet/HTML/region.html">Region 1</a>
-                <a href="../../TEST/projet/HTML/region.html">Region 2</a>
-                <a href="../../TEST/projet/HTML/region.html">Region 3</a>
-            </div>
-        </li>
-        <li class="dropdown">
-            <button class="dropbtn">Locations <img src="../../TMAX/projet/svg/ico_arrow_down_hover.svg" class="ico"
-                                                   alt="ico_arrow_down_hover"></button>
-            <div class="dropdown-content">
-                <a href="../../MAES/PROJET/index.html">Location 1</a>
-                <a href="../../MAES/PROJET/index.html">Location 2</a>
-                <a href="../../MAES/PROJET/index.html">Location 3</a>
-            </div>
-        </li>
-    </ul>
-        <a href="../../PTDQ/projet/index.html" class="navbar-user">
+        <a href="../../CRUD/projet/index.html" class="navbar-brand">
+            <img src="../../TMAX/projet/svg/ico_logo.svg" alt="Logo" class="logo">
+            <h3>My Network</h3>
+        </a>
+        <ul class="navbar-menu">
+            <li class="dropdown">
+                <a href="../../CRUD/projet/index.html" class="dropbtn">Solutions</a>
+            </li>
+            <li class="dropdown">
+                <button class="dropbtn"><a href="../../TEST/projet/HTML/region.html">Regions <img
+                            src="../../TMAX/projet/svg/ico_arrow_down_hover.svg" class="ico"
+                            alt="ico_arrow_down_hover"></a></button>
+                <div class="dropdown-content">
+                    <a href="../../TEST/projet/HTML/details.html">Region 1</a>
+                    <a href="../../TEST/projet/HTML/details.html">Region 2</a>
+                    <a href="../../TEST/projet/HTML/details.html">Region 3</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button class="dropbtn"><a href="../../PTDQ/projet/index.html">Locations <img
+                            src="../../TMAX/projet/svg/ico_arrow_down_hover.svg" class="ico"
+                            alt="ico_arrow_down_hover"></a></button>
+                <div class="dropdown-content">
+                    <a href="../../MAES/projet/index.html">Location 1</a>
+                    <a href="../../MAES/projet/index.html">Location 2</a>
+                    <a href="../../MAES/projet/index2.html">Location 3</a>
+                </div>
+            </li>
+        </ul>
+        <a href="../../CRUD/projet/index.html" class="navbar-user">
             <img src="../../TMAX/projet/svg/ico_avatar.svg" class="ico-avatar" alt="ico_avatar">
             <span>FirstName LastName</span>
         </a>
-</nav>
+    </nav>
 
     <nav class="breadcrumb">
         <a href="#">Home</a>
         <a href="">Networking</a>
-        <a href="../../CRUD/project/index.html">Flexible</a>
+        <a href="../../CRUD/projet/index.html">Flexible</a>
         <a href="#">Network name</a>
     </nav>
 
@@ -58,7 +60,7 @@
 
     <main>
         <section>
-            <a id="network-name" href="../../CRUD/project/index.html">
+            <a id="network-name" href="../../CRUD/projet/index.html">
                 <h1>Region Name</h1>
                 <div class="flex-row">
                     <img src="../../TMAX/projet/svg/ico_cross_hover.svg">
@@ -199,10 +201,15 @@
             <table id="Gateways">
                 <thead>
                     <tr>
-                        <th scope="col">Gateway name <button class="sortBy" onclick="sortTable(0, 'Gateways')"><img src="../../TMAX/projet/svg/ico_tri.svg"></button></th>
-                        <th scope="col">Region <button class="sortBy" onclick="sortTable(1, 'Gateways')"><img src="../../TMAX/projet/svg/ico_tri.svg"></button></th>
-                        <th scope="col">Type <button class="sortBy" onclick="sortTable(2, 'Gateways')"><img src="../../TMAX/projet/svg/ico_tri.svg"></button></th>
-                        <th scope="col">Operational Status <button class="sortBy" onclick="sortTable(3, 'Gateways')"><img src="../../TMAX/projet/svg/ico_tri.svg"></button></th>
+                        <th scope="col">Gateway name <button class="sortBy" onclick="sortTable(0, 'Gateways')"><img
+                                    src="../../TMAX/projet/svg/ico_tri.svg"></button></th>
+                        <th scope="col">Region <button class="sortBy" onclick="sortTable(1, 'Gateways')"><img
+                                    src="../../TMAX/projet/svg/ico_tri.svg"></button></th>
+                        <th scope="col">Type <button class="sortBy" onclick="sortTable(2, 'Gateways')"><img
+                                    src="../../TMAX/projet/svg/ico_tri.svg"></button></th>
+                        <th scope="col">Operational Status <button class="sortBy"
+                                onclick="sortTable(3, 'Gateways')"><img
+                                    src="../../TMAX/projet/svg/ico_tri.svg"></button></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -215,7 +222,7 @@
                                 <img src="../../TMAX/projet/svg/ico_warning.svg">
                                 <p>Degraded</p>
                             </div>
-                        </td>                       
+                        </td>
                     </tr>
                     <tr>
                         <td data-label="Gateway name">Gateway B</td>
@@ -226,7 +233,7 @@
                                 <img src="../../TMAX/projet/svg/ico_danger.svg">
                                 <p>Down</p>
                             </div>
-                        </td>                      
+                        </td>
                     </tr>
                     <tr>
                         <td data-label="Gateway name">Gateway C</td>
@@ -237,7 +244,7 @@
                                 <img src="../../TMAX/projet/svg/ico_success.svg">
                                 <p>Up</p>
                             </div>
-                        </td>                                           
+                        </td>
                     </tr>
                     <tr>
                         <td data-label="Gateway name">Gateway D</td>
@@ -248,7 +255,7 @@
                                 <img src="../../TMAX/projet/svg/ico_success.svg">
                                 <p>Up</p>
                             </div>
-                        </td>                       
+                        </td>
                     </tr>
                     <tr>
                         <td data-label="Gateway name">Gateway E</td>
@@ -259,7 +266,7 @@
                                 <img src="../../TMAX/projet/svg/ico_success.svg">
                                 <p>Up</p>
                             </div>
-                        </td>                                          
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -267,9 +274,12 @@
             <table id="Sites">
                 <thead>
                     <tr>
-                        <th scope="col">Site name <button class="sortBy" onclick="sortTable(0, 'Sites')"><img src="../../TMAX/projet/svg/ico_tri.svg"></button></th>
-                        <th scope="col">Edges <button class="sortBy" onclick="sortTable(1, 'Sites')"><img src="../../TMAX/projet/svg/ico_tri.svg"></button></th>
-                        <th scope="col">Operational Status <button class="sortBy" onclick="sortTable(2, 'Sites')"><img src="../../TMAX/projet/svg/ico_tri.svg"></button></th>
+                        <th scope="col">Site name <button class="sortBy" onclick="sortTable(0, 'Sites')"><img
+                                    src="../../TMAX/projet/svg/ico_tri.svg"></button></th>
+                        <th scope="col">Edges <button class="sortBy" onclick="sortTable(1, 'Sites')"><img
+                                    src="../../TMAX/projet/svg/ico_tri.svg"></button></th>
+                        <th scope="col">Operational Status <button class="sortBy" onclick="sortTable(2, 'Sites')"><img
+                                    src="../../TMAX/projet/svg/ico_tri.svg"></button></th>
                         <th scope="col"></th>
                     </tr>
                 </thead>
@@ -282,8 +292,9 @@
                                 <img src="../../TMAX/projet/svg/ico_success.svg">
                                 <p>Up</p>
                             </div>
-                        </td>                       
-                        <td data-label="Monitoring"><a class="site-monitoring-link" href="#">Site monitoring <img src="../../TMAX/projet/svg/ico_right_hover.svg"></a></td>
+                        </td>
+                        <td data-label="Monitoring"><a class="site-monitoring-link" href="#">Site monitoring <img
+                                    src="../../TMAX/projet/svg/ico_right_hover.svg"></a></td>
                     </tr>
                     <tr>
                         <td data-label="Site name">Centro comercial Moctezuma</td>
@@ -293,8 +304,9 @@
                                 <img src="../../TMAX/projet/svg/ico_danger.svg">
                                 <p>Down</p>
                             </div>
-                        </td>       
-                        <td data-label="Monitoring"><a class="site-monitoring-link" href="#">Site monitoring <img src="../../TMAX/projet/svg/ico_right_hover.svg"></a></td>
+                        </td>
+                        <td data-label="Monitoring"><a class="site-monitoring-link" href="#">Site monitoring <img
+                                    src="../../TMAX/projet/svg/ico_right_hover.svg"></a></td>
                     </tr>
                     <tr>
                         <td data-label="Site name">Ernst Handel</td>
@@ -304,8 +316,9 @@
                                 <img src="../../TMAX/projet/svg/ico_success.svg">
                                 <p>Up</p>
                             </div>
-                        </td>                     
-                        <td data-label="Monitoring"><a class="site-monitoring-link" href="#">Site monitoring <img src="../../TMAX/projet/svg/ico_right_hover.svg"></a></td>
+                        </td>
+                        <td data-label="Monitoring"><a class="site-monitoring-link" href="#">Site monitoring <img
+                                    src="../../TMAX/projet/svg/ico_right_hover.svg"></a></td>
                     </tr>
                     <tr>
                         <td data-label="Site name">Island Trading</td>
@@ -315,8 +328,9 @@
                                 <img src="../../TMAX/projet/svg/ico_success.svg">
                                 <p>Up</p>
                             </div>
-                        </td> 
-                        <td data-label="Monitoring"><a class="site-monitoring-link" href="#">Site monitoring <img src="../../TMAX/projet/svg/ico_right_hover.svg"></a></td>
+                        </td>
+                        <td data-label="Monitoring"><a class="site-monitoring-link" href="#">Site monitoring <img
+                                    src="../../TMAX/projet/svg/ico_right_hover.svg"></a></td>
                     </tr>
                     <tr>
                         <td data-label="Site name">Laughing Bacchus Winecellars</td>
@@ -326,8 +340,9 @@
                                 <img src="../../TMAX/projet/svg/ico_success.svg">
                                 <p>Up</p>
                             </div>
-                        </td>                     
-                        <td data-label="Monitoring"><a class="site-monitoring-link" href="#">Site monitoring <img src="../../TMAX/projet/svg/ico_right_hover.svg"></a></td>
+                        </td>
+                        <td data-label="Monitoring"><a class="site-monitoring-link" href="#">Site monitoring <img
+                                    src="../../TMAX/projet/svg/ico_right_hover.svg"></a></td>
                     </tr>
                     <tr>
                         <td data-label="Site name">Magazzini Alimentari Riuniti</td>
@@ -337,8 +352,9 @@
                                 <img src="../../TMAX/projet/svg/ico_danger.svg">
                                 <p>Down</p>
                             </div>
-                        </td>      
-                        <td data-label="Monitoring"><a class="site-monitoring-link" href="#">Site monitoring <img src="../../TMAX/projet/svg/ico_right_hover.svg"></a></td>
+                        </td>
+                        <td data-label="Monitoring"><a class="site-monitoring-link" href="#">Site monitoring <img
+                                    src="../../TMAX/projet/svg/ico_right_hover.svg"></a></td>
                     </tr>
                     <tr>
                         <td data-label="Site name">Nowhere</td>
@@ -348,19 +364,25 @@
                                 <img src="../../TMAX/projet/svg/ico_danger.svg">
                                 <p>Down</p>
                             </div>
-                        </td>                   
-                        <td data-label="Monitoring"><a class="site-monitoring-link" href="#">Site monitoring <img src="../../TMAX/projet/svg/ico_right_hover.svg"></a></td>
+                        </td>
+                        <td data-label="Monitoring"><a class="site-monitoring-link" href="#">Site monitoring <img
+                                    src="../../TMAX/projet/svg/ico_right_hover.svg"></a></td>
                     </tr>
                 </tbody>
             </table>
             <table id="Edges">
                 <thead>
                     <tr>
-                        <th scope="col">Edge name <button class="sortBy" onclick="sortTable(0, 'Edges')"><img src="../../TMAX/projet/svg/ico_tri.svg"></button></th>
-                        <th scope="col">Hostname <button class="sortBy" onclick="sortTable(1, 'Edges')"><img src="../../TMAX/projet/svg/ico_tri.svg"></button></th>
-                        <th scope="col">Serial number <button class="sortBy" onclick="sortTable(2, 'Edges')"><img src="../../TMAX/projet/svg/ico_tri.svg"></button></th>
-                        <th scope="col">Site <button class="sortBy" onclick="sortTable(3, 'Edges')"><img src="../../TMAX/projet/svg/ico_tri.svg"></button></th>
-                        <th scope="col">Operational Status <button class="sortBy" onclick="sortTable(4, 'Edges')"><img src="../../TMAX/projet/svg/ico_tri.svg"></button></th>
+                        <th scope="col">Edge name <button class="sortBy" onclick="sortTable(0, 'Edges')"><img
+                                    src="../../TMAX/projet/svg/ico_tri.svg"></button></th>
+                        <th scope="col">Hostname <button class="sortBy" onclick="sortTable(1, 'Edges')"><img
+                                    src="../../TMAX/projet/svg/ico_tri.svg"></button></th>
+                        <th scope="col">Serial number <button class="sortBy" onclick="sortTable(2, 'Edges')"><img
+                                    src="../../TMAX/projet/svg/ico_tri.svg"></button></th>
+                        <th scope="col">Site <button class="sortBy" onclick="sortTable(3, 'Edges')"><img
+                                    src="../../TMAX/projet/svg/ico_tri.svg"></button></th>
+                        <th scope="col">Operational Status <button class="sortBy" onclick="sortTable(4, 'Edges')"><img
+                                    src="../../TMAX/projet/svg/ico_tri.svg"></button></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -371,7 +393,7 @@
                         <td data-label="Site">Alfreds Futterkiste</td>
                         <td data-label="Operational Status">
                             <div class="flex-row">
-                                <img src="../../TMAX/projet/svg/ico_success.svg" >
+                                <img src="../../TMAX/projet/svg/ico_success.svg">
                                 <p>Up</p>
                             </div>
                         </td>
@@ -383,10 +405,10 @@
                         <td data-label="Site">Centro comercial Moctezuma</td>
                         <td data-label="Operational Status">
                             <div class="flex-row">
-                                <img src="../../TMAX/projet/svg/ico_success.svg" >
+                                <img src="../../TMAX/projet/svg/ico_success.svg">
                                 <p>Up</p>
                             </div>
-                        </td>                    
+                        </td>
                     </tr>
                     <tr>
                         <td data-label="Edge name">Edge 3</td>
@@ -395,10 +417,10 @@
                         <td data-label="Site">Ernst Handel</td>
                         <td data-label="Operational Status">
                             <div class="flex-row">
-                                <img src="../../TMAX/projet/svg/ico_danger.svg" >
+                                <img src="../../TMAX/projet/svg/ico_danger.svg">
                                 <p>Down</p>
                             </div>
-                        </td>                    
+                        </td>
                     </tr>
                     <tr>
                         <td data-label="Edge name">Edge 4</td>
@@ -410,7 +432,7 @@
                                 <img src="../../TMAX/projet/svg/ico_warning.svg">
                                 <p>Degraded</p>
                             </div>
-                        </td>                      
+                        </td>
                     </tr>
                     <tr>
                         <td data-label="Edge name">Edge 5</td>
@@ -419,10 +441,10 @@
                         <td data-label="Site">Laughing Bacchus Winecellars</td>
                         <td data-label="Operational Status">
                             <div class="flex-row">
-                                <img src="../../TMAX/projet/svg/ico_danger.svg" >
+                                <img src="../../TMAX/projet/svg/ico_danger.svg">
                                 <p>Down</p>
                             </div>
-                        </td>                    
+                        </td>
                     </tr>
                     <tr>
                         <td data-label="Edge name">Edge 6</td>
@@ -431,10 +453,10 @@
                         <td data-label="Site">Magazzini Alimentari Riuniti</td>
                         <td data-label="Operational Status">
                             <div class="flex-row">
-                                <img src="../../TMAX/projet/svg/ico_success.svg" >
+                                <img src="../../TMAX/projet/svg/ico_success.svg">
                                 <p>Up</p>
                             </div>
-                        </td>                    
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -443,4 +465,5 @@
     </main>
 </body>
 <script src="script.js" type="text/javascript"></script>
+
 </html>

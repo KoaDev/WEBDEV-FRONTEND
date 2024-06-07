@@ -5,7 +5,6 @@ html {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: Arial, sans-serif;
 }
 
 .container {
@@ -59,7 +58,6 @@ html {
 
 
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -223,10 +221,6 @@ body {
 
 .delivery-table tr:nth-child(even) {
     background-color: var(--backgroundGrey);
-}
-
-body {
-    font-family: Arial, sans-serif;
 }
 
 .header-container {

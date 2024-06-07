@@ -41,6 +41,7 @@
   --border: var(--lightergrey);
   --titleTab: var(--verydarkgray);
   --previsioning: var(--honeydew);
+  --backgroundLigthGrey: var(--lightgrey);
 
   --base-font-size: 16px;
   --base-font-family: "Inter";

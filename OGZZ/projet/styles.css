@@ -1,6 +1,6 @@
 @import url(../../TMAX/style.css);
 
-a {
+main a {
   text-decoration: none;
   color : var(--secondary);
 }
