@@ -1,17 +1,3 @@
-@import url(../../TMAX/projet/style.css);
-
-body,
-html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .container {
   width: 100%;
   height: 100%;
