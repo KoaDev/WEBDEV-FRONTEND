@@ -333,6 +333,10 @@
 
 /* Cockpit */
 
+.close-section {
+  top: -100px;
+}
+
 #cockpit.active {
   z-index: 1000;
   position: relative;

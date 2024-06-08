@@ -57,8 +57,8 @@
 
     <hr class="spacer-line">
 
-
-    <H1 id="cockpit-title-id">Cockpit</H2>
+    <div id="cockpit">
+        <H1 id="cockpit-title-id">Cockpit</H1>
 
         <div id="containerOverview">
             <img src="../../TMAX/projet/svg/ico_overview.svg" alt="Image SVG" id="overview-id" class="svg-icon">
@@ -73,7 +73,7 @@
         <div id="golden-bar"></div>
 
         <!-- Il faudra modifier les div des titres des grids par rapport à ce qu'a fait maxime (edge_biot_1 par exemple) -->
-        <div id="gray-area">
+        <div id="gray-area" class="gray-area">
             <H1 id="location-overview">Location Overview</H1>
             <div class="box-container">
                 <div class="box-overview">
@@ -94,16 +94,8 @@
                 </div>
 
             </div>
-
-            <div class="close-section" onclick="history.back()">
-
-                <img src="../../TMAX/projet/svg/ico_cross_hover.svg" alt="close_icon" class="close-icon">
-                <span>Close</span></a>
-            </div>
-
         </div>
-
-        <div id="gray-area-2">
+        <div id="gray-area-2" class="gray-area">
             <H1 id="location-overview">Edge monitoring</H1>
             <div class="grid-container">
                 <div class="grid-item grid-item1" id="NameColumn">Name</div>
@@ -244,16 +236,12 @@
                 </a>
 
             </div>
-            <div class="close-section2" onclick="history.back()">
-
-                <img src="../../TMAX/projet/svg/ico_cross_hover.svg" alt="close_icon" class="close-icon">
-                <span>Close</span>
-            </div>
         </div>
-
-
-
-
+    </div>
+    <div class="close-section">
+        <img src="../../TMAX/projet/svg/ico_cross_hover.svg" alt="close_icon" class="close-icon">
+        <span>Close</span>
+    </div>
 </body>
 
 
