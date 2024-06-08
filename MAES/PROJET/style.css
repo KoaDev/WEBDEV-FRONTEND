@@ -82,10 +82,10 @@ body {
 
 .header-left p {
   margin: 0;
-  color: var(--lightTitle);
+  color: var(--secondary);
 }
 
-.cockpit-button {
+#cockpit-button {
   display: flex;
   align-items: center;
   background-color: var(--backgroundGrey);
@@ -95,9 +95,10 @@ body {
   color: var(--secondary);
   font-weight: bold;
   margin-top: 10px;
+  cursor: pointer;
 }
 
-.cockpit-button i {
+#cockpit-button img {
   margin-left: 10px;
 }
 
@@ -141,7 +142,7 @@ body {
   font-weight: bold;
 }
 
-.status-not-in-production i {
+.status-not-in-production img {
   margin-right: 10px;
   color: var(--error);
 }
@@ -169,8 +170,8 @@ body {
   align-items: center;
 }
 
-.admin-info i,
-.delivery-info i {
+.admin-info img,
+.delivery-info img {
   margin-right: 10px;
 }
 
@@ -182,13 +183,15 @@ body {
 }
 
 .no-deliveries-alert {
+  display: flex;
+  align-items: center;
   background-color: var(--ligthWarning);
   color: var(--secondary);
   padding: 10px;
   font-weight: bold;
 }
 
-.no-deliveries-alert i {
+.no-deliveries-alert img {
   margin-right: 10px;
   color: var(--warning);
 }
@@ -342,13 +345,38 @@ body {
   background-color: var(--backgroundGrey);
 }
 
+/* Cockpit */
+
+#cockpit.active {
+  z-index: 1000;
+  position: relative;
+  top: -100px;
+  width: 100%;
+}
+
+#location.active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+}
+
+#location {
+  position: relative;
+  z-index: 2;
+}
+
 @media (max-width: 768px) {
   .header-container {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .cockpit-button {
+  #cockpit-button {
     margin-top: 10px;
   }
 
@@ -375,7 +403,7 @@ body {
     font-size: 1.2em;
   }
 
-  .cockpit-button {
+  #cockpit-button {
     padding: 5px 10px;
   }
 

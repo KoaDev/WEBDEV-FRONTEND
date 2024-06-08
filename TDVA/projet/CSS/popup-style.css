@@ -5,36 +5,22 @@
     position: absolute;
     left: 0;
     top: 0;
-    display: none;
+    display: block;
 }
 
-#gray-area {
-    position: absolute;
+.gray-area {
     margin-top: 5px;
     padding-bottom: 5em;
     width: 100%;
     border-top: 1px solid var(--border);
-    background-color: var(--backgroundGrey);
-    opacity: 0;
-   
-    
+    background-color: var(--backgroundGrey); 
 }
+
 .containerOverview{
     opacity: 0.5;
 }
 .svg-icon:hover {
     cursor: pointer; /* Définir le curseur comme une main lors du survol */
-}
-#gray-area-2 {
-    position: absolute;
-    margin-top: 5px;
-    padding-bottom: 5em;
-    width: 100%;
-    border-top: 1px solid var(--border);
-    border-color:var(--border) ;
-    background-color: var(--backgroundGrey);
-    opacity: 0;
- 
 }
 
 #cockpit-title-id {
@@ -313,25 +299,18 @@ h4{
     font-size: 18px;
 }
 .close-section {
-    z-index: 10000;
-    transform: translateY(+1000%);
+    position: relative;
+    top: -100px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 3em;
+    padding-top: em;
 }
 .close-section:hover {
     cursor: pointer; /* Définir le curseur comme une main lors du survol */
 }
-.close-section2:hover {
-    cursor: pointer; /* Définir le curseur comme une main lors du survol */
-}
-.close-section2 {
-    z-index: 0;
-    transform: translateY(+850%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .close-section span {
     margin-right: 10px;
 }

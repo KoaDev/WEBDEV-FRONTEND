@@ -7,6 +7,7 @@
     <link rel="icon" href="../../TMAX/projet/svg/ico_logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="../../TMAX/projet/style.css">
     <link rel="stylesheet" href="../../TMAX/projet/custom.css">
+    <link rel="stylesheet" href="../../TDVA/projet/CSS/popup-style.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -23,8 +24,8 @@
             </li>
             <li class="dropdown">
                 <button class="dropbtn"><a href="../../TEST/projet/HTML/region.html">Regions <img
-                            src="../../TMAX/projet/svg/ico_arrow_down_hover.svg" class="ico"
-                            alt="ico_arrow_down_hover"></a></button>
+                            src="../../TMAX/projet/svg/ico_arrow_down_nav.svg" class="ico"
+                            alt="ico_arrow_down_nav"></a></button>
                 <div class="dropdown-content">
                     <a href="../../TEST/projet/HTML/details.html">Region 1</a>
                     <a href="../../TEST/projet/HTML/details.html">Region 2</a>
@@ -33,8 +34,8 @@
             </li>
             <li class="dropdown">
                 <button class="dropbtn"><a href="../../PTDQ/projet/index.html">Locations <img
-                            src="../../TMAX/projet/svg/ico_arrow_down_hover.svg" class="ico"
-                            alt="ico_arrow_down_hover"></a></button>
+                            src="../../TMAX/projet/svg/ico_arrow_down_nav.svg" class="ico"
+                            alt="ico_arrow_down_nav"></a></button>
                 <div class="dropdown-content">
                     <a href="../../MAES/projet/index.html">Location 1</a>
                     <a href="../../MAES/projet/index.html">Location 2</a>
@@ -50,8 +51,8 @@
 
     <nav class="breadcrumb">
         <a href="#">Home</a>
-        <a href="#">Regions</a>
-        <a href="#">Location Name2</a>
+        <a href="#">Your locations</a>
+        <a href="#">Location Name</a>
     </nav>
 
     <hr class="spacer-line">
@@ -61,181 +62,371 @@
             <h1>Location name</h1>
             <p>Manage and monitor your location</p>
         </div>
-        <a href="../../TDVA/projet/popup.html" class="cockpit-button">
-            COCKPIT <i class="fas fa-eye"></i>
-        </a>
+        <button id="cockpit-button">
+            COCKPIT <img src="../../TMAX/projet/svg/ico_eye.svg"></img>
+        </button>
     </div>
 
-    <div class="top-container">
-        <div class="box">
-            <p>Location Unique ID
+    <div id="location">
+        <div class="top-container">
+            <div class="box">
+                <p>Location Unique ID
+                    <br>
+                    <strong>8754-1654eef-54df59-j1zf3</strong>
+                    <br>
+                    <br>
+                    Main Status
+                </p>
+                <div class="status-not-in-production">
+                    <img src="../../TMAX/projet/svg/ico_danger.svg"></img>
+                    <span>Not in production</span>
+                </div>
+            </div>
+            <div class="box" style="border: 1px solid #ccc;">
                 <br>
-                <strong>8754-1654eef-54df59-j1zf3</strong>
                 <br>
-                <br>
-                Main Status
-            </p>
-            <div class="status-not-in-production">
-                <i class="fas fa-exclamation-triangle"></i>
-                <span>Not in production</span>
+                <div class="info-box">
+                    <div>
+                        <strong>Location Type</strong>
+                        Remote
+                    </div>
+                    <div>
+                        <strong>Attached Region</strong>
+                        EMEA
+                    </div>
+                    <div>
+                        <strong>Attached Project</strong>
+                        Project 2
+                    </div>
+                    <div>
+                        <strong>Vendor Dashboard</strong>
+                        <a href="#" style="color: black; font-weight: bold; text-decoration: none;">Go to VC
+                            Orchestrator</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="box" style="border: 1px solid #ccc;">
-            <br>
-            <br>
-            <div class="info-box">
+
+        <div class="additional-box">
+            <div class="admin-info">
                 <div>
-                    <strong>Location Type</strong>
-                    Remote
+                    <img src="../../TMAX/projet/svg/ico_writing.svg"></img>
+                    <span><strong>Administrative Information</strong></span>
                 </div>
                 <div>
-                    <strong>Attached Region</strong>
-                    EMEA
+                    <a href="#" onclick="toggleDetails(event, 'admin-details')"
+                        style="color: black; font-weight: bold; text-decoration: none;">
+                        View more <img id="arrowAdmin" src="../../TMAX/projet/svg/ico_arrow_down_hover.svg"></img></a>
+                </div>
+            </div>
+            <div class="details" id="admin-details">
+                <div class="section">
+                    <h2>General Information</h2>
+                    <p>These informations are used by My support and other team.</p>
+                    <div class="form-group">
+                        <div class="form-field" style="flex: 0.3;">
+                            <label>Location Name</label>
+                            <input type="text" placeholder="Input text">
+                        </div>
+                        <div class="form-field" style="flex: 0.70;">
+                            <label>Location Description</label>
+                            <input type="text" placeholder="Input text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-field">
+                            <label>Number and Street Name</label>
+                            <input type="text" placeholder="Input text">
+                        </div>
+                        <div class="form-field">
+                            <label>Postal Code</label>
+                            <input type="text" placeholder="Input text">
+                        </div>
+                        <div class="form-field">
+                            <label>City</label>
+                            <input type="text" placeholder="Input text">
+                        </div>
+                    </div>
+                    <button>Save</button>
+                </div>
+                <div class="section">
+                    <h2>Local Contact Information</h2>
+                    <p>A local contact is mandatory to handle on-site actions.</p>
+                    <div class="form-group">
+                        <div class="form-field">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Input text">
+                        </div>
+                        <div class="form-field">
+                            <label>First Name</label>
+                            <input type="text" placeholder="Input text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-field">
+                            <label>Phone</label>
+                            <input type="text" placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-field">
+                            <label>E-mail</label>
+                            <input type="text" placeholder="Enter your e-mail">
+                        </div>
+                    </div>
+                    <label>Availability</label>
+                    <div class="availability">
+                        <input type="radio" id="manual" name="availability" value="manual" checked>
+                        <label for="manual">Manual</label>
+                        <input type="radio" id="24-7" name="availability" value="24-7">
+                        <label for="24-7">24/7</label>
+                        <input type="radio" id="weekdays-only" name="availability" value="weekdays-only">
+                        <label for="weekdays-only">Weekdays only</label>
+                    </div>
+                    <div class="checkbox-grid">
+                        <div class="header"></div>
+                        <div class="header">Monday</div>
+                        <div class="header">Tuesday</div>
+                        <div class="header">Wednesday</div>
+                        <div class="header">Thursday</div>
+                        <div class="header">Friday</div>
+                        <div class="header">Saturday</div>
+                        <div class="header">24h</div>
+                        <div><input type="checkbox"></div>
+                        <div><input type="checkbox"></div>
+                        <div><input type="checkbox"></div>
+                        <div><input type="checkbox"></div>
+                        <div><input type="checkbox"></div>
+                        <div><input type="checkbox"></div>
+                        <div class="header">AM (0h - 12h)</div>
+                        <div><input type="checkbox" checked></div>
+                        <div><input type="checkbox" checked></div>
+                        <div><input type="checkbox" checked></div>
+                        <div><input type="checkbox" checked></div>
+                        <div><input type="checkbox" checked></div>
+                        <div><input type="checkbox"></div>
+                        <div class="header">PM (12h - 0h)</div>
+                        <div><input type="checkbox" checked></div>
+                        <div><input type="checkbox"></div>
+                        <div><input type="checkbox" checked></div>
+                        <div><input type="checkbox"></div>
+                        <div><input type="checkbox" checked></div>
+                        <div><input type="checkbox"></div>
+                    </div>
+                    <button>Save</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="additional-box">
+            <div class="delivery-info">
+                <div>
+                    <img src="../../TMAX/projet/svg/ico_info.svg"></img>
+                    <span><strong>Delivery Information</strong></span>
                 </div>
                 <div>
-                    <strong>Attached Project</strong>
-                    Project 2
+                    <a href="#" onclick="toggleDetails(event, 'delivery-details')"
+                        style="color: black; font-weight: bold; text-decoration: none;">
+                        View more
+                        <img id="arrowDelivery" src="../../TMAX/projet/svg/ico_arrow_down_hover.svg"></img></a>
                 </div>
-                <div>
-                    <strong>Vendor Dashboard</strong>
-                    <a href="#" style="color: black; font-weight: bold; text-decoration: none;">Go to VC
-                        Orchestrator</a>
+            </div>
+            <div class="details" id="delivery-details">
+                <p>Find Here all deliveries for hardware components</p>
+                <div class="no-deliveries-alert">
+                    <img src="../../TMAX/projet/svg/ico_warning.svg"></img> No deliveries to display
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="additional-box">
-        <div class="admin-info">
-            <div>
-                <i class="fas fa-info-circle"></i>
-                <span><strong>Administrative Information</strong></span>
-            </div>
-            <div>
-                <a href="#" onclick="toggleDetails(event, 'admin-details')"
-                    style="color: black; font-weight: bold; text-decoration: none;">
-                    View more <i class="fas fa-chevron-down"></i></a>
-            </div>
-        </div>
-        <div class="details" id="admin-details">
-            <div class="section">
-                <h2>General Information</h2>
-                <p>These informations are used by My support and other team.</p>
-                <div class="form-group">
-                    <div class="form-field" style="flex: 0.3;">
-                        <label>Location Name</label>
-                        <input type="text" placeholder="Input text">
-                    </div>
-                    <div class="form-field" style="flex: 0.70;">
-                        <label>Location Description</label>
-                        <input type="text" placeholder="Input text">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="form-field">
-                        <label>Number and Street Name</label>
-                        <input type="text" placeholder="Input text">
-                    </div>
-                    <div class="form-field">
-                        <label>Postal Code</label>
-                        <input type="text" placeholder="Input text">
-                    </div>
-                    <div class="form-field">
-                        <label>City</label>
-                        <input type="text" placeholder="Input text">
-                    </div>
-                </div>
-                <button>Save</button>
-            </div>
-            <div class="section">
-                <h2>Local Contact Information</h2>
-                <p>A local contact is mandatory to handle on-site actions.</p>
-                <div class="form-group">
-                    <div class="form-field">
-                        <label>Last Name</label>
-                        <input type="text" placeholder="Input text">
-                    </div>
-                    <div class="form-field">
-                        <label>First Name</label>
-                        <input type="text" placeholder="Input text">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="form-field">
-                        <label>Phone</label>
-                        <input type="text" placeholder="Enter your phone number">
-                    </div>
-                    <div class="form-field">
-                        <label>E-mail</label>
-                        <input type="text" placeholder="Enter your e-mail">
-                    </div>
-                </div>
-                <label>Availability</label>
-                <div class="availability">
-                    <input type="radio" id="manual" name="availability" value="manual" checked>
-                    <label for="manual">Manual</label>
-                    <input type="radio" id="24-7" name="availability" value="24-7">
-                    <label for="24-7">24/7</label>
-                    <input type="radio" id="weekdays-only" name="availability" value="weekdays-only">
-                    <label for="weekdays-only">Weekdays only</label>
-                </div>
-                <div class="checkbox-grid">
-                    <div class="header"></div>
-                    <div class="header">Monday</div>
-                    <div class="header">Tuesday</div>
-                    <div class="header">Wednesday</div>
-                    <div class="header">Thursday</div>
-                    <div class="header">Friday</div>
-                    <div class="header">Saturday</div>
-                    <div class="header">24h</div>
-                    <div><input type="checkbox"></div>
-                    <div><input type="checkbox"></div>
-                    <div><input type="checkbox"></div>
-                    <div><input type="checkbox"></div>
-                    <div><input type="checkbox"></div>
-                    <div><input type="checkbox"></div>
-                    <div class="header">AM (0h - 12h)</div>
-                    <div><input type="checkbox" checked></div>
-                    <div><input type="checkbox" checked></div>
-                    <div><input type="checkbox" checked></div>
-                    <div><input type="checkbox" checked></div>
-                    <div><input type="checkbox" checked></div>
-                    <div><input type="checkbox"></div>
-                    <div class="header">PM (12h - 0h)</div>
-                    <div><input type="checkbox" checked></div>
-                    <div><input type="checkbox"></div>
-                    <div><input type="checkbox" checked></div>
-                    <div><input type="checkbox"></div>
-                    <div><input type="checkbox" checked></div>
-                    <div><input type="checkbox"></div>
-                </div>
-                <button>Save</button>
-            </div>
-        </div>
-    </div>
+    <div id="cockpit">
+        <H1 id="cockpit-title-id">Cockpit</H1>
 
-    <div class="additional-box">
-        <div class="delivery-info">
-            <div>
-                <i class="fas fa-truck"></i>
-                <span><strong>Delivery Information</strong></span>
+        <div id="containerOverview">
+            <img src="../../TMAX/projet/svg/ico_overview.svg" alt="Image SVG" id="overview-id" class="svg-icon">
+            <img src="../../TMAX/projet/svg/ico_avaibility.svg" alt="Image SVG" id="avaibility-id" class="svg-icon">
+            <img src="../../TMAX/projet/svg/ico_service.svg" alt="Image SVG" id="service-id" class="svg-icon">
+            <img src="../../TMAX/projet/svg/ico_monitor.svg" alt="Image SVG" id="monitor-id" class="svg-icon">
+            <img src="../../TMAX/projet/svg/ico_security.svg" alt="Image SVG" id="security-id" class="svg-icon">
+            <img src="../../TMAX/projet/svg/ico_configure.svg" alt="Image SVG" id="configure-id" class="svg-icon">
+            <img src="../../TMAX/projet/svg/ico_data.svg" alt="Image SVG" id="data-id" class="svg-icon">
+            <img src="../../TMAX/projet/svg/ico_biling.svg" alt="Image SVG" id="biling-id" class="svg-icon">
+        </div>
+        <div id="golden-bar"></div>
+
+        <!-- Il faudra modifier les div des titres des grids par rapport à ce qu'a fait maxime (edge_biot_1 par exemple) -->
+        <div id="gray-area" class="gray-area">
+            <H1 id="location-overview">Location Overview</H1>
+            <div class="box-container">
+                <div class="box-overview">
+                    <h3 class="text_in_box">1</h3>
+                    <div>Edge count</div>
+                </div>
+                <div class="box-overview">
+                    <h3 class="text_in_box">Single-Edge</h3>
+                    <div>Edge redundancy</div>
+                </div>
+                <div class="box-overview">
+                    <h3 class="text_in_box">Edge510Ite</h3>
+                    <div>Edge Model</div>
+                </div>
+                <div class="box-overview">
+                    <h3 class="text_in_box">Down</h3>
+                    <div>All links Status</div>
+                </div>
+
             </div>
-            <div>
-                <a href="#" onclick="toggleDetails(event, 'delivery-details')"
-                    style="color: black; font-weight: bold; text-decoration: none;">
+        </div>
+        <div id="gray-area-2" class="gray-area">
+            <H1 id="location-overview">Edge monitoring</H1>
+            <div class="grid-container">
+                <div class="grid-item grid-item1" id="NameColumn">Name</div>
+                <div class="grid-item grid-item2">Hostname</div>
+                <div class="grid-item grid-item8">Edge_Biot_1</div>
+
+                <div class="grid-item grid-item9">Edge_Biot_1</div>
+                <div class="grid-item grid-item3">Attribut</div>
+                <div class="grid-item grid-item4">HA Status</div>
+                <a class="link-VC" href="#">
+                    <img src="../../TMAX/projet/svg/ico_href.svg" class="ico-ref" alt="ico_href">
+                    Go to VC Orchestrator
+                </a>
+                <a href="#" class="view-more">
+
                     View more
-                    <i class="fas fa-chevron-down"></i></a>
+                    <img src="../../TMAX/projet/svg/ico_arrow_down_hover.svg" class="ico-ref" alt="ico_href">
+                </a>
+
             </div>
-        </div>
-        <div class="details" id="delivery-details">
-            <p>Find Here all deliveries for hardware components</p>
-            <div class="no-deliveries-alert">
-                <i class="fas fa-exclamation-circle"></i> No deliveries to display
+            <div class="grid-container2">
+                <!-- Il faudra modifier les div des titres des grids par rapport à ce qu'a fait maxime (edge_biot_1 par exemple) -->
+                <h4 class="title-subgrid">Overview</h4>
+                <div class="grid-item grid-item2">Model</div>
+                <div class="grid-item grid-item9">edge-510-lte</div>
+
+
+            </div>
+
+            <div class="grid-container2">
+                <!-- Il faudra modifier les div des titres des grids par rapport à ce qu'a fait maxime (edge_biot_1 par exemple) -->
+                <h4 class="title-subgrid">Links & Overlay Tunnels</h4>
+                <div class="grid-item grid-item2">Links
+                    <img src="../../TMAX/projet/svg/ico_info_black.svg" class="ico-ref" alt="ico_href">
+
+                </div>
+
+                <div class="grid-item grid-item9">
+                    <img src="../../TMAX/projet/svg/ico_warning.svg" class="ico-ref" alt="ico_href">
+
+                </div>
+                <div class="grid-item grid-item3">Overlay Tunnels
+                    <img src="../../TMAX/projet/svg/ico_info_black.svg" class="ico-info" alt="ico_href">
+                    <div class="info-hover">
+
+                        <div class="gateway-hover">GATEWAY</div>
+                        <div class="peername1-hover">peername1</div>
+                        <img src="../../TMAX/projet/svg/ico_success.svg" class="ico-success" alt="ico_href">
+
+
+                        <div>BRANCH</div>
+                        <div>peername2</div>
+                        <img src="../../TMAX/projet/svg/ico_success.svg" class="ico-success" alt="ico_href">
+
+                        <div>HUB</div>
+                        <div>peername3</div>
+                        <img src="../../TMAX/projet/svg/ico_danger.svg" class="ico-failure" alt="ico_href">
+
+                        <div>GATEWAY</div>
+                        <div>peername4</div>
+                        <img src="../../TMAX/projet/svg/ico_danger.svg" class="ico-failure" alt="ico_href">
+
+                    </div>
+                </div>
+                <div class="grid-item grid-item10">
+                    <img src="../../TMAX/projet/svg/ico_warning.svg" class="ico-warning" alt="ico_href">
+
+                </div>
+
+                <div class="grid-item grid-item4"> QoE
+                    <img src="../../TMAX/projet/svg/ico_info_black.svg" class="ico-info2" alt="ico_href">
+                    <div class="info-hover2">
+
+                        <div class="">Voice :</div>
+                        <div class="">10</div>
+
+
+
+                        <div>Video :</div>
+                        <div>10</div>
+
+
+                        <div>Trans :</div>
+                        <div>10</div>
+
+
+                        <div>Average score :</div>
+                        <div>10.0</div>
+
+
+                    </div>
+                </div>
+                <div class="grid-item grid-item11">
+                    <img src="../../TMAX/projet/svg/ico_success.svg" class="ico-success" alt="ico_href">
+                </div>
+
+
+            </div>
+            <div class="grid-container3">
+                <!-- Il faudra modifier les div des titres des grids par rapport à ce qu'a fait maxime (edge_biot_1 par exemple) -->
+                <h4 class="title-subgrid">System</h4>
+                <div class="grid-item grid-item2">CPU usage
+
+                </div>
+                <div class="grid-item grid-item9">
+                    <div> 29%</div>
+                </div>
+                <div class="grid-item grid-item3">RAM usage</div>
+                <div class="grid-item grid-item10">
+                    44.
+                </div>
+
+                <div class="grid-item grid-item5"> Flows</div>
+                <div class="grid-item grid-item12">
+                    11
+                </div>
+
+
+            </div>
+            <div class="grid-container">
+                <div class="grid-item grid-item1" id="NameColumn">Name</div>
+                <div class="grid-item grid-item2">Hostname</div>
+                <div class="grid-item grid-item8">Edge_Biot_1</div>
+
+                <div class="grid-item grid-item9">Edge_Biot_1</div>
+                <div class="grid-item grid-item3">Attribut</div>
+                <div class="success-grid">Active</div>
+                <div class="grid-item grid-item4">HA Status</div>
+                <div class="grid-item grid-item11">N/A</div>
+                <a class="link-VC" href="#">
+                    <img src="../../TMAX/projet/svg/ico_href.svg" class="ico-ref" alt="ico_href">
+                    Go to VC Orchestrator
+                </a>
+                <a href="#" class="view-more">
+
+                    View more
+                    <img src="../../TMAX/projet/svg/ico_arrow_down_hover.svg" class="ico-ref" alt="ico_href">
+                </a>
+
             </div>
         </div>
     </div>
+    <div class="close-section">
+        <img src="../../TMAX/projet/svg/ico_cross_hover.svg" alt="close_icon" class="close-icon">
+        <span>Close</span></a>
+    </div>
+
 
     <script src="main.js"></script>
+    <script src="../../TDVA/projet/JS/script.js"></script>
 </body>
 
 </html>
