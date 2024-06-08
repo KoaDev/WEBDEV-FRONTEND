@@ -2,516 +2,388 @@
 
 body,
 html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header {
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .logo {
-    width: 22%;
-    height: 50px;
+  width: 22%;
+  height: 50px;
 }
 
 .menu {
-    width: 80%;
-    height: 50px;
-    border: 2px solid var(--secondary);
+  width: 80%;
+  height: 50px;
+  border: 2px solid var(--secondary);
 }
 
 .main-content {
-    width: 90%;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 20px 0;
+  width: 90%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 0;
 }
 
-
 .small-box {
-    width: 100%;
-    height: 150px;
-    border: 2px solid var(--secondary);
+  width: 100%;
+  height: 150px;
+  border: 2px solid var(--secondary);
 }
 
 .bottom-content {
-    width: 90%;
-    height: 200px;
-    border: 2px solid var(--secondary);
-    margin-bottom: 20px;
-}
-
-
-body {
-    margin: 0;
-    padding: 0;
+  width: 90%;
+  height: 200px;
+  border: 2px solid var(--secondary);
+  margin-bottom: 20px;
 }
 
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    margin: 10px;
-    background-color: var(--backgroundWhite);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 10px;
+  background-color: var(--backgroundWhite);
+  flex-wrap: wrap;
 }
 
 .header-left {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .header-left h1 {
-    margin: 0;
-    font-size: 1.5em;
+  margin: 0;
+  font-size: 1.5em;
 }
 
 .header-left p {
-    margin: 0;
-    color: var(--lightTitle);
+  margin: 0;
+  color: var(--lightTitle);
 }
 
 .cockpit-button {
-    display: flex;
-    align-items: center;
-    background-color: var(--backgroundGrey);
-    border: 1px solid var(--border);
-    padding: 10px 20px;
-    text-decoration: none;
-    color: var(--secondary);
-    font-weight: bold;
+  display: flex;
+  align-items: center;
+  background-color: var(--backgroundGrey);
+  border: 1px solid var(--border);
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--secondary);
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .cockpit-button i {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .top-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 10px;
-    background-color: var(--backgroundWhite);
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 10px;
+  background-color: var(--backgroundWhite);
+  flex-wrap: wrap;
 }
 
 .box {
-    flex: 1;
-}
-
-.status-not-in-production {
-    background-color: var(--ligthError);
-    padding: 10px;
-    color: var(--orangeIcon);
-    border: 1px solid var(--orangeIcon);
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.status-not-in-production i {
-    margin-right: 10px;
-}
-
-.info-box {
-    display: flex;
-    justify-content: space-around;
-}
-
-.info-box div {
-    text-align: left;
-    margin: 0 10px;
-}
-
-.info-box div strong {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.admin-info,
-.delivery-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.admin-info i,
-.delivery-info i {
-    margin-right: 10px;
-}
-
-.additional-box {
-    border: 1px solid var(--border);
-    padding: 20px;
-    margin: 10px 10px 0 10px;
-    background-color: var(--backgroundGrey);
-}
-
-.details {
-    display: none;
-    border-top: 1px solid var(--border);
-    padding-top: 20px;
-    margin-top: 20px;
-}
-
-.details .section {
-    margin-bottom: 20px;
-}
-
-.details label {
-    display: block;
-    margin-bottom: 5px;
+  flex: 1;
 }
 
 .details input,
 .details select {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid var(--backgroundWhite);
-}
-
-.details .checkbox-grid {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.details .checkbox-grid div {
-    text-align: center;
-}
-
-.details .checkbox-grid input {
-    margin: 0 auto;
-}
-
-.delivery-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-.delivery-table th,
-.delivery-table td {
-    padding: 10px;
-    text-align: left;
-}
-
-.delivery-table th {
-    background-color: var(--backgroundGrey);
-}
-
-.delivery-table tr:nth-child(even) {
-    background-color: var(--backgroundGrey);
-}
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    margin: 10px;
-    background-color: var(--backgroundWhite);
-    flex-wrap: wrap;
-}
-
-.header-left {
-    display: flex;
-    flex-direction: column;
-}
-
-.header-left h1 {
-    margin: 0;
-    font-size: 1.5em;
-}
-
-.header-left p {
-    margin: 0;
-    color: var(--lightTitle);
-}
-
-.cockpit-button {
-    display: flex;
-    align-items: center;
-    background-color: var(--backgroundGrey);
-    border: 1px solid var(--border);
-    padding: 10px 20px;
-    text-decoration: none;
-    color: var(--secondary);
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.cockpit-button i {
-    margin-left: 10px;
-}
-
-.top-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 10px;
-    background-color: var(--backgroundWhite);
-    flex-wrap: wrap;
-}
-
-.box {
-    flex: 1;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--backgroundWhite);
 }
 
 .top-container .box:first-child {
-    flex: 0.25;
+  flex: 0.25;
 }
 
 .top-container .box:last-child {
-    flex: 0.75;
+  flex: 0.75;
 }
 
 .status-not-in-production {
-    background-color: var(--ligthError);
-    padding: 10px;
-    color: var(--orangeIcon);
-    border: 1px solid var(--orangeIcon);
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
+  background-color: var(--ligthError);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-weight: bold;
 }
 
 .status-not-in-production i {
-    margin-right: 10px;
+  margin-right: 10px;
+  color: var(--error);
 }
 
 .info-box {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .info-box div {
-    text-align: left;
-    margin: 0 10px;
+  text-align: left;
+  margin: 0 10px;
 }
 
 .info-box div strong {
-    display: block;
-    margin-bottom: 5px;
+  display: block;
+  margin-bottom: 5px;
 }
 
 .admin-info,
 .delivery-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .admin-info i,
 .delivery-info i {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .additional-box {
-    border: 1px solid var(--border);
-    padding: 20px;
-    margin: 10px 10px 0 10px;
-    background-color: var(--backgroundWhite);
+  border: 1px solid var(--border);
+  padding: 20px;
+  margin: 10px 10px 0 10px;
+  background-color: var(--backgroundWhite);
+}
+
+.no-deliveries-alert {
+  background-color: var(--ligthWarning);
+  color: var(--secondary);
+  padding: 10px;
+  font-weight: bold;
+}
+
+.no-deliveries-alert i {
+  margin-right: 10px;
+  color: var(--warning);
 }
 
 .details {
-    display: none;
-    border-top: 1px solid var(--border);
-    padding-top: 20px;
-    margin-top: 20px;
+  display: none;
+  border-top: 1px solid var(--border);
+  padding-top: 20px;
+  margin-top: 20px;
 }
 
 .details .section {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .details .section h2 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
+  font-size: 1.2em;
+  margin-bottom: 10px;
 }
 
 .details .section p {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .details label {
-    display: block;
-    margin-bottom: 5px;
+  display: block;
+  margin-bottom: 5px;
 }
 
 .details .form-group {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .details .form-group .form-field {
-    flex: 1;
-    min-width: 200px;
+  flex: 1;
+  min-width: 200px;
 }
 
 .details .form-group .form-field input {
-    width: 100%;
-    padding: 8px;
-    border-bottom: 1px solid var(--secondary);
-    background-color: var(--backgroundWhite);
-    outline: none;
+  width: 100%;
+  padding: 8px;
+  border-bottom: 1px solid var(--secondary);
+  background-color: var(--backgroundWhite);
+  outline: none;
 }
 
 .details button {
-    background-color: var(--backgroundWhite);
-    color: var(--secondary);
-    border: solid 1px var(--secondary);
-    padding: 10px 20px;
-    cursor: pointer;
+  background-color: var(--backgroundWhite);
+  color: var(--secondary);
+  border: solid 1px var(--secondary);
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
 .availability {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .availability input {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .availability label {
-    margin-right: 20px;
-    padding: 10px 20px;
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    cursor: pointer;
+  margin-right: 20px;
+  padding: 10px 20px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 .availability input[type="radio"] {
-    display: none;
+  display: none;
 }
 
-.availability input[type="radio"]:checked+label {
-    border: solid 2px var(--orangeIcon);
-    background-color: var(--backgroundWhite);
-    color: var(--secondary);
-    font-weight: bold;
-}
-
-.checkbox-grid {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    gap: 10px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.checkbox-grid div {
-    padding: 10px 0;
-}
-
-.checkbox-grid div.header {
-    font-weight: bold;
-}
-
-.checkbox-grid div.empty {
-    border-top: 1px solid var(--border);
+.availability input[type="radio"]:checked + label {
+  border: solid 2px var(--orangeIcon);
+  background-color: var(--backgroundWhite);
+  color: var(--secondary);
+  font-weight: bold;
 }
 
 .checkbox-grid input[type="checkbox"] {
-    margin: 0 auto;
+  appearance: none;
+  -webkit-appearance: none; /* Pour Safari */
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--secondary);
+  background-color: var(--backgroundWhite);
+  cursor: pointer;
+  position: relative;
 }
 
 .checkbox-grid input[type="checkbox"]:checked {
-    border: solid 1px  var(--orangeIcon);
-    color: var(--backgroundWhite);
+  background-color: var(--backgroundWhite);
+  border-color: var(--orangeIcon);
+}
+
+.checkbox-grid input[type="checkbox"]:checked::before {
+  content: "\2713"; /* Symbole de coche */
+  color: var(--orangeIcon);
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.details .checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.details .checkbox-grid div.header {
+  font-weight: bold;
+}
+
+.details .checkbox-grid div {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.details .checkbox-grid input {
+  margin: 0 auto;
 }
 
 .delivery-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
 .delivery-table th,
 .delivery-table td {
-    padding: 10px;
-    text-align: left;
+  padding: 10px;
+  text-align: left;
 }
 
 .delivery-table th {
-    background-color: var(--backgroundWhite);
+  background-color: var(--backgroundWhite);
 }
 
 .delivery-table tr:nth-child(even) {
-    background-color: var(--backgroundGrey);
+  background-color: var(--backgroundGrey);
 }
 
 @media (max-width: 768px) {
-    .header-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .cockpit-button {
-        margin-top: 10px;
-    }
+  .cockpit-button {
+    margin-top: 10px;
+  }
 
-    .top-container {
-        flex-direction: column;
-    }
+  .top-container {
+    flex-direction: column;
+  }
 
-    .info-box {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .info-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .availability {
-        flex-direction: column;
-    }
+  .availability {
+    flex-direction: column;
+  }
 
-    .checkbox-grid {
-        grid-template-columns: 1fr 1fr;
-    }
+  .checkbox-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 480px) {
-    .header-left h1 {
-        font-size: 1.2em;
-    }
+  .header-left h1 {
+    font-size: 1.2em;
+  }
 
-    .cockpit-button {
-        padding: 5px 10px;
-    }
+  .cockpit-button {
+    padding: 5px 10px;
+  }
 
-    .details .form-group {
-        flex-direction: column;
-    }
+  .details .form-group {
+    flex-direction: column;
+  }
 
-    .details .form-group .form-field {
-        min-width: 100%;
-    }
+  .details .form-group .form-field {
+    min-width: 100%;
+  }
 }

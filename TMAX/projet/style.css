@@ -10,6 +10,7 @@
   --lightgreen: #2f4f27;
   --goldenrod: #cfa40b;
   --yellow: #ffcd0b;
+  --lightyellow: #fffae7;
   --limegreen: #3de35a;
   --orange: #f16e00;
   --red: #e70002;
@@ -33,6 +34,7 @@
   --success: var(--limegreen);
   --warning: var(--yellow);
   --ligthError: var(--ligthred);
+  --ligthWarning: var(--lightyellow);
   --text: var(--black);
   --draft: var(--whitesmoke);
   --backgroundRow: var(--whitesmoke);
