@@ -23,7 +23,7 @@ const toBool = [() => true, () => false];
 
 const prepareFile = async (url) => {
     const paths = [STATIC_PATH, url];
-    if (url.endsWith("/")) paths.push("./PTDQ/projet/index.html");
+    if (url.endsWith("/")) paths.push("./CRUD/projet/index.html");
     const filePath = path.join(...paths);
     const pathTraversal = !filePath.startsWith(STATIC_PATH);
     const exists = await fs.promises.access(filePath).then(...toBool);
@@ -45,4 +45,4 @@ http
     })
     .listen(PORT);
 
-console.log(`Server running at http://127.0.0.1:${PORT}/`);
+console.log(`Server running at http://127.0.0.1:${PORT}/CRUD/projet/index.html`);
